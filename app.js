@@ -615,7 +615,7 @@
   };
   resetWorkflow();
 
-  const revealItems=$('.reveal').filter(el=>!el.classList.contains('is-visible'));
+  const revealItems=$$('.reveal').filter(el=>!el.classList.contains('is-visible'));
   if('IntersectionObserver' in window){
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{
       if(e.isIntersecting){
