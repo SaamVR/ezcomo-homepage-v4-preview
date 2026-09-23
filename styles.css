@@ -358,3 +358,65 @@ button{color:inherit}
   .bento-admin{order:5}
   .bento-domain{order:6}
 }
+
+/* --- V4.5 simplified real-store hero --- */
+.hero-stage{max-width:700px;justify-self:end}
+.hero-store-shell{position:relative;border:1px solid #29483a;border-radius:22px;background:#091510;box-shadow:0 42px 120px rgba(0,0,0,.45);overflow:hidden;animation:ezPanelBreath 8s ease-in-out infinite}
+.hero-store-meta{height:38px;display:flex;align-items:center;justify-content:space-between;padding:0 13px;border-bottom:1px solid #20382e;color:#728b7f;font:750 8px/1 monospace;letter-spacing:.09em;text-transform:uppercase}
+.hero-store-meta>span{display:flex;align-items:center;gap:7px}.hero-store-meta i{width:6px;height:6px;border-radius:50%;background:#8ee8b9;box-shadow:0 0 0 5px rgba(142,232,185,.07)}.hero-store-meta b{font-size:8px;color:#9bb2a7}
+.hero-store-shell .hero-preview-frame{min-height:0;aspect-ratio:auto;background:#f3efe7}
+.hero-store-shell .storefront-ui{min-height:500px;display:flex;flex-direction:column}
+.hero-store-shell .storefront-nav{height:52px;display:flex;align-items:center;gap:20px;padding:0 20px;border-bottom:1px solid rgba(20,28,24,.11);font-size:8px;letter-spacing:.08em}
+.hero-store-shell .storefront-nav>b{font-size:12px;letter-spacing:.16em;margin-right:auto}
+.hero-store-shell .storefront-nav nav{display:flex;gap:15px;align-items:center;text-transform:uppercase;font-weight:750;opacity:.62}
+.mini-cart{display:flex;gap:6px;align-items:center;font-size:8px;font-weight:800;text-transform:uppercase}.mini-cart i{width:17px;height:17px;border-radius:50%;display:grid;place-items:center;background:currentColor;color:transparent;position:relative}.mini-cart i:after{content:"1";position:absolute;inset:0;display:grid;place-items:center;color:#f5f3ec;font-style:normal;font-size:7px}
+
+.hero-store-shell .storefront-hero{height:278px;display:grid;grid-template-columns:1.08fr .92fr;gap:18px;align-items:center;padding:28px 30px}
+.storefront-copy-box{display:flex;flex-direction:column;align-items:flex-start;max-width:300px}
+.storefront-copy-box small{font:800 7px/1 monospace;letter-spacing:.14em;opacity:.54}
+.storefront-copy-box h3{margin:10px 0 10px;max-width:300px;font-size:34px;line-height:.94;letter-spacing:-.047em}
+.storefront-copy-box p{margin:0;max-width:255px;font-size:9px;line-height:1.55;opacity:.64}
+.storefront-cta-row{display:flex;align-items:center;gap:12px;margin-top:16px}.storefront-cta-row button{border:0;border-radius:999px;padding:9px 13px;background:#171915;color:#f7f3eb;font-size:8px;font-weight:850}.storefront-cta-row span{font-size:7px;font-weight:800;opacity:.62;white-space:nowrap}
+.hero-store-shell .product-sculpture{min-height:190px}
+.hero-store-shell .product-sculpture span:nth-child(1){width:62%;height:74%;right:2%;top:8%}.hero-store-shell .product-sculpture span:nth-child(2){width:40%;height:46%;left:3%;bottom:4%}.hero-store-shell .product-sculpture span:nth-child(3){width:17%;height:27%;right:18%;bottom:1%}
+
+.storefront-featured{margin-top:auto;padding:16px 18px 18px;border-top:1px solid rgba(20,28,24,.1);background:rgba(255,255,255,.2)}
+.storefront-featured-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.storefront-featured-head strong{font-size:8px;text-transform:uppercase;letter-spacing:.08em}.storefront-featured-head span{font-size:7px;opacity:.55;font-weight:750}
+.hero-store-shell .storefront-products{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0}
+.hero-store-shell .storefront-products article{padding:7px;border:1px solid rgba(20,28,24,.09);border-radius:8px;background:rgba(255,255,255,.52);min-width:0}
+.hero-store-shell .storefront-products .flat-product{height:54px;background:rgba(255,255,255,.42)}
+.hero-store-shell .storefront-products strong,.hero-store-shell .storefront-products span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero-store-shell .storefront-products strong{margin-top:5px;font-size:7px}.hero-store-shell .storefront-products span{margin-top:1px;font-size:7px;font-weight:850;opacity:.7}
+.hero-store-shell .store-tabs{padding:10px;background:#091510;border-top:1px solid #20382e}.hero-store-shell .store-tab{padding:7px 10px}
+
+.flat-headphones:before{width:31px;height:31px;border:6px solid #202b31;border-bottom-color:transparent;border-radius:50%;left:50%;top:8px;transform:translateX(-50%)}
+.flat-headphones i,.flat-headphones b{width:11px;height:20px;top:27px;background:#202b31;border-radius:7px}.flat-headphones i{left:10px}.flat-headphones b{right:10px}
+.flat-phone:before{width:24px;height:39px;left:50%;top:7px;transform:translateX(-50%);background:#293a43;border-radius:6px;box-shadow:inset 0 0 0 2px #6e8793}.flat-phone:after{width:4px;height:4px;border-radius:50%;left:50%;top:10px;transform:translateX(-50%);background:#a9bec7}
+.flat-keyboard:before{width:43px;height:24px;left:50%;top:16px;transform:translateX(-50%);border-radius:5px;background:repeating-linear-gradient(90deg,#304049 0 4px,#60747e 4px 6px)}.flat-keyboard:after{width:25px;height:3px;left:50%;top:34px;transform:translateX(-50%);background:#94a7ae;border-radius:2px}
+.flat-pot:before{width:30px;height:31px;left:50%;bottom:8px;transform:translateX(-50%);background:#9c6b4c;border-radius:8px 8px 12px 12px}.flat-pot:after{width:20px;height:8px;left:50%;top:10px;transform:translateX(-50%);background:#bd8a67;border-radius:50%}
+.flat-print:before{width:32px;height:38px;left:50%;top:8px;transform:translateX(-50%);background:#f1e5ca;border:5px solid #6c513f;border-radius:3px}.flat-print:after{width:17px;height:17px;left:50%;top:18px;transform:translateX(-50%) rotate(45deg);background:#b46e5a}
+.flat-bowl:before{width:40px;height:20px;left:50%;bottom:10px;transform:translateX(-50%);background:#c7654d;border-radius:3px 3px 22px 22px}.flat-bowl:after{width:34px;height:15px;left:50%;top:13px;transform:translateX(-50%);background:#6f914f;border-radius:50%;box-shadow:0 -3px 0 #e4a744 inset}
+.flat-drink:before{width:18px;height:36px;left:50%;bottom:8px;transform:translateX(-50%);background:#dfa84b;border-radius:5px 5px 8px 8px}.flat-drink:after{width:10px;height:7px;left:50%;top:7px;transform:translateX(-50%);background:#576f45;border-radius:3px}
+.flat-pack:before{width:29px;height:37px;left:50%;bottom:8px;transform:translateX(-50%);background:#d9824f;border-radius:4px 4px 8px 8px}.flat-pack:after{width:19px;height:8px;left:50%;top:13px;transform:translateX(-50%);background:#f0d394;border-radius:2px}
+
+[data-template-visual="electronics"] .storefront-copy-box h3,[data-template-visual="electronics"] .storefront-featured-head strong{letter-spacing:-.035em}
+[data-template-visual="electronics"] .storefront-copy-box,[data-template-visual="electronics"] .storefront-featured{font-family:"Segoe UI Variable",Aptos,Arial,sans-serif}
+[data-template-visual="electronics"] .storefront-cta-row button{background:#0c151b}
+[data-template-visual="crafts"] .storefront-copy-box h3{font-weight:720;letter-spacing:-.025em}
+[data-template-visual="crafts"] .storefront-cta-row button{background:#39271d}
+[data-template-visual="food"] .storefront-copy-box h3{letter-spacing:-.035em}
+[data-template-visual="food"] .storefront-cta-row button{background:#3d2913}
+
+@media(max-width:1020px){
+  .hero-stage{max-width:820px;justify-self:stretch}
+}
+@media(max-width:700px){
+  .hero-store-shell .storefront-ui{min-height:450px}
+  .hero-store-shell .storefront-nav{height:46px;padding:0 14px}.hero-store-shell .storefront-nav nav{display:none}
+  .hero-store-shell .storefront-hero{height:245px;grid-template-columns:1.1fr .7fr;padding:21px 18px;gap:10px}
+  .storefront-copy-box h3{font-size:27px;max-width:220px}.storefront-copy-box p{font-size:8px;max-width:210px}.storefront-cta-row span{display:none}
+  .hero-store-shell .product-sculpture{min-height:150px}
+  .storefront-featured{padding:12px}.hero-store-shell .storefront-products{gap:5px}.hero-store-shell .storefront-products article{padding:5px}.hero-store-shell .storefront-products .flat-product{height:48px}
+  .hero-store-shell .store-tabs{overflow-x:auto}
+}
+@media(prefers-reduced-motion:reduce){.hero-store-shell{animation:none!important}}

@@ -61,17 +61,32 @@
 
     <div class="hero-stage reveal is-visible" id="heroStage">
       <div class="stage-glow" aria-hidden="true"></div>
-      <div class="store-window">
-        <div class="window-top">
-          <div class="window-lights"><i></i><i></i><i></i></div>
-          <span id="heroWindowTitle">Threads · live preview</span>
-          <span class="window-state"><i></i> STOREFRONT</span>
-        </div>
+      <div class="hero-store-shell">
+        <div class="hero-store-meta"><span><i></i>LIVE STOREFRONT</span><b id="heroWindowTitle">Threads</b></div>
         <div class="hero-preview-frame" id="heroStoreVisual" data-template-visual="threads">
           <div class="storefront-ui">
-            <div class="storefront-nav"><b>THREADS</b><span>New</span><span>Shop</span><span>Stories</span><i></i></div>
-            <div class="storefront-hero"><div><small>NEW DROP 06</small><h3 id="visualHeadline">Built for the city after dark.</h3><button type="button">Shop collection</button></div><div class="product-sculpture"><span></span><span></span><span></span></div></div>
-            <div class="storefront-products"><article><div class="product-shape p1"></div><b>Studio Tee</b><small>৳1,490</small></article><article><div class="product-shape p2"></div><b>Field Shirt</b><small>৳1,790</small></article><article><div class="product-shape p3"></div><b>Utility Pant</b><small>৳2,190</small></article></div>
+            <header class="storefront-nav">
+              <b id="heroStoreBrand">THREADS</b>
+              <nav><span>New</span><span>Shop</span><span>Stories</span></nav>
+              <div class="mini-cart">Cart <i>1</i></div>
+            </header>
+            <section class="storefront-hero">
+              <div class="storefront-copy-box">
+                <small id="heroStoreEyebrow">NEW DROP 06</small>
+                <h3 id="visualHeadline">Built for the city after dark.</h3>
+                <p id="heroStoreBody">Everyday pieces with a sharper point of view.</p>
+                <div class="storefront-cta-row"><button type="button" id="heroStoreCta">Shop collection</button><span>View lookbook →</span></div>
+              </div>
+              <div class="product-sculpture" aria-hidden="true"><span></span><span></span><span></span></div>
+            </section>
+            <section class="storefront-featured">
+              <div class="storefront-featured-head"><strong id="heroFeaturedTitle">Featured products</strong><span>View all →</span></div>
+              <div class="storefront-products">
+                <article><div class="flat-product flat-tee" aria-hidden="true"><i></i><b></b></div><strong id="heroProduct1Name">Studio Tee</strong><span id="heroProduct1Price">৳1,490</span></article>
+                <article><div class="flat-product flat-tote" aria-hidden="true"><i></i><b></b></div><strong id="heroProduct2Name">Canvas Tote</strong><span id="heroProduct2Price">৳990</span></article>
+                <article><div class="flat-product flat-mug" aria-hidden="true"><i></i><b></b></div><strong id="heroProduct3Name">Rib Mug</strong><span id="heroProduct3Price">৳690</span></article>
+              </div>
+            </section>
           </div>
           <div class="preview-sheen" aria-hidden="true"></div>
         </div>
@@ -81,15 +96,6 @@
           <button class="store-tab" type="button" data-template="crafts" aria-selected="false">Crafts</button>
           <button class="store-tab" type="button" data-template="food" aria-selected="false">Food</button>
         </div>
-      </div>
-      <div class="float-state fs-payment">
-        <span class="float-label" data-i18n="paymentReady">PAYMENT OPTIONS</span>
-        <strong>bKash · Nagad · COD</strong>
-        <small data-i18n="configuredIn">Configured in your workspace</small>
-      </div>
-      <div class="float-state fs-order">
-        <span class="state-icon">✓</span>
-        <div><span class="float-label" data-i18n="structuredOrder">STRUCTURED ORDER</span><strong data-i18n="readyFulfilment">Ready for fulfilment</strong></div>
       </div>
     </div>
   </div>

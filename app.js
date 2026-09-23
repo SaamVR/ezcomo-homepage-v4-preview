@@ -3,11 +3,32 @@
   const $$ = (s, r=document) => [...r.querySelectorAll(s)];
 
   const templates = {
-    threads:{name:'Threads',brand:'THREADS',visual:'Built for the city after dark.',eyebrow:'DROP 06 / EDITORIAL',templateVisual:'Objects for everyday movement.',desc:'Editorial apparel with room for campaigns, collections and strong visual identity.',bn:'ক্যাম্পেইন, কালেকশন ও ব্র্যান্ড স্টোরির জন্য তৈরি এডিটোরিয়াল ফ্যাশন স্টোর।'},
-    electronics:{name:'Electronics',brand:'NEXUS',visual:'Technology that earns its place.',eyebrow:'FEATURED / PERFORMANCE',templateVisual:'Compare less. Choose better.',desc:'Product-first merchandising for shoppers comparing features and specifications.',bn:'ফিচার ও স্পেসিফিকেশন তুলনা করা ক্রেতাদের জন্য প্রোডাক্ট-কেন্দ্রিক স্টোর।'},
-    crafts:{name:'Crafts',brand:'HANDMADE',visual:'Made slowly. Kept for years.',eyebrow:'MAKER / PROCESS',templateVisual:'Every object carries a handprint.',desc:'Maker-led storytelling for handmade products where process and origin matter.',bn:'হ্যান্ডমেড পণ্যে নির্মাতা, প্রক্রিয়া ও গল্পকে সামনে আনে।'},
-    food:{name:'Food',brand:'TABLE',visual:'Good food, ready when you are.',eyebrow:'MENU / TODAY',templateVisual:'Fresh picks, easy ordering.',desc:'Menu-first presentation that keeps products easy to browse and order.',bn:'পণ্য দ্রুত দেখা ও অর্ডার করার জন্য মেনু-কেন্দ্রিক স্টোর।'}
+    threads:{
+      name:'Threads',brand:'THREADS',visual:'Built for the city after dark.',eyebrow:'NEW DROP 06',
+      body:'Everyday pieces with a sharper point of view.',cta:'Shop collection',secondary:'View lookbook →',
+      featured:'Featured products',products:[['Studio Tee','৳1,490','tee'],['Canvas Tote','৳990','tote'],['Rib Mug','৳690','mug']],
+      templateVisual:'Objects for everyday movement.',desc:'Editorial apparel with room for campaigns, collections and strong visual identity.',bn:'ক্যাম্পেইন, কালেকশন ও ব্র্যান্ড স্টোরির জন্য তৈরি এডিটোরিয়াল ফ্যাশন স্টোর।'
+    },
+    electronics:{
+      name:'Electronics',brand:'NEXUS',visual:'Technology that earns its place.',eyebrow:'FEATURED / PERFORMANCE',
+      body:'Clear specifications. Less noise. Better everyday devices.',cta:'Shop devices',secondary:'Compare models →',
+      featured:'Popular right now',products:[['Arc Headphones','৳5,990','headphones'],['Nova Phone','৳28,900','phone'],['Key Mini','৳3,490','keyboard']],
+      templateVisual:'Compare less. Choose better.',desc:'Product-first merchandising for shoppers comparing features and specifications.',bn:'ফিচার ও স্পেসিফিকেশন তুলনা করা ক্রেতাদের জন্য প্রোডাক্ট-কেন্দ্রিক স্টোর।'
+    },
+    crafts:{
+      name:'Crafts',brand:'HANDMADE',visual:'Made slowly. Kept for years.',eyebrow:'MAKER / PROCESS',
+      body:'Useful objects shaped by hand, material and small details.',cta:'Shop handmade',secondary:'Meet the makers →',
+      featured:'From the studio',products:[['Clay Vessel','৳1,250','pot'],['Market Tote','৳890','tote'],['Block Print','৳1,690','print']],
+      templateVisual:'Every object carries a handprint.',desc:'Maker-led storytelling for handmade products where process and origin matter.',bn:'হ্যান্ডমেড পণ্যে নির্মাতা, প্রক্রিয়া ও গল্পকে সামনে আনে।'
+    },
+    food:{
+      name:'Food',brand:'TABLE',visual:'Good food, ready when you are.',eyebrow:'TODAY / FRESH',
+      body:'Fresh picks, clear prices and an ordering path that stays simple.',cta:'Order today',secondary:'See full menu →',
+      featured:'Today’s favourites',products:[['Harvest Bowl','৳390','bowl'],['Citrus Drink','৳220','drink'],['Granola Pack','৳480','pack']],
+      templateVisual:'Fresh picks, easy ordering.',desc:'Menu-first presentation that keeps products easy to browse and order.',bn:'পণ্য দ্রুত দেখা ও অর্ডার করার জন্য মেনু-কেন্দ্রিক স্টোর।'
+    }
   };
+
 
   const i18n = {
     en:{
@@ -92,8 +113,22 @@
       heroVisual.classList.add('visual-switch');
       setTimeout(()=>heroVisual.classList.remove('visual-switch'),650);
     }
-    const title=$('#heroWindowTitle'); if(title) title.textContent=`${data.name} · live preview`;
+    const title=$('#heroWindowTitle'); if(title) title.textContent=data.name;
+    if($('#heroStoreBrand')) $('#heroStoreBrand').textContent=data.brand;
+    if($('#heroStoreEyebrow')) $('#heroStoreEyebrow').textContent=data.eyebrow;
     if($('#visualHeadline')) $('#visualHeadline').textContent=data.visual;
+    if($('#heroStoreBody')) $('#heroStoreBody').textContent=data.body;
+    if($('#heroStoreCta')) $('#heroStoreCta').textContent=data.cta;
+    const heroSecondary=$('.storefront-cta-row span'); if(heroSecondary) heroSecondary.textContent=data.secondary;
+    if($('#heroFeaturedTitle')) $('#heroFeaturedTitle').textContent=data.featured;
+    data.products.forEach((product,index)=>{
+      const n=index+1;
+      const name=$(`#heroProduct${n}Name`),price=$(`#heroProduct${n}Price`);
+      const art=$(`.storefront-products article:nth-child(${n}) .flat-product`);
+      if(name)name.textContent=product[0];
+      if(price)price.textContent=product[1];
+      if(art)art.className=`flat-product flat-${product[2]}`;
+    });
     const templateVisual=$('#templateVisual');
     if(templateVisual){
       templateVisual.dataset.templateVisual=id;
@@ -423,7 +458,7 @@
     conversionVisible=conversionNodes.size>0;
     refreshSticky();
   },{threshold:.08});
-  ['#pricing','#closing','#editorDemo','#orderWorkflowCard'].forEach(s=>{const el=$(s);if(el)convObs.observe(el)});
+  ['#pricing','#closing','#editorDemo','#orderWorkflowCard','.hero-store-shell'].forEach(s=>{const el=$(s);if(el)convObs.observe(el)});
   $('#stickyClose')?.addEventListener('click',()=>{dismissed=true;sessionStorage.setItem('ezcomo-v4-sticky','1');refreshSticky()});
 
   applyLanguage('en'); selectTemplate('threads'); renderFaq(); updateCalc();
