@@ -895,3 +895,39 @@ html[data-theme="light"] .hanging-lamp .lamp-shade{border-color:#59665c}
   .hanging-lamp .lamp-pull,.hanging-lamp.lamp-react .lamp-toggle{animation:none!important}
   .hanging-lamp .lamp-toggle{transform:none!important}
 }
+
+/* --- V6.5 navbar lamp + hanging rope restoration --- */
+.navbar-lamp{position:relative;width:50px;height:42px;flex:0 0 50px;overflow:visible;z-index:96}
+.navbar-lamp .lamp-toggle{position:absolute;inset:0;width:50px;height:42px;border:0;background:transparent;padding:0;cursor:pointer;overflow:visible;transform:none!important}
+.navbar-lamp .lamp-fixture{position:absolute;left:8px;top:6px;width:34px;height:29px;border-radius:17px 17px 9px 9px;background:#33483d;border:1px solid #5b6b60;box-shadow:inset 0 2px rgba(240,235,226,.09),0 7px 15px rgba(0,0,0,.13)}
+.navbar-lamp .lamp-fixture:before{content:"";position:absolute;left:7px;right:7px;top:-4px;height:6px;border-radius:6px 6px 2px 2px;background:#242722;border:1px solid #4c524b}
+.navbar-lamp .lamp-fixture:after{content:"";position:absolute;left:4px;right:4px;bottom:-4px;height:6px;border-radius:50%;background:#171916;border:1px solid #677168}
+.navbar-lamp .lamp-fixture i{position:absolute;left:12px;right:12px;bottom:-2px;height:4px;border-radius:50%;background:#78796b;opacity:.55}
+.navbar-lamp .lamp-fixture b{position:absolute;left:15px;top:-8px;width:4px;height:6px;border-radius:2px;background:#ae9461}
+.navbar-lamp .lamp-glow{position:absolute;left:-4px;top:27px;width:58px;height:40px;border-radius:50%;background:radial-gradient(ellipse at 50% 0,rgba(190,160,96,.38),rgba(174,148,97,.13) 42%,transparent 74%);filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .28s ease}
+.navbar-lamp.is-lit .lamp-fixture{background:#756f56;border-color:#ad965f;box-shadow:inset 0 2px rgba(255,246,214,.18),0 8px 19px rgba(174,148,97,.18)}
+.navbar-lamp.is-lit .lamp-fixture:after{background:#e4cb8b;border-color:#c3aa6e}.navbar-lamp.is-lit .lamp-fixture i{background:#f0d797;opacity:1}.navbar-lamp.is-lit .lamp-glow{opacity:1}
+
+.navbar-lamp .lamp-pull{position:absolute;left:27px;top:31px;width:24px;height:168px;border:0;background:transparent;padding:0;cursor:grab;z-index:100;transform-origin:50% 1px;touch-action:none;animation:navbarCordIdle 5.8s ease-in-out infinite}
+.navbar-lamp .lamp-pull.dragging,.navbar-lamp .lamp-pull.physics-active{animation:none}
+.navbar-lamp .lamp-cord{position:absolute;left:11px;top:0;width:1px;height:142px;background:linear-gradient(#949186,#666960);transform:scaleY(var(--cord-stretch,1));transform-origin:top center;box-shadow:1px 0 rgba(240,235,226,.05)}
+.navbar-lamp .lamp-weight{position:absolute;left:6px;top:138px;width:11px;height:19px;border-radius:7px 7px 10px 10px;background:#9b5845;border:1px solid #b46d58;box-shadow:0 7px 14px rgba(0,0,0,.18),inset 0 1px rgba(240,235,226,.12)}
+.navbar-lamp .lamp-weight:after{content:"";position:absolute;left:3px;right:3px;top:5px;height:1px;background:rgba(240,235,226,.28)}
+.navbar-lamp.is-lit .lamp-weight{background:#ae9461;border-color:#c8ae75}
+.navbar-lamp .lamp-pull:hover .lamp-weight{box-shadow:0 9px 17px rgba(0,0,0,.22),0 0 0 4px rgba(174,148,97,.09)}
+.navbar-lamp.lamp-react .lamp-fixture{animation:navbarLampClick .56s cubic-bezier(.2,.8,.2,1)}
+@keyframes navbarCordIdle{0%,100%{transform:rotate(-1.2deg)}50%{transform:rotate(1.55deg)}}
+@keyframes navbarLampClick{0%,100%{transform:none}42%{transform:translateY(1px) scale(.96)}72%{transform:translateY(-1px) scale(1.02)}}
+html[data-theme="light"] .navbar-lamp .lamp-fixture{border-color:#68736a}
+html[data-theme="light"] .navbar-lamp .lamp-fixture:before{background:#bbb3a7;border-color:#a29b90}
+html[data-theme="light"] .navbar-lamp .lamp-cord{background:linear-gradient(#77746b,#555b54)}
+
+.hero{padding-top:86px}
+@media(max-width:700px){
+  .navbar-lamp{width:44px;flex-basis:44px}.navbar-lamp .lamp-toggle{width:44px}.navbar-lamp .lamp-fixture{left:6px;width:31px;height:27px}
+  .navbar-lamp .lamp-pull{left:23px;top:30px;height:126px}.navbar-lamp .lamp-cord{height:102px}.navbar-lamp .lamp-weight{top:98px}
+  .hero{padding-top:58px}
+}
+@media(prefers-reduced-motion:reduce){
+  .navbar-lamp .lamp-pull,.navbar-lamp.lamp-react .lamp-fixture{animation:none!important}.navbar-lamp .lamp-glow{transition:none}
+}
