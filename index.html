@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#07110e">
   <meta name="description" content="EZComo helps Bangladeshi merchants launch branded online stores and manage products, orders, payments and delivery from one workspace.">
+  <link rel="icon" href="data:,">
   <title>EZComo — Build your store. Run the business behind it.</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
-<div class="noise" aria-hidden="true"></div>
 <div class="announcement" id="announcement">
   <div class="shell announcement-inner">
     <span data-i18n="announcement">Built for Bangladesh commerce — bKash, Nagad, COD and Pathao workflows.</span>
@@ -171,11 +171,63 @@
     <div class="section-heading split reveal"><div><p class="kicker" data-i18n="featuresKicker">Commerce workspace</p><h2 data-i18n="featuresTitle">Beautiful outside. Operational underneath.</h2></div><p data-i18n="featuresCopy">The storefront is only one surface. The same system keeps the products, orders, payment setup and delivery work that power it.</p></div>
     <div class="bento">
       <article class="bento-card bento-hero reveal" data-spotlight>
-        <div class="bento-copy"><span class="mini-label">STOREFRONT BUILDER</span><h3 data-i18n="builderTitle">Make the storefront feel like your brand.</h3><p data-i18n="builderCopy">Start from a complete design and adjust theme, sections and presentation without touching code.</p></div>
-        <div class="product-shot ui-shot builder-ui">
-          <div class="ui-sidebar"><span class="active">Theme</span><span>Sections</span><span>Typography</span><span>Spacing</span></div>
-          <div class="ui-canvas"><div class="mini-store"><div class="mini-nav"></div><div class="mini-hero"></div><div class="mini-grid"><i></i><i></i><i></i></div></div></div>
-          <div class="ui-controls"><label>Brand color <i class="swatch"></i></label><label>Radius <b>16</b></label><label>Density <b>Comfortable</b></label><label>Heading <b>Outfit</b></label></div>
+        <div class="bento-copy"><span class="mini-label">STOREFRONT BUILDER</span><h3 data-i18n="builderTitle">Try editing a storefront right here.</h3><p data-i18n="builderCopy">Click the words, rewrite them, drag them anywhere inside the section, or change the section color. No setup and no code.</p></div>
+        <div class="product-shot ui-shot builder-ui editor-demo" id="editorDemo">
+          <div class="editor-topbar">
+            <div class="editor-brand"><b>E</b><span data-i18n="editorTitle">Store editor</span><em data-i18n="editorPreview">Preview</em></div>
+            <div class="editor-top-actions"><span class="editor-saved"><i></i><span data-i18n="editorLive">Live changes</span></span><button type="button" id="editorReset" data-i18n="editorReset">Reset demo</button></div>
+          </div>
+          <aside class="editor-palette" aria-label="Storefront blocks">
+            <span class="editor-panel-label" data-i18n="editorBlocks">BLOCKS</span>
+            <button type="button" class="editor-block-btn active" data-editor-target="heroBlock"><i></i><span data-i18n="editorHero">Hero</span><b>01</b></button>
+            <button type="button" class="editor-block-btn" data-editor-target="productsBlock"><i></i><span data-i18n="editorProducts">Products</span><b>02</b></button>
+            <button type="button" class="editor-block-btn" data-editor-target="promoBlock"><i></i><span data-i18n="editorPromo">Promo</span><b>03</b></button>
+            <button type="button" class="editor-block-btn" data-editor-target="trustBlock"><i></i><span data-i18n="editorTrust">Trust</span><b>04</b></button>
+            <div class="editor-palette-tip"><strong data-i18n="editorTry">Try it</strong><span data-i18n="editorTryHint">Click text → type → drag</span></div>
+          </aside>
+          <div class="editor-stage">
+            <div class="editor-stage-head"><span>THREADS / HOME</span><div><i></i><i></i><i></i></div></div>
+            <div class="editor-canvas" id="editorCanvas">
+              <section class="editor-section editor-hero-block active" id="heroBlock" data-section-name="Hero">
+                <span class="section-chip">HERO</span>
+                <div class="editable-layer selected" data-editable="heroTitle" style="left:8%;top:29%">
+                  <button class="drag-handle" type="button" aria-label="Drag headline">⠿</button>
+                  <span class="editable-text editable-title" contenteditable="plaintext-only" spellcheck="false">Make the everyday unmistakably yours.</span>
+                </div>
+                <div class="editor-art-shapes" aria-hidden="true"><i></i><i></i><i></i></div>
+              </section>
+              <section class="editor-section editor-products-block" id="productsBlock" data-section-name="Products">
+                <span class="section-chip">PRODUCTS</span>
+                <div class="editable-layer" data-editable="productsTitle" style="left:7%;top:14%">
+                  <button class="drag-handle" type="button" aria-label="Drag products heading">⠿</button>
+                  <span class="editable-text editable-subtitle" contenteditable="plaintext-only" spellcheck="false">New this week</span>
+                </div>
+                <div class="editor-product-row" aria-hidden="true"><i></i><i></i><i></i></div>
+              </section>
+              <section class="editor-section editor-promo-block" id="promoBlock" data-section-name="Promo">
+                <span class="section-chip">PROMO</span>
+                <div class="editable-layer" data-editable="promoTitle" style="left:12%;top:32%">
+                  <button class="drag-handle" type="button" aria-label="Drag promo text">⠿</button>
+                  <span class="editable-text editable-promo" contenteditable="plaintext-only" spellcheck="false">Free delivery over ৳1,500</span>
+                </div>
+              </section>
+              <section class="editor-section editor-trust-block" id="trustBlock" data-section-name="Trust">
+                <span class="section-chip">TRUST</span>
+                <div class="editable-layer" data-editable="trustTitle" style="left:8%;top:30%">
+                  <button class="drag-handle" type="button" aria-label="Drag trust text">⠿</button>
+                  <span class="editable-text editable-trust" contenteditable="plaintext-only" spellcheck="false">bKash · Nagad · COD · Pathao</span>
+                </div>
+              </section>
+            </div>
+          </div>
+          <aside class="editor-inspector">
+            <span class="editor-panel-label" data-i18n="editorSelected">SELECTED</span>
+            <div class="inspector-name"><small data-i18n="editorTextLayer">Text layer</small><strong id="inspectorLayerName">Hero headline</strong></div>
+            <label><span data-i18n="editorText">Text</span><input id="editorTextInput" type="text" value="Make the everyday unmistakably yours."></label>
+            <label><span data-i18n="editorColor">Section color</span><div class="editor-swatches" id="editorSwatches"><button type="button" data-color="#d8b16c" style="--swatch:#d8b16c" aria-label="Sand"></button><button type="button" data-color="#6e8d79" style="--swatch:#6e8d79" aria-label="Sage"></button><button type="button" data-color="#36483f" style="--swatch:#36483f" aria-label="Forest"></button><button type="button" data-color="#b46e5a" style="--swatch:#b46e5a" aria-label="Clay"></button></div></label>
+            <div class="editor-position-readout"><span data-i18n="editorPosition">Position</span><strong id="positionReadout">X 8% · Y 29%</strong></div>
+            <div class="editor-help"><i></i><span data-i18n="editorHelp">Drag the handle to place text anywhere inside the selected section.</span></div>
+          </aside>
         </div>
       </article>
       <article class="bento-card bento-pay reveal" data-spotlight><span class="bento-mark">৳</span><h3 data-i18n="payTitle">Payments that make sense locally.</h3><p data-i18n="payCopy">bKash, Nagad and cash-on-delivery options, with automated bKash checkout available when connected.</p><div class="chip-row"><span>bKash</span><span>Nagad</span><span>COD</span></div></article>
