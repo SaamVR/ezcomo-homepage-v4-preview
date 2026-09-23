@@ -223,9 +223,11 @@
       lampVelocity=(lampVelocity+accel*dt)*.987;
       lampAngle+=lampVelocity*dt;
       lampPull.style.transform=`rotate(${lampAngle.toFixed(3)}deg)`;
+      if(themeToggle)themeToggle.style.transform=`rotate(${(lampAngle*.82).toFixed(3)}deg)`;
       if(Math.abs(lampAngle)<.08&&Math.abs(lampVelocity)<.035){
         lampAngle=0;lampVelocity=0;
         lampPull.style.removeProperty('transform');
+        themeToggle?.style.removeProperty('transform');
         lampPull.classList.remove('physics-active');
         lampFrame=0;
         return;
@@ -267,6 +269,7 @@
       lampAngle=Math.max(-28,Math.min(28,Math.atan2(dx,dy)*180/Math.PI));
       const pull=Math.max(0,Math.min(22,e.clientY-startY));
       lampPull.style.transform=`rotate(${lampAngle.toFixed(2)}deg) translateY(${pull.toFixed(1)}px)`;
+      if(themeToggle)themeToggle.style.transform=`rotate(${(lampAngle*.78).toFixed(2)}deg)`;
       lampPull.style.setProperty('--cord-stretch',String(1+pull/155));
       lampMoved=lampMoved||Math.hypot(e.clientX-startX,e.clientY-startY)>7;
       const now=performance.now(),dt=Math.max(8,now-lastTime);
@@ -281,6 +284,7 @@
       const pullDistance=Math.max(0,e.clientY-startY);
       const shouldToggle=lampMoved&&pullDistance>10;
       lampPull.style.transform=`rotate(${lampAngle.toFixed(2)}deg)`;
+      if(themeToggle)themeToggle.style.transform=`rotate(${(lampAngle*.82).toFixed(2)}deg)`;
       if(shouldToggle){toggleTheme();reactLamp();}
       const kick=Math.max(-2.2,Math.min(2.2,lampVelocity+(e.clientX-startX)*.006));
       settleLamp(kick|| (lampAngle>0?-.55:.55));

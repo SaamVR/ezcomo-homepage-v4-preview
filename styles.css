@@ -785,3 +785,113 @@ html[data-theme="light"] .site-nav .nav-lamp .lamp-pivot{box-shadow:0 0 0 3px rg
   .lamp-pull,.nav-lamp.lamp-react .lamp-neck,.nav-lamp.lamp-react .lamp-shade{animation:none!important}
   .lamp-glow{transition:none}
 }
+
+/* --- V6.4 hanging pendant lamp --- */
+.hanging-lamp{
+  width:72px;height:42px;flex:0 0 72px;position:relative;overflow:visible;z-index:95;
+}
+.hanging-lamp .lamp-canopy{
+  position:absolute;left:27px;top:-2px;width:28px;height:7px;border-radius:0 0 10px 10px;
+  background:#2a2e29;border:1px solid #4b5149;border-top:0;
+  box-shadow:0 4px 10px rgba(0,0,0,.18),inset 0 -1px rgba(240,235,226,.07);
+}
+.hanging-lamp .lamp-canopy:before{
+  content:"";position:absolute;left:11px;top:-4px;width:6px;height:6px;border-radius:50%;
+  background:#ae9461;box-shadow:0 0 0 3px rgba(174,148,97,.08);
+}
+.hanging-lamp .lamp-toggle{
+  position:absolute;left:17px;top:0;width:48px;height:146px;border:0;background:transparent;padding:0;
+  overflow:visible;cursor:pointer;transform-origin:50% 1px;transition:none;
+}
+.hanging-lamp .lamp-cable{
+  position:absolute;left:23px;top:0;width:2px;height:88px;border-radius:2px;
+  background:linear-gradient(#6d7068,#4b5049);
+  box-shadow:1px 0 rgba(240,235,226,.04);
+}
+.hanging-lamp .lamp-cable:after{
+  content:"";position:absolute;left:-3px;bottom:-4px;width:8px;height:8px;border-radius:50%;
+  background:#ae9461;border:1px solid #c2aa76;
+}
+.hanging-lamp .lamp-shade{
+  position:absolute;left:6px;top:84px;width:36px;height:28px;
+  border-radius:18px 18px 7px 7px;background:#33483d;border:1px solid #596b60;
+  transform:none;box-shadow:inset 0 2px rgba(240,235,226,.08),0 10px 20px rgba(0,0,0,.18);
+}
+.hanging-lamp .lamp-shade:before{
+  content:"";position:absolute;left:4px;right:4px;bottom:-5px;height:7px;border-radius:50%;
+  background:#171916;border:1px solid #657167;
+}
+.hanging-lamp .lamp-shade i{
+  position:absolute;left:12px;right:12px;bottom:-3px;height:5px;border-radius:50%;
+  background:#6d6f61;opacity:.5;
+}
+.hanging-lamp .lamp-shade b{
+  position:absolute;left:16px;top:-10px;width:4px;height:10px;border-radius:2px 2px 0 0;
+  background:#ae9461;
+}
+.hanging-lamp .lamp-glow{
+  position:absolute;left:-14px;top:106px;width:76px;height:62px;border-radius:50%;
+  background:radial-gradient(ellipse at 50% 0,rgba(190,160,96,.42),rgba(174,148,97,.16) 38%,transparent 72%);
+  filter:blur(7px);opacity:0;pointer-events:none;transition:opacity .28s ease;
+}
+.hanging-lamp.is-lit .lamp-shade{
+  background:#756f56;border-color:#ad965f;
+  box-shadow:inset 0 2px rgba(255,246,214,.16),0 12px 28px rgba(174,148,97,.22);
+}
+.hanging-lamp.is-lit .lamp-shade:before{background:#e2ca8c;border-color:#c3aa6e}
+.hanging-lamp.is-lit .lamp-shade i{background:#f1d899;opacity:1}
+.hanging-lamp.is-lit .lamp-glow{opacity:1}
+
+/* Separate pull chain hangs from the pendant, not from the navbar. */
+.hanging-lamp .lamp-pull{
+  left:50px;top:101px;width:24px;height:126px;transform-origin:50% 1px;
+  animation:lampIdle 5.6s ease-in-out infinite;
+}
+.hanging-lamp .lamp-cord{
+  left:11px;top:0;width:1px;height:101px;
+  background:linear-gradient(#8a877d,#62655e);
+}
+.hanging-lamp .lamp-weight{
+  left:6px;top:97px;width:11px;height:18px;border-radius:7px 7px 10px 10px;
+  background:#9b5845;border-color:#b46d58;
+}
+.hanging-lamp.is-lit .lamp-weight{background:#ae9461;border-color:#c8ae75}
+
+.hanging-lamp.lamp-react .lamp-toggle{animation:hangingLampNudge .82s cubic-bezier(.18,.82,.22,1)}
+@keyframes hangingLampNudge{
+  0%,100%{transform:rotate(0deg)}
+  24%{transform:rotate(3.8deg)}
+  54%{transform:rotate(-2.7deg)}
+  76%{transform:rotate(1.3deg)}
+}
+@keyframes lampIdle{0%,100%{transform:rotate(-1.5deg)}50%{transform:rotate(1.9deg)}}
+
+html[data-theme="light"] .hanging-lamp .lamp-canopy{background:#d8d1c6;border-color:#afa79b}
+html[data-theme="light"] .hanging-lamp .lamp-cable{background:linear-gradient(#85837a,#5f645d)}
+html[data-theme="light"] .hanging-lamp .lamp-shade{border-color:#59665c}
+
+/* Give the hanging object breathing room over the hero while preserving nav usability. */
+.site-nav{overflow:visible}
+.hero{padding-top:118px}
+
+@media(max-width:1020px){
+  .hanging-lamp{width:62px;flex-basis:62px}
+  .hanging-lamp .lamp-toggle{left:11px}
+  .hanging-lamp .lamp-pull{left:44px}
+}
+@media(max-width:700px){
+  .hanging-lamp{width:50px;flex-basis:50px}
+  .hanging-lamp .lamp-canopy{left:17px;width:24px}
+  .hanging-lamp .lamp-toggle{left:5px;height:116px}
+  .hanging-lamp .lamp-cable{height:63px}
+  .hanging-lamp .lamp-shade{top:59px;width:32px;height:25px;left:8px}
+  .hanging-lamp .lamp-glow{top:80px;width:62px;height:48px;left:-7px}
+  .hanging-lamp .lamp-pull{left:35px;top:76px;height:98px}
+  .hanging-lamp .lamp-cord{height:76px}
+  .hanging-lamp .lamp-weight{top:73px}
+  .hero{padding-top:100px}
+}
+@media(prefers-reduced-motion:reduce){
+  .hanging-lamp .lamp-pull,.hanging-lamp.lamp-react .lamp-toggle{animation:none!important}
+  .hanging-lamp .lamp-toggle{transform:none!important}
+}
