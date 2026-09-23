@@ -735,3 +735,53 @@ body.v6-mature .workflow-step.active:after{background:var(--clay-light)}
   .editor-block-btn.reorder-settled,.workflow-step.active:after{animation:none!important}
   .workflow-step.active:after{display:none}
 }
+
+/* --- V6.3 tactile nav lamp theme control --- */
+.nav-actions{position:relative}
+.nav-lamp{position:relative;width:54px;height:42px;flex:0 0 54px;z-index:4}
+.lamp-toggle{position:relative;width:54px;height:42px;border:0;background:transparent;padding:0;cursor:pointer;overflow:visible}
+.lamp-pivot{position:absolute;left:8px;top:8px;width:10px;height:10px;border-radius:50%;background:#ae9461;box-shadow:0 0 0 3px color-mix(in srgb,#ae9461 18%,transparent)}
+.lamp-neck{position:absolute;left:15px;top:12px;width:27px;height:5px;border-radius:5px;background:#4c554d;transform:rotate(-17deg);transform-origin:left center;box-shadow:inset 0 1px rgba(240,235,226,.12)}
+.lamp-neck:after{content:"";position:absolute;right:-2px;top:-3px;width:9px;height:9px;border:2px solid #ae9461;border-radius:50%;background:#252924}
+.lamp-shade{position:absolute;right:2px;top:13px;width:21px;height:18px;border-radius:11px 11px 5px 5px;background:#33483d;border:1px solid #536458;transform:rotate(11deg);transform-origin:55% 22%;box-shadow:inset 0 2px rgba(240,235,226,.1),0 6px 12px rgba(0,0,0,.12)}
+.lamp-shade:before{content:"";position:absolute;left:3px;right:3px;bottom:-4px;height:5px;border-radius:50%;background:#171916;border:1px solid #5f6d63}
+.lamp-shade i{position:absolute;left:7px;right:7px;bottom:-2px;height:3px;border-radius:50%;background:#6d6e60;opacity:.55}
+.lamp-glow{position:absolute;right:-9px;top:26px;width:42px;height:34px;border-radius:50%;background:radial-gradient(ellipse at 50% 0,rgba(174,148,97,.38),rgba(174,148,97,.13) 42%,transparent 72%);filter:blur(4px);opacity:0;transform:rotate(11deg);pointer-events:none;transition:opacity .35s ease}
+.nav-lamp.is-lit .lamp-shade{background:#7d765b;border-color:#ae9461;box-shadow:inset 0 2px rgba(255,246,214,.18),0 7px 18px rgba(174,148,97,.18)}
+.nav-lamp.is-lit .lamp-shade:before{background:#e1c889;border-color:#c3a969}
+.nav-lamp.is-lit .lamp-shade i{background:#f3d99b;opacity:1}
+.nav-lamp.is-lit .lamp-glow{opacity:1}
+.nav-lamp.lamp-react .lamp-neck{animation:lampNeckReact .7s cubic-bezier(.2,.8,.2,1)}
+.nav-lamp.lamp-react .lamp-shade{animation:lampShadeReact .7s cubic-bezier(.2,.8,.2,1)}
+
+.lamp-pull{position:absolute;left:33px;top:35px;width:24px;height:138px;border:0;background:transparent;padding:0;cursor:grab;z-index:90;transform-origin:50% 2px;animation:lampIdle 5.8s ease-in-out infinite;touch-action:none}
+.lamp-pull.dragging{cursor:grabbing;animation:none}
+.lamp-pull.physics-active{animation:none}
+.lamp-cord{position:absolute;left:11px;top:0;width:1px;height:116px;background:linear-gradient(#8f8c80,#65675f);transform:scaleY(var(--cord-stretch,1));transform-origin:top center;box-shadow:1px 0 rgba(240,235,226,.05)}
+.lamp-weight{position:absolute;left:6px;top:112px;width:11px;height:17px;border-radius:7px 7px 9px 9px;background:#9b5845;border:1px solid #b66e58;box-shadow:0 6px 12px rgba(0,0,0,.16),inset 0 1px rgba(240,235,226,.12)}
+.lamp-weight:after{content:"";position:absolute;left:3px;right:3px;top:4px;height:1px;background:rgba(240,235,226,.28)}
+.nav-lamp.is-lit .lamp-weight{background:#ae9461;border-color:#c8ae75}
+.lamp-pull:hover .lamp-weight{transform:translateY(1px);box-shadow:0 8px 16px rgba(0,0,0,.2),0 0 0 4px color-mix(in srgb,#ae9461 10%,transparent)}
+
+@keyframes lampIdle{0%,100%{transform:rotate(-1.15deg)}50%{transform:rotate(1.6deg)}}
+@keyframes lampNeckReact{0%,100%{transform:rotate(-17deg)}30%{transform:rotate(-13deg)}62%{transform:rotate(-19deg)}}
+@keyframes lampShadeReact{0%,100%{transform:rotate(11deg)}32%{transform:rotate(17deg) translateY(1px)}68%{transform:rotate(7deg)}}
+
+html[data-theme="light"] .site-nav .nav-lamp .lamp-neck{background:#596058}
+html[data-theme="light"] .site-nav .nav-lamp .lamp-cord{background:linear-gradient(#716f65,#52564f)}
+html[data-theme="light"] .site-nav .nav-lamp .lamp-pivot{box-shadow:0 0 0 3px rgba(174,148,97,.12)}
+
+@media(max-width:700px){
+  .nav-lamp{width:46px;flex-basis:46px}
+  .lamp-toggle{width:46px}
+  .lamp-pivot{left:5px}
+  .lamp-neck{left:12px;width:24px}
+  .lamp-shade{right:0}
+  .lamp-pull{left:27px;height:108px}
+  .lamp-cord{height:88px}
+  .lamp-weight{top:85px}
+}
+@media(prefers-reduced-motion:reduce){
+  .lamp-pull,.nav-lamp.lamp-react .lamp-neck,.nav-lamp.lamp-react .lamp-shade{animation:none!important}
+  .lamp-glow{transition:none}
+}

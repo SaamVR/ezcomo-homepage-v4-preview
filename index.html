@@ -29,7 +29,18 @@
       <a href="#pricing" data-i18n="navPricing">Pricing</a>
     </nav>
     <div class="nav-actions">
-      <button class="icon-control" id="themeToggle" type="button" aria-label="Switch theme">◐</button>
+      <div class="nav-lamp" id="navLamp">
+        <button class="lamp-toggle" id="themeToggle" type="button" aria-label="Switch theme" aria-pressed="false">
+          <span class="lamp-pivot" aria-hidden="true"></span>
+          <span class="lamp-neck" aria-hidden="true"></span>
+          <span class="lamp-shade" aria-hidden="true"><i></i></span>
+          <span class="lamp-glow" aria-hidden="true"></span>
+        </button>
+        <button class="lamp-pull" id="lampPull" type="button" aria-label="Pull lamp cord to switch theme">
+          <span class="lamp-cord" aria-hidden="true"></span>
+          <span class="lamp-weight" aria-hidden="true"></span>
+        </button>
+      </div>
       <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language"><span>EN</span><span>বাংলা</span></button>
       <a class="nav-login" href="https://ezcomo.shop/login" data-i18n="login">Log in</a>
       <a class="btn btn-primary nav-cta" data-signup href="https://ezcomo.shop/signup?template=threads" data-i18n="startFree">Start free</a>
