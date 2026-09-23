@@ -615,8 +615,23 @@
   };
   resetWorkflow();
 
-  const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');observer.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px'});
-  $$('.reveal').forEach(el=>{if(!el.classList.contains('is-visible'))observer.observe(el)});
+  const revealItems=$('.reveal').filter(el=>!el.classList.contains('is-visible'));
+  if('IntersectionObserver' in window){
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('is-visible');
+        observer.unobserve(e.target);
+      }
+    }),{threshold:.12,rootMargin:'0px 0px -40px'});
+    revealItems.forEach(el=>observer.observe(el));
+    requestAnimationFrame(()=>revealItems.forEach(el=>{
+      if(!el.classList.contains('is-visible'))el.classList.add('reveal-pending');
+    }));
+    // Fail open: marketing content must never stay blank if an observer is delayed or interrupted.
+    setTimeout(()=>revealItems.forEach(el=>el.classList.add('is-visible')),1600);
+  }else{
+    revealItems.forEach(el=>el.classList.add('is-visible'));
+  }
 
   const motionObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
     if(!entry.isIntersecting) return;
