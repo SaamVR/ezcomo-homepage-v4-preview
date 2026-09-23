@@ -80,19 +80,28 @@
     const close=$('#closingSignup'); if(close) close.textContent=lang==='bn'?`${templates[selected].name} দিয়ে শুরু করুন`:`Start with ${templates[selected].name}`;
   }
 
-  function swapImage(img,wrap,src,alt){
-    wrap?.classList.add('swap');
-    setTimeout(()=>{img.src=src;img.alt=alt;requestAnimationFrame(()=>wrap?.classList.remove('swap'))},160);
-  }
-
   function selectTemplate(id,source='full'){
     if(!templates[id]) return; selected=id; const data=templates[id];
     $$('.store-tab').forEach(b=>{const a=b.dataset.template===id;b.classList.toggle('active',a);b.setAttribute('aria-selected',String(a))});
     $$('.template-option').forEach(b=>{const a=b.dataset.templateFull===id;b.classList.toggle('active',a);b.setAttribute('aria-selected',String(a))});
-    const heroVisual=$('#heroStoreVisual'); if(heroVisual) heroVisual.dataset.templateVisual=id;
+    const heroVisual=$('#heroStoreVisual');
+    if(heroVisual){
+      heroVisual.dataset.templateVisual=id;
+      heroVisual.classList.remove('visual-switch');
+      void heroVisual.offsetWidth;
+      heroVisual.classList.add('visual-switch');
+      setTimeout(()=>heroVisual.classList.remove('visual-switch'),650);
+    }
     const title=$('#heroWindowTitle'); if(title) title.textContent=`${data.name} · live preview`;
     if($('#visualHeadline')) $('#visualHeadline').textContent=data.visual;
-    const templateVisual=$('#templateVisual'); if(templateVisual) templateVisual.dataset.templateVisual=id;
+    const templateVisual=$('#templateVisual');
+    if(templateVisual){
+      templateVisual.dataset.templateVisual=id;
+      templateVisual.classList.remove('visual-switch');
+      void templateVisual.offsetWidth;
+      templateVisual.classList.add('visual-switch');
+      setTimeout(()=>templateVisual.classList.remove('visual-switch'),650);
+    }
     if($('#templateBrand')) $('#templateBrand').textContent=data.brand;
     if($('#templateEyebrow')) $('#templateEyebrow').textContent=data.eyebrow;
     if($('#templateVisualTitle')) $('#templateVisualTitle').textContent=data.templateVisual;
@@ -136,6 +145,15 @@
 
   const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');observer.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px'});
   $$('.reveal').forEach(el=>{if(!el.classList.contains('is-visible'))observer.observe(el)});
+
+  const motionObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(!entry.isIntersecting) return;
+    const el=entry.target;
+    if(el.classList.contains('system-card')) el.classList.add('system-live');
+    if(el.classList.contains('builder-ui')||el.classList.contains('admin-ui')) el.classList.add('demo-live');
+    motionObserver.unobserve(el);
+  }),{threshold:.32,rootMargin:'0px 0px -10% 0px'});
+  $$('.system-card,.builder-ui,.admin-ui').forEach(el=>motionObserver.observe(el));
 
   $$('[data-spotlight]').forEach(card=>card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--mx',`${e.clientX-r.left}px`);card.style.setProperty('--my',`${e.clientY-r.top}px`)}));
   const stage=$('#heroStage');
