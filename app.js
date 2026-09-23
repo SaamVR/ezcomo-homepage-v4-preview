@@ -113,7 +113,7 @@
     }
   };
 
-  let lang='en', selected='fashion', faqCategory='start';
+  let lang='en', selected='threads', directionSelected='fashion', faqCategory='start';
 
   function applyLanguage(next){
     lang=next; document.documentElement.lang=lang==='bn'?'bn':'en'; document.body.classList.toggle('bn',lang==='bn');
@@ -124,13 +124,18 @@
   }
 
   function updateSignup(){
-    const data=directions[selected]||directions.fashion;
-    $$('[data-signup]').forEach(a=>a.href=`https://ezcomo.shop/signup?template=${encodeURIComponent(data.slug)}`);
+    const data=directions[selected]||templates[selected]||directions.fashion;
+    const slug=data.slug||selected;
+    $('[data-signup]:not(#templateSignup)').forEach(a=>a.href=`https://ezcomo.shop/signup?template=${encodeURIComponent(slug)}`);
     const close=$('#closingSignup'); if(close) close.textContent=lang==='bn'?`${data.name} দিয়ে শুরু করুন`:`Start with ${data.name}`;
+    const direction=directions[directionSelected]||directions.fashion;
+    const templateSignup=$('#templateSignup');
+    if(templateSignup) templateSignup.href=`https://ezcomo.shop/signup?template=${encodeURIComponent(direction.slug)}`;
   }
 
   function selectTemplate(id){
     if(!templates[id]) return;
+    selected=id;
     const data=templates[id];
     $$('.store-tab').forEach(b=>{const a=b.dataset.template===id;b.classList.toggle('active',a);b.setAttribute('aria-selected',String(a))});
     const heroVisual=$('#heroStoreVisual');
@@ -157,11 +162,13 @@
       if(price)price.textContent=product[1];
       if(art)art.className=`flat-product flat-${product[2]}`;
     });
+    updateSignup();
   }
 
   function selectDirection(id){
     if(!directions[id]) return;
     selected=id;
+    directionSelected=id;
     const data=directions[id];
     $$('.template-option').forEach(b=>{const active=b.dataset.templateFull===id;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active))});
     $$('[data-direction-panel]').forEach(panel=>panel.classList.toggle('active',panel.dataset.directionPanel===id));
@@ -177,7 +184,7 @@
   }
 
   function updateTemplateText(){
-    const data=directions[selected]||directions.fashion;
+    const data=directions[directionSelected]||directions.fashion;
     if($('#templateDescription')) $('#templateDescription').textContent=lang==='bn'?data.bn:data.desc;
     updateSignup();
   }
