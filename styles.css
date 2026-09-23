@@ -1013,3 +1013,17 @@ html[data-theme="light"] .navbar-lamp .lamp-cord{background:linear-gradient(#777
 @media(prefers-reduced-motion:reduce){
   .editor-demo.demo-live .editor-block-btn[data-editor-target="heroBlock"] .section-drag-grip,.editor-demo.demo-live #heroBlock{animation:none!important}
 }
+
+/* --- V6.7 compact hanging cord after hero --- */
+.navbar-lamp .lamp-pull,.navbar-lamp .lamp-cord,.navbar-lamp .lamp-weight{transition:height .28s ease,top .28s ease}
+body.lamp-rope-compact .navbar-lamp .lamp-pull{height:54px}
+body.lamp-rope-compact .navbar-lamp .lamp-cord{height:27px}
+body.lamp-rope-compact .navbar-lamp .lamp-weight{top:24px}
+@media(max-width:700px){
+  body.lamp-rope-compact .navbar-lamp .lamp-pull{height:50px}
+  body.lamp-rope-compact .navbar-lamp .lamp-cord{height:25px}
+  body.lamp-rope-compact .navbar-lamp .lamp-weight{top:22px}
+}
+@media(prefers-reduced-motion:reduce){
+  .navbar-lamp .lamp-pull,.navbar-lamp .lamp-cord,.navbar-lamp .lamp-weight{transition:none}
+}

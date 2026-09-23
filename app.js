@@ -193,6 +193,16 @@
   $$('.template-option').forEach(b=>b.addEventListener('click',()=>selectDirection(b.dataset.templateFull)));
 
   $('#langToggle')?.addEventListener('click',()=>applyLanguage(lang==='en'?'bn':'en'));
+  let lampScrollFrame=0;
+  const syncLampScrollState=()=>{
+    lampScrollFrame=0;
+    document.body.classList.toggle('lamp-rope-compact',window.scrollY>220);
+  };
+  addEventListener('scroll',()=>{
+    if(!lampScrollFrame)lampScrollFrame=requestAnimationFrame(syncLampScrollState);
+  },{passive:true});
+  syncLampScrollState();
+
   const themeToggle=$('#themeToggle');
   const navLamp=$('#navLamp');
   const lampPull=$('#lampPull');
