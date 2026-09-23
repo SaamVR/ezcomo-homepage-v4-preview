@@ -380,10 +380,14 @@
     workflowDemo.classList.add('running');
     setWorkflowStatus('workflowRunning');
     const reduced=matchMedia('(prefers-reduced-motion:reduce)').matches;
-    let t=reduced?0:500;
+    // Deliberately paced so visitors can read each operational state instead of watching a flash-by demo.
+    const workflowTiming=reduced
+      ? {start:0,step:24,courier:48,gap:8,finish:40}
+      : {start:1200,step:1800,courier:3200,gap:450,finish:600};
+    let t=workflowTiming.start;
     workflowOrder.forEach(name=>{
-      const hold=reduced?24:(name==='courier'?820:420);
-      const gap=reduced?8:110;
+      const hold=name==='courier'?workflowTiming.courier:workflowTiming.step;
+      const gap=workflowTiming.gap;
       workflowTimers.push(setTimeout(()=>{
         if(name==='courier')workflowDemo.classList.add('courier-click');
         activateWorkflowStep(name);
@@ -399,14 +403,14 @@
       setWorkflowStatus('workflowComplete');
       workflowRunning=false;
       if(workflowRun)workflowRun.disabled=false;
-    },t+100));
+    },t+workflowTiming.finish));
   };
   workflowRun?.addEventListener('click',runWorkflow);
   placeOrderDemo?.addEventListener('click',runWorkflow);
   if(workflowCard){
     const workflowObserver=new IntersectionObserver(entries=>{
       if(entries.some(e=>e.isIntersecting)&&!workflowPlayed){
-        workflowTimers.push(setTimeout(runWorkflow,450));
+        workflowTimers.push(setTimeout(runWorkflow,900));
         workflowObserver.disconnect();
       }
     },{threshold:.38});
