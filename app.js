@@ -409,7 +409,7 @@
     const markSection=section=>{
       selectedSection=section;
       $$('.editor-section',editor).forEach(el=>el.classList.toggle('active',el===section));
-      $$$('.editor-block-btn',editor).forEach(btn=>btn.classList.toggle('active',btn.dataset.editorTarget===section?.id));
+      $$('.editor-block-btn',editor).forEach(btn=>btn.classList.toggle('active',btn.dataset.editorTarget===section?.id));
     };
     const selectLayer=(layer,text=null)=>{
       if(!layer)return;
@@ -429,7 +429,7 @@
       }
     };
 
-    $('.editor-block-btn',editor).forEach(btn=>{
+    $$('.editor-block-btn',editor).forEach(btn=>{
       btn.addEventListener('click',e=>{
         if(e.target.closest('.section-drag-grip')){e.preventDefault();return;}
         selectSection(document.getElementById(btn.dataset.editorTarget));reactEditor();
@@ -524,7 +524,7 @@
     $('#editorReset')?.addEventListener('click',()=>{
       $$('.editable-text',editor).forEach(el=>el.textContent=el.dataset.initialText||'');
       $$('.editable-layer',editor).forEach(el=>{el.style.left=el.dataset.initialLeft||'0%';el.style.top=el.dataset.initialTop||'0%';el.style.transform='';el.dataset.dx='0';el.dataset.dy='0';applyAlignment(el,'left');});
-      $('.editor-section',editor).forEach(section=>{section.style.removeProperty('background');section.style.removeProperty('color');});
+      $$('.editor-section',editor).forEach(section=>{section.style.removeProperty('background');section.style.removeProperty('color');});
       restoreSectionOrder();
       if(canvas)canvas.scrollTop=0;
       const hero=$('[data-editable="heroTitle"]',editor);selectLayer(hero,$('.editable-title',hero)||$('.editable-text',hero));reactEditor();
