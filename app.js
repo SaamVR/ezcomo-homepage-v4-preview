@@ -559,7 +559,7 @@
     workflowRunning=false;
     workflowDemo?.classList.remove('running','courier-click','finished');
     activeWorkflowStep=null;
-    $('.workflow-step',workflowDemo||document).forEach(step=>{step.classList.remove('active','done','just-completed');step.style.removeProperty('--workflow-hold');});
+    $$('.workflow-step',workflowDemo||document).forEach(step=>{step.classList.remove('active','done','just-completed');step.style.removeProperty('--workflow-hold');});
     if(workflowRun)workflowRun.disabled=false;
     setWorkflowStatus('workflowWaiting');
     syncWorkflowNow();
