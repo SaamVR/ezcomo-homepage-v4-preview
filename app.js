@@ -3,10 +3,10 @@
   const $$ = (s, r=document) => [...r.querySelectorAll(s)];
 
   const templates = {
-    threads:{name:'Threads',image:'./assets/threads.webp',desc:'Editorial apparel with room for campaigns, collections and strong visual identity.',bn:'ক্যাম্পেইন, কালেকশন ও ব্র্যান্ড স্টোরির জন্য তৈরি এডিটোরিয়াল ফ্যাশন স্টোর।'},
-    electronics:{name:'Electronics',image:'./assets/electronics.webp',desc:'Product-first merchandising for shoppers comparing features and specifications.',bn:'ফিচার ও স্পেসিফিকেশন তুলনা করা ক্রেতাদের জন্য প্রোডাক্ট-কেন্দ্রিক স্টোর।'},
-    crafts:{name:'Crafts',image:'./assets/crafts.webp',desc:'Maker-led storytelling for handmade products where process and origin matter.',bn:'হ্যান্ডমেড পণ্যে নির্মাতা, প্রক্রিয়া ও গল্পকে সামনে আনে।'},
-    food:{name:'Food',image:'./assets/food.webp',desc:'Menu-first presentation that keeps products easy to browse and order.',bn:'পণ্য দ্রুত দেখা ও অর্ডার করার জন্য মেনু-কেন্দ্রিক স্টোর।'}
+    threads:{name:'Threads',brand:'THREADS',visual:'Built for the city after dark.',eyebrow:'DROP 06 / EDITORIAL',templateVisual:'Objects for everyday movement.',desc:'Editorial apparel with room for campaigns, collections and strong visual identity.',bn:'ক্যাম্পেইন, কালেকশন ও ব্র্যান্ড স্টোরির জন্য তৈরি এডিটোরিয়াল ফ্যাশন স্টোর।'},
+    electronics:{name:'Electronics',brand:'NEXUS',visual:'Technology that earns its place.',eyebrow:'FEATURED / PERFORMANCE',templateVisual:'Compare less. Choose better.',desc:'Product-first merchandising for shoppers comparing features and specifications.',bn:'ফিচার ও স্পেসিফিকেশন তুলনা করা ক্রেতাদের জন্য প্রোডাক্ট-কেন্দ্রিক স্টোর।'},
+    crafts:{name:'Crafts',brand:'HANDMADE',visual:'Made slowly. Kept for years.',eyebrow:'MAKER / PROCESS',templateVisual:'Every object carries a handprint.',desc:'Maker-led storytelling for handmade products where process and origin matter.',bn:'হ্যান্ডমেড পণ্যে নির্মাতা, প্রক্রিয়া ও গল্পকে সামনে আনে।'},
+    food:{name:'Food',brand:'TABLE',visual:'Good food, ready when you are.',eyebrow:'MENU / TODAY',templateVisual:'Fresh picks, easy ordering.',desc:'Menu-first presentation that keeps products easy to browse and order.',bn:'পণ্য দ্রুত দেখা ও অর্ডার করার জন্য মেনু-কেন্দ্রিক স্টোর।'}
   };
 
   const i18n = {
@@ -89,9 +89,13 @@
     if(!templates[id]) return; selected=id; const data=templates[id];
     $$('.store-tab').forEach(b=>{const a=b.dataset.template===id;b.classList.toggle('active',a);b.setAttribute('aria-selected',String(a))});
     $$('.template-option').forEach(b=>{const a=b.dataset.templateFull===id;b.classList.toggle('active',a);b.setAttribute('aria-selected',String(a))});
-    const heroImg=$('#heroStoreImage'); if(heroImg) swapImage(heroImg,$('.hero-preview-frame'),data.image,`${data.name} storefront preview`);
+    const heroVisual=$('#heroStoreVisual'); if(heroVisual) heroVisual.dataset.templateVisual=id;
     const title=$('#heroWindowTitle'); if(title) title.textContent=`${data.name} · live preview`;
-    const fullImg=$('#templateImage'); if(fullImg) swapImage(fullImg,$('.template-image-wrap'),data.image,`${data.name} EZComo storefront template`);
+    if($('#visualHeadline')) $('#visualHeadline').textContent=data.visual;
+    const templateVisual=$('#templateVisual'); if(templateVisual) templateVisual.dataset.templateVisual=id;
+    if($('#templateBrand')) $('#templateBrand').textContent=data.brand;
+    if($('#templateEyebrow')) $('#templateEyebrow').textContent=data.eyebrow;
+    if($('#templateVisualTitle')) $('#templateVisualTitle').textContent=data.templateVisual;
     $('#templateTitle').textContent=data.name; $('#templateDescription').textContent=lang==='bn'?data.bn:data.desc; $('#templateLabel').textContent=`${data.name} · template`;
     const index=Object.keys(templates).indexOf(id)+1; $('#templateCount').textContent=String(index).padStart(2,'0');
     $('#templatePreviewLink').href=`https://ecomcms-homepage-preview-production.up.railway.app/template-snapshot/${id}`;

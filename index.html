@@ -67,8 +67,12 @@
           <span id="heroWindowTitle">Threads · live preview</span>
           <span class="window-state"><i></i> STOREFRONT</span>
         </div>
-        <div class="hero-preview-frame">
-          <img id="heroStoreImage" src="./assets/threads.webp" width="900" height="598" fetchpriority="high" alt="Threads storefront preview">
+        <div class="hero-preview-frame" id="heroStoreVisual" data-template-visual="threads">
+          <div class="storefront-ui">
+            <div class="storefront-nav"><b>THREADS</b><span>New</span><span>Shop</span><span>Stories</span><i></i></div>
+            <div class="storefront-hero"><div><small>NEW DROP 06</small><h3 id="visualHeadline">Built for the city after dark.</h3><button type="button">Shop collection</button></div><div class="product-sculpture"><span></span><span></span><span></span></div></div>
+            <div class="storefront-products"><article><div class="product-shape p1"></div><b>Studio Tee</b><small>৳1,490</small></article><article><div class="product-shape p2"></div><b>Field Shirt</b><small>৳1,790</small></article><article><div class="product-shape p3"></div><b>Utility Pant</b><small>৳2,190</small></article></div>
+          </div>
           <div class="preview-sheen" aria-hidden="true"></div>
         </div>
         <div class="store-tabs" role="tablist" aria-label="Choose storefront preview">
@@ -168,13 +172,20 @@
     <div class="bento">
       <article class="bento-card bento-hero reveal" data-spotlight>
         <div class="bento-copy"><span class="mini-label">STOREFRONT BUILDER</span><h3 data-i18n="builderTitle">Make the storefront feel like your brand.</h3><p data-i18n="builderCopy">Start from a complete design and adjust theme, sections and presentation without touching code.</p></div>
-        <div class="product-shot"><img src="./assets/theme-controls.webp" loading="lazy" width="1176" height="641" alt="EZComo theme controls"></div>
+        <div class="product-shot ui-shot builder-ui">
+          <div class="ui-sidebar"><span class="active">Theme</span><span>Sections</span><span>Typography</span><span>Spacing</span></div>
+          <div class="ui-canvas"><div class="mini-store"><div class="mini-nav"></div><div class="mini-hero"></div><div class="mini-grid"><i></i><i></i><i></i></div></div></div>
+          <div class="ui-controls"><label>Brand color <i class="swatch"></i></label><label>Radius <b>16</b></label><label>Density <b>Comfortable</b></label><label>Heading <b>Outfit</b></label></div>
+        </div>
       </article>
       <article class="bento-card bento-pay reveal" data-spotlight><span class="bento-mark">৳</span><h3 data-i18n="payTitle">Payments that make sense locally.</h3><p data-i18n="payCopy">bKash, Nagad and cash-on-delivery options, with automated bKash checkout available when connected.</p><div class="chip-row"><span>bKash</span><span>Nagad</span><span>COD</span></div></article>
       <article class="bento-card bento-delivery reveal" data-spotlight><span class="bento-mark">→</span><h3 data-i18n="deliveryTitle">Orders that move into fulfilment.</h3><p data-i18n="deliveryCopy">Book Pathao from the order workflow when configured, with additional courier setup paths available.</p><div class="status-row"><i></i><span>Pathao API</span><em data-i18n="active">active</em></div></article>
       <article class="bento-card bento-admin reveal" data-spotlight>
         <div class="bento-copy"><span class="mini-label">MERCHANT WORKSPACE</span><h3 data-i18n="adminTitle">The next jobs that need attention, together.</h3><p data-i18n="adminCopy">Storefront, store profile, payments and recent orders stay visible in the same operating surface.</p></div>
-        <div class="product-shot"><img src="./assets/admin-dashboard.webp" loading="lazy" width="1176" height="641" alt="EZComo merchant dashboard"></div>
+        <div class="product-shot ui-shot admin-ui">
+          <div class="admin-rail"><b>E</b><i></i><i></i><i></i><i></i></div>
+          <div class="admin-main"><div class="admin-top"><div><small>Today</small><strong>Store overview</strong></div><button type="button">+ Add product</button></div><div class="metric-row"><article><small>Orders</small><b>24</b><span>+8%</span></article><article><small>Revenue</small><b>৳38.4k</b><span>today</span></article><article><small>Pending</small><b>7</b><span>needs action</span></article></div><div class="order-table"><div class="thead"><span>Order</span><span>Customer</span><span>Payment</span><span>Status</span></div><div><span>#1048</span><span>Arif H.</span><span>bKash</span><em>Ready</em></div><div><span>#1047</span><span>Nadia R.</span><span>COD</span><em>Pending</em></div><div><span>#1046</span><span>Sami T.</span><span>Nagad</span><em>Ready</em></div></div></div>
+        </div>
       </article>
       <article class="bento-card bento-domain reveal" data-spotlight><span class="bento-mark">◎</span><h3 data-i18n="domainTitle">Your own branded domain.</h3><p data-i18n="domainCopy">Eligible paid plans can connect a custom domain after DNS setup and verification.</p></article>
     </div>
@@ -194,7 +205,13 @@
       <div class="template-canvas">
         <div class="template-browser">
           <div class="window-top"><div class="window-lights"><i></i><i></i><i></i></div><span id="templateLabel">Threads · template</span><span class="window-state"><i></i> PREVIEW</span></div>
-          <div class="template-image-wrap"><img id="templateImage" src="./assets/threads.webp" width="900" height="598" loading="lazy" alt="Threads EZComo storefront template"></div>
+          <div class="template-image-wrap" id="templateVisual" data-template-visual="threads">
+          <div class="template-ui">
+            <div class="template-ui-nav"><b id="templateBrand">THREADS</b><span>Shop</span><span>New</span><span>About</span><i></i></div>
+            <div class="template-ui-hero"><div><small id="templateEyebrow">DROP 06 / EDITORIAL</small><h3 id="templateVisualTitle">Objects for everyday movement.</h3><button type="button">Explore collection</button></div><div class="template-art"><span></span><span></span><span></span></div></div>
+            <div class="template-ui-grid"><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
         </div>
         <div class="template-footer"><div><span class="mini-label" data-i18n="selectedDirection">SELECTED DIRECTION</span><h3 id="templateTitle">Threads</h3><p id="templateDescription">Editorial apparel with room for campaigns, collections and strong visual identity.</p></div><div><a class="btn btn-outline" id="templatePreviewLink" href="https://ecomcms-homepage-preview-production.up.railway.app/template-snapshot/threads" target="_blank" rel="noreferrer" data-i18n="openPreview">Open preview</a><a class="btn btn-primary" data-signup id="templateSignup" href="https://ezcomo.shop/signup?template=threads" data-i18n="useTemplate">Use this template</a></div></div>
       </div>
