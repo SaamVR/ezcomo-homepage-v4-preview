@@ -23,10 +23,9 @@
   <div class="shell nav-inner">
     <a class="brand" href="#top" aria-label="EZComo home"><span class="brand-symbol">E</span><span>EZCOMO</span></a>
     <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#why" data-i18n="navWhy">Why EZComo</a>
-      <a href="#features" data-i18n="navFeatures">Features</a>
-      <a href="#templates" data-i18n="navTemplates">Templates</a>
-      <a href="#integrations" data-i18n="navIntegrations">Integrations</a>
+      <a href="#features" data-i18n="navWhy">Product</a>
+      <a href="#templates" data-i18n="navTemplates">Storefronts</a>
+      <a href="#integrations" data-i18n="navIntegrations">Local commerce</a>
       <a href="#pricing" data-i18n="navPricing">Pricing</a>
     </nav>
     <div class="nav-actions">
@@ -38,7 +37,7 @@
     </div>
   </div>
   <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-    <a href="#why" data-i18n="navWhy">Why EZComo</a><a href="#features" data-i18n="navFeatures">Features</a><a href="#templates" data-i18n="navTemplates">Templates</a><a href="#integrations" data-i18n="navIntegrations">Integrations</a><a href="#pricing" data-i18n="navPricing">Pricing</a><a href="https://ezcomo.shop/login" data-i18n="login">Log in</a>
+    <a href="#features" data-i18n="navWhy">Product</a><a href="#templates" data-i18n="navTemplates">Storefronts</a><a href="#integrations" data-i18n="navIntegrations">Local commerce</a><a href="#pricing" data-i18n="navPricing">Pricing</a><a href="https://ezcomo.shop/login" data-i18n="login">Log in</a>
   </div>
 </header>
 
@@ -52,10 +51,7 @@
       <p class="hero-lede" data-i18n="heroLede">Give customers a branded store they can browse on their own, while products, orders, payments and delivery stay connected behind it.</p>
       <div class="hero-actions">
         <a class="btn btn-primary btn-large" data-signup href="https://ezcomo.shop/signup?template=threads"><span data-i18n="createStore">Create free store</span><b>→</b></a>
-        <a class="btn btn-ghost btn-large" href="#templates"><span data-i18n="seeStores">See storefronts</span><b>↓</b></a>
-      </div>
-      <div class="hero-trust" aria-label="Product assurances">
-        <span data-i18n="trustNoCode">No code required</span><i></i><span data-i18n="trustTemplate">Start from a template</span><i></i><span data-i18n="trustLocal">Local commerce workflows</span>
+        <a class="btn btn-ghost btn-large" href="#features"><span data-i18n="seeStores">Try the editor</span><b>↓</b></a>
       </div>
     </div>
 
@@ -101,21 +97,20 @@
   </div>
 </section>
 
-<section class="story-bridge" id="why">
-  <div class="shell story-bridge-inner reveal">
-    <div class="story-step muted">
-      <span>01</span><small data-i18n="bridgeBefore">BEFORE</small><strong data-i18n="bridgeInbox">Orders trapped in DMs</strong>
-      <div class="bridge-bubbles"><i>Price?</i><i>COD?</i><i>Size?</i></div>
+<section class="proof-rail" id="why">
+  <div class="shell proof-rail-inner reveal">
+    <div class="proof-intro">
+      <span class="mini-label" data-i18n="proofLabel">ONE CONNECTED PATH</span>
+      <strong data-i18n="proofIntro">From storefront to fulfilment without losing the thread.</strong>
     </div>
-    <div class="story-arrow" aria-hidden="true">→</div>
-    <div class="story-step">
-      <span>02</span><small data-i18n="bridgeStore">STOREFRONT</small><strong data-i18n="bridgeStoreTitle">Customers browse and order themselves</strong>
-      <div class="bridge-store"><i></i><i></i><i></i></div>
-    </div>
-    <div class="story-arrow" aria-hidden="true">→</div>
-    <div class="story-step accent">
-      <span>03</span><small data-i18n="bridgeSystem">EZCOMO</small><strong data-i18n="bridgeSystemTitle">The work behind each sale stays structured</strong>
-      <div class="bridge-status"><i></i><b>Order</b><b>Payment</b><b>Delivery</b></div>
+    <div class="proof-flow" aria-label="Connected commerce flow">
+      <div class="proof-node"><b>01</b><strong data-i18n="proofStore">Storefront</strong><small data-i18n="proofStoreNote">Browse and choose</small></div>
+      <i aria-hidden="true">→</i>
+      <div class="proof-node"><b>02</b><strong data-i18n="proofCheckout">Checkout</strong><small data-i18n="proofCheckoutNote">Payment method captured</small></div>
+      <i aria-hidden="true">→</i>
+      <div class="proof-node"><b>03</b><strong data-i18n="proofOrder">Order</strong><small data-i18n="proofOrderNote">Structured in the workspace</small></div>
+      <i aria-hidden="true">→</i>
+      <div class="proof-node"><b>04</b><strong data-i18n="proofFulfilment">Fulfilment</strong><small data-i18n="proofFulfilmentNote">The next action stays visible</small></div>
     </div>
   </div>
 </section>
@@ -124,7 +119,7 @@
   <div class="shell">
     <div class="section-heading split reveal">
       <div><p class="kicker" data-i18n="featuresKicker">Try the CMS</p><h2 data-i18n="featuresTitle">Build the store. Then run what happens next.</h2></div>
-      <p data-i18n="featuresCopy">This is the product story in one place: shape a real storefront, let a customer order, then watch EZComo carry that sale into operations.</p>
+      <p data-i18n="featuresCopy">Start with the storefront itself. Edit the page, place an order, then follow the same sale into the operational workflow.</p>
     </div>
 
     <article class="product-story-card editor-story reveal" data-spotlight>
@@ -313,22 +308,6 @@
       </div>
     </article>
 
-    <article class="product-story-card workspace-story reveal" data-spotlight>
-      <div class="story-card-head">
-        <div><span class="mini-label" data-i18n="workspaceLabel">03 · MERCHANT WORKSPACE</span><h3 data-i18n="workspaceTitle">The storefront and the work behind it stay connected.</h3><p data-i18n="workspaceCopy">One operating surface for products, orders, payment setup and fulfilment status—shown here with illustrative sample data.</p></div>
-      </div>
-      <div class="workspace-demo">
-        <aside class="workspace-nav"><b>E</b><span class="active">Overview</span><span>Products</span><span>Orders</span><span>Payments</span><span>Delivery</span><span>Store</span></aside>
-        <div class="workspace-main">
-          <div class="workspace-top"><div><small>THREADS / TODAY</small><strong>Store overview</strong></div><button type="button">+ Add product</button></div>
-          <div class="workspace-metrics"><article><span>Products</span><b>128</b><small>catalog</small></article><article><span>Orders</span><b>7</b><small>need action</small></article><article><span>Payments</span><b>3</b><small>methods</small></article><article><span>Delivery</span><b>1</b><small>API active</small></article></div>
-          <div class="workspace-grid">
-            <div class="workspace-orders"><div class="workspace-title"><strong>Recent orders</strong><span>View all →</span></div><div class="workspace-table"><div><span>#1051</span><b>Studio Tee</b><small>bKash</small><em>Ready</em></div><div><span>#1050</span><b>Canvas Tote</b><small>COD</small><em>Pending</em></div><div><span>#1049</span><b>Rib Mug</b><small>Nagad</small><em>Ready</em></div></div></div>
-            <div class="workspace-next"><span class="mini-label">NEXT ACTIONS</span><div><i></i><b>2 orders need courier</b></div><div><i></i><b>1 product low in stock</b></div><div><i></i><b>Storefront published</b></div></div>
-          </div>
-        </div>
-      </div>
-    </article>
   </div>
 </section>
 
