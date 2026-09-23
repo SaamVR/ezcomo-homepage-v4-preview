@@ -202,7 +202,11 @@
                   <button class="drag-handle" type="button" aria-label="Drag products heading">⠿</button>
                   <span class="editable-text editable-subtitle" contenteditable="plaintext-only" spellcheck="false">New this week</span>
                 </div>
-                <div class="editor-product-row" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="editor-product-row" aria-label="Example products">
+                  <article class="editor-product-card"><div class="flat-product flat-tee" aria-hidden="true"><i></i><b></b></div><div><strong>Studio Tee</strong><span>৳1,490</span><small>18 in stock</small></div></article>
+                  <article class="editor-product-card"><div class="flat-product flat-tote" aria-hidden="true"><i></i><b></b></div><div><strong>Canvas Tote</strong><span>৳990</span><small>12 in stock</small></div></article>
+                  <article class="editor-product-card"><div class="flat-product flat-mug" aria-hidden="true"><i></i><b></b></div><div><strong>Rib Mug</strong><span>৳690</span><small>26 in stock</small></div></article>
+                </div>
               </section>
               <section class="editor-section editor-promo-block" id="promoBlock" data-section-name="Promo">
                 <span class="section-chip">PROMO</span>
@@ -232,6 +236,40 @@
       </article>
       <article class="bento-card bento-pay reveal" data-spotlight><span class="bento-mark">৳</span><h3 data-i18n="payTitle">Payments that make sense locally.</h3><p data-i18n="payCopy">bKash, Nagad and cash-on-delivery options, with automated bKash checkout available when connected.</p><div class="chip-row"><span>bKash</span><span>Nagad</span><span>COD</span></div></article>
       <article class="bento-card bento-delivery reveal" data-spotlight><span class="bento-mark">→</span><h3 data-i18n="deliveryTitle">Orders that move into fulfilment.</h3><p data-i18n="deliveryCopy">Book Pathao from the order workflow when configured, with additional courier setup paths available.</p><div class="status-row"><i></i><span>Pathao API</span><em data-i18n="active">active</em></div></article>
+
+      <article class="bento-card bento-workflow reveal" id="orderWorkflowCard" data-spotlight>
+        <div class="workflow-head">
+          <div><span class="mini-label" data-i18n="workflowLabel">LIVE ORDER WORKFLOW · SIMULATED</span><h3 data-i18n="workflowTitle">See what happens after a customer clicks Order.</h3><p data-i18n="workflowCopy">A short illustrative run from checkout to courier, stock and margin tracking.</p></div>
+          <button type="button" class="workflow-run" id="workflowRun"><span class="run-dot"></span><span data-i18n="workflowRun">Run order workflow</span></button>
+        </div>
+        <div class="workflow-demo" id="workflowDemo">
+          <div class="workflow-checkout">
+            <div class="checkout-top"><span>CUSTOMER CHECKOUT</span><i></i></div>
+            <div class="checkout-product">
+              <div class="flat-product flat-tee workflow-product" aria-hidden="true"><i></i><b></b></div>
+              <div><strong>Studio Tee</strong><small>Black · M · Qty 1</small><span>৳1,490</span></div>
+            </div>
+            <div class="checkout-total"><span>Total</span><strong>৳1,490</strong></div>
+            <button type="button" class="place-order-btn" id="placeOrderDemo"><span data-i18n="placeOrder">Place order</span><i class="auto-cursor">↖</i></button>
+            <small class="workflow-disclaimer" data-i18n="workflowDisclaimer">Illustrative demo data</small>
+          </div>
+
+          <div class="workflow-runner">
+            <div class="runner-top"><span data-i18n="automationRunner">AUTOMATION RUNNER</span><div><i></i><b id="workflowStatus">Waiting</b></div></div>
+            <div class="workflow-steps">
+              <div class="workflow-step" data-step="payment"><span class="step-icon">৳</span><div><small data-i18n="stepPayment">PAYMENT</small><strong data-i18n="stepPaymentTitle">Payment received</strong></div><em>৳1,490</em></div>
+              <div class="workflow-step" data-step="order"><span class="step-icon">#</span><div><small data-i18n="stepOrder">ORDER</small><strong data-i18n="stepOrderTitle">Order received</strong></div><em>#1051</em></div>
+              <div class="workflow-step workflow-action-step" data-step="courier"><span class="step-icon">→</span><div><small data-i18n="stepCourier">FULFILMENT</small><strong data-i18n="stepCourierTitle">Book courier</strong></div><button type="button" class="courier-action" id="courierAction"><span data-i18n="bookCourier">Book courier</span><i class="action-cursor">↖</i></button></div>
+              <div class="workflow-step" data-step="booked"><span class="step-icon">✓</span><div><small>PATHAO</small><strong data-i18n="stepBookedTitle">Courier booked</strong></div><em>PX-84721</em></div>
+              <div class="workflow-step" data-step="pickup"><span class="step-icon">↑</span><div><small data-i18n="stepPickup">PICKUP</small><strong data-i18n="stepPickupTitle">Courier picked up</strong></div><em data-i18n="collected">Collected</em></div>
+              <div class="workflow-step" data-step="inventory"><span class="step-icon">▦</span><div><small data-i18n="stepInventory">INVENTORY</small><strong data-i18n="stepInventoryTitle">Stock updated</strong></div><em><s>18</s> → 17</em></div>
+              <div class="workflow-step" data-step="profit"><span class="step-icon">↗</span><div><small data-i18n="stepProfit">MARGIN</small><strong data-i18n="stepProfitTitle">Profit booked</strong></div><em>+৳690</em></div>
+            </div>
+            <div class="workflow-result" id="workflowResult"><span class="pulse-dot"></span><strong data-i18n="workflowResult">Order complete — every next action is visible.</strong><small data-i18n="workflowResultNote">Example margin assumes merchant cost data is configured.</small></div>
+          </div>
+        </div>
+      </article>
+
       <article class="bento-card bento-admin reveal" data-spotlight>
         <div class="bento-copy"><span class="mini-label">MERCHANT WORKSPACE</span><h3 data-i18n="adminTitle">The next jobs that need attention, together.</h3><p data-i18n="adminCopy">Storefront, store profile, payments and recent orders stay visible in the same operating surface.</p></div>
         <div class="product-shot ui-shot admin-ui">

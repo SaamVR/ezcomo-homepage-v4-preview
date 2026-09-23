@@ -20,7 +20,7 @@
       bdPay:'Sell in familiar ways',bdPayCopy:'Offer bKash, Nagad and cash on delivery in the storefront.',bdDeliver:'Move orders into delivery',bdDeliverCopy:'Pathao merchant-API booking is available when configured.',bdBrand:'Own the customer experience',bdBrandCopy:'Use a branded storefront and connect an eligible custom domain.',bdTogether:'Keep operations together',bdTogetherCopy:'Products, orders, store settings and selling setup live in one workspace.',
       painKicker:'The shift',painTitle:'From message chaos to a store customers can use.',painIntro:'Social channels are great for discovery. They become painful when every product question, order detail and delivery update has to be handled manually.',beforeLabel:'BEFORE · DMs',afterLabel:'AFTER · EZCOMO',chat1:'Price please?',chat2:'Which size is available?',chat3:'Do you have COD?',chat4:'Where is my order?',chaosFoot:'Important order details scattered across conversations.',system1:'Product details visible',system2:'Order captured',system3:'Payment method recorded',system4:'Fulfilment workflow',done:'ready',systemFoot:'One structured merchant workflow',
       howKicker:'How it works',howTitle:'Three steps. No blank-canvas anxiety.',howCopy:'Start from something complete, make it yours, then run the business from the same system.',step1:'Pick a storefront',step1Copy:'Choose a starting point shaped for the way your category sells.',step2:'Add your business',step2Copy:'Products, imagery, brand details, payment options and delivery setup.',step3:'Publish and manage',step3Copy:'Receive structured orders and manage the work behind each sale.',
-      featuresKicker:'Commerce workspace',featuresTitle:'Beautiful outside. Operational underneath.',featuresCopy:'The storefront is only one surface. The same system keeps the products, orders, payment setup and delivery work that power it.',builderTitle:'Try editing a storefront right here.',builderCopy:'Click the words, rewrite them, drag them anywhere inside the section, or change the section color. No setup and no code.',editorTitle:'Store editor',editorPreview:'Preview',editorLive:'Live changes',editorReset:'Reset demo',editorBlocks:'BLOCKS',editorHero:'Hero',editorProducts:'Products',editorPromo:'Promo',editorTrust:'Trust',editorTry:'Try it',editorTryHint:'Click text → type → drag',editorSelected:'SELECTED',editorTextLayer:'Text layer',editorText:'Text',editorColor:'Section color',editorPosition:'Position',editorHelp:'Drag the handle to place text anywhere inside the selected section.',payTitle:'Payments that make sense locally.',payCopy:'bKash, Nagad and cash-on-delivery options, with automated bKash checkout available when connected.',deliveryTitle:'Orders that move into fulfilment.',deliveryCopy:'Book Pathao from the order workflow when configured, with additional courier setup paths available.',active:'active',adminTitle:'The next jobs that need attention, together.',adminCopy:'Storefront, store profile, payments and recent orders stay visible in the same operating surface.',domainTitle:'Your own branded domain.',domainCopy:'Eligible paid plans can connect a custom domain after DNS setup and verification.',
+      featuresKicker:'Commerce workspace',featuresTitle:'Beautiful outside. Operational underneath.',featuresCopy:'The storefront is only one surface. The same system keeps the products, orders, payment setup and delivery work that power it.',builderTitle:'Try editing a storefront right here.',builderCopy:'Click the words, rewrite them, drag them anywhere inside the section, or change the section color. No setup and no code.',editorTitle:'Store editor',editorPreview:'Preview',editorLive:'Live changes',editorReset:'Reset demo',editorBlocks:'BLOCKS',editorHero:'Hero',editorProducts:'Products',editorPromo:'Promo',editorTrust:'Trust',editorTry:'Try it',editorTryHint:'Click text → type → drag',editorSelected:'SELECTED',editorTextLayer:'Text layer',editorText:'Text',editorColor:'Section color',editorPosition:'Position',editorHelp:'Drag the handle to place text anywhere inside the selected section.',payTitle:'Payments that make sense locally.',payCopy:'bKash, Nagad and cash-on-delivery options, with automated bKash checkout available when connected.',deliveryTitle:'Orders that move into fulfilment.',deliveryCopy:'Book Pathao from the order workflow when configured, with additional courier setup paths available.',active:'active',workflowLabel:'LIVE ORDER WORKFLOW · SIMULATED',workflowTitle:'See what happens after a customer clicks Order.',workflowCopy:'A short illustrative run from checkout to courier, stock and margin tracking.',workflowRun:'Run order workflow',workflowWaiting:'Waiting',workflowRunning:'Running',workflowComplete:'Complete',placeOrder:'Place order',workflowDisclaimer:'Illustrative demo data',automationRunner:'AUTOMATION RUNNER',stepPayment:'PAYMENT',stepPaymentTitle:'Payment received',stepOrder:'ORDER',stepOrderTitle:'Order received',stepCourier:'FULFILMENT',stepCourierTitle:'Book courier',bookCourier:'Book courier',stepBookedTitle:'Courier booked',stepPickup:'PICKUP',stepPickupTitle:'Courier picked up',collected:'Collected',stepInventory:'INVENTORY',stepInventoryTitle:'Stock updated',stepProfit:'MARGIN',stepProfitTitle:'Profit booked',workflowResult:'Order complete — every next action is visible.',workflowResultNote:'Example margin assumes merchant cost data is configured.',adminTitle:'The next jobs that need attention, together.',adminCopy:'Storefront, store profile, payments and recent orders stay visible in the same operating surface.',domainTitle:'Your own branded domain.',domainCopy:'Eligible paid plans can connect a custom domain after DNS setup and verification.',
       templatesKicker:'Storefront directions',templatesTitle:'Same platform. Different selling personality.',threadsDesc:'Editorial apparel',electronicsDesc:'Specification-led',craftsDesc:'Maker storytelling',foodDesc:'Menu-first commerce',selectedDirection:'SELECTED DIRECTION',openPreview:'Open preview',useTemplate:'Use this template',
       integrationsKicker:'Commerce connections',integrationsTitle:'Know what is active before you depend on it.',integrationsCopy:'EZComo exposes connection state clearly instead of pretending every logo means the same thing.',payments:'PAYMENTS',delivery:'DELIVERY',storefront:'STOREFRONT',autoConnected:'Automated when connected',storeOption:'Storefront option',merchantApi:'Merchant API booking',setupAvailable:'Setup available',customDomain:'Custom domain',eligiblePlans:'Eligible paid plans',responsiveStore:'Responsive store',allScreens:'Phone to desktop',
       calcKicker:'Illustrative cost check',calcTitle:'Use your numbers, not ours.',calcCopy:'Compare the percentage cost you currently enter with an EZComo plan amount you enter. This tool does not assume a competitor fee or promise savings.',calcNote:'Illustrative only — verify real plan and provider charges before deciding.',monthlySales:'Monthly sales',currentCost:'Current platform / manual cost',planInput:'EZComo plan amount to compare',annualDifference:'Illustrative annual difference',
@@ -39,7 +39,7 @@
       bdPay:'পরিচিত উপায়ে বিক্রি করুন',bdPayCopy:'স্টোরে bKash, Nagad ও ক্যাশ অন ডেলিভারি দিন।',bdDeliver:'অর্ডার ডেলিভারিতে পাঠান',bdDeliverCopy:'কনফিগার করা থাকলে Pathao merchant API booking ব্যবহার করা যায়।',bdBrand:'কাস্টমার অভিজ্ঞতা নিজের রাখুন',bdBrandCopy:'নিজস্ব ব্র্যান্ডেড স্টোরফ্রন্ট ও যোগ্য প্ল্যানে কাস্টম ডোমেইন ব্যবহার করুন।',bdTogether:'অপারেশন একসাথে রাখুন',bdTogetherCopy:'পণ্য, অর্ডার, স্টোর সেটিং ও সেলিং সেটআপ একই ওয়ার্কস্পেসে।',
       painKicker:'পরিবর্তনটা',painTitle:'মেসেজের বিশৃঙ্খলা থেকে ক্রেতার ব্যবহারযোগ্য স্টোরে।',painIntro:'সোশ্যাল চ্যানেল নতুন ক্রেতা আনে, কিন্তু প্রতিটি দাম, সাইজ, অর্ডার আর ডেলিভারি প্রশ্ন হাতে সামলাতে হলে কাজ জটিল হয়ে যায়।',beforeLabel:'আগে · DM',afterLabel:'পরে · EZCOMO',chat1:'দাম কত?',chat2:'কোন সাইজ আছে?',chat3:'COD আছে?',chat4:'আমার অর্ডার কোথায়?',chaosFoot:'গুরুত্বপূর্ণ অর্ডার তথ্য আলাদা আলাদা কথোপকথনে ছড়িয়ে থাকে।',system1:'পণ্যের তথ্য দৃশ্যমান',system2:'অর্ডার ধরা হয়েছে',system3:'পেমেন্ট পদ্ধতি রেকর্ড',system4:'ফুলফিলমেন্ট ওয়ার্কফ্লো',done:'প্রস্তুত',systemFoot:'একটি গোছানো মার্চেন্ট ওয়ার্কফ্লো',
       howKicker:'কীভাবে কাজ করে',howTitle:'তিন ধাপ। Blank canvas-এর ভয় নেই।',howCopy:'সম্পূর্ণ একটি ডিজাইন থেকে শুরু করুন, নিজের মতো করুন, তারপর একই সিস্টেমে ব্যবসা চালান।',step1:'স্টোরফ্রন্ট বেছে নিন',step1Copy:'আপনার ক্যাটাগরির বিক্রির ধরন অনুযায়ী শুরু করার ডিজাইন বেছে নিন।',step2:'ব্যবসার তথ্য যোগ করুন',step2Copy:'পণ্য, ছবি, ব্র্যান্ড, পেমেন্ট ও ডেলিভারি সেটআপ করুন।',step3:'পাবলিশ ও ম্যানেজ করুন',step3Copy:'গোছানো অর্ডার নিন এবং প্রতিটি বিক্রির পরের কাজ পরিচালনা করুন।',
-      featuresKicker:'কমার্স ওয়ার্কস্পেস',featuresTitle:'বাইরে সুন্দর। ভিতরে অপারেশনাল।',featuresCopy:'স্টোরফ্রন্ট শুধু একটি সারফেস। পণ্য, অর্ডার, পেমেন্ট সেটআপ ও ডেলিভারি কাজ একই সিস্টেমে থাকে।',builderTitle:'এখানেই স্টোরফ্রন্ট এডিট করে দেখুন।',builderCopy:'লেখায় ক্লিক করে বদলান, সেকশনের ভেতরে যেকোনো জায়গায় টেনে নিন, অথবা সেকশনের রং পাল্টান। কোনো সেটআপ বা কোড নেই।',editorTitle:'স্টোর এডিটর',editorPreview:'প্রিভিউ',editorLive:'লাইভ পরিবর্তন',editorReset:'ডেমো রিসেট',editorBlocks:'ব্লক',editorHero:'হিরো',editorProducts:'পণ্য',editorPromo:'প্রোমো',editorTrust:'ট্রাস্ট',editorTry:'চেষ্টা করুন',editorTryHint:'লেখায় ক্লিক → টাইপ → ড্র্যাগ',editorSelected:'নির্বাচিত',editorTextLayer:'টেক্সট লেয়ার',editorText:'লেখা',editorColor:'সেকশনের রং',editorPosition:'অবস্থান',editorHelp:'হ্যান্ডেল টেনে নির্বাচিত সেকশনের ভেতরে লেখাটি যেকোনো জায়গায় রাখুন।',payTitle:'লোকাল পেমেন্টের জন্য তৈরি।',payCopy:'bKash, Nagad ও COD; সংযোগ করা থাকলে automated bKash checkout পাওয়া যায়।',deliveryTitle:'অর্ডার থেকে ফুলফিলমেন্টে যান।',deliveryCopy:'কনফিগার করা থাকলে অর্ডার ওয়ার্কফ্লো থেকে Pathao booking করুন।',active:'সক্রিয়',adminTitle:'পরের কাজগুলো একসাথে দেখুন।',adminCopy:'স্টোরফ্রন্ট, প্রোফাইল, পেমেন্ট ও সাম্প্রতিক অর্ডার একই অপারেটিং সারফেসে।',domainTitle:'নিজস্ব ব্র্যান্ডেড ডোমেইন।',domainCopy:'যোগ্য paid plan-এ DNS setup ও verification-এর পর custom domain যুক্ত করা যায়।',
+      featuresKicker:'কমার্স ওয়ার্কস্পেস',featuresTitle:'বাইরে সুন্দর। ভিতরে অপারেশনাল।',featuresCopy:'স্টোরফ্রন্ট শুধু একটি সারফেস। পণ্য, অর্ডার, পেমেন্ট সেটআপ ও ডেলিভারি কাজ একই সিস্টেমে থাকে।',builderTitle:'এখানেই স্টোরফ্রন্ট এডিট করে দেখুন।',builderCopy:'লেখায় ক্লিক করে বদলান, সেকশনের ভেতরে যেকোনো জায়গায় টেনে নিন, অথবা সেকশনের রং পাল্টান। কোনো সেটআপ বা কোড নেই।',editorTitle:'স্টোর এডিটর',editorPreview:'প্রিভিউ',editorLive:'লাইভ পরিবর্তন',editorReset:'ডেমো রিসেট',editorBlocks:'ব্লক',editorHero:'হিরো',editorProducts:'পণ্য',editorPromo:'প্রোমো',editorTrust:'ট্রাস্ট',editorTry:'চেষ্টা করুন',editorTryHint:'লেখায় ক্লিক → টাইপ → ড্র্যাগ',editorSelected:'নির্বাচিত',editorTextLayer:'টেক্সট লেয়ার',editorText:'লেখা',editorColor:'সেকশনের রং',editorPosition:'অবস্থান',editorHelp:'হ্যান্ডেল টেনে নির্বাচিত সেকশনের ভেতরে লেখাটি যেকোনো জায়গায় রাখুন।',payTitle:'লোকাল পেমেন্টের জন্য তৈরি।',payCopy:'bKash, Nagad ও COD; সংযোগ করা থাকলে automated bKash checkout পাওয়া যায়।',deliveryTitle:'অর্ডার থেকে ফুলফিলমেন্টে যান।',deliveryCopy:'কনফিগার করা থাকলে অর্ডার ওয়ার্কফ্লো থেকে Pathao booking করুন।',active:'সক্রিয়',workflowLabel:'লাইভ অর্ডার ওয়ার্কফ্লো · সিমুলেশন',workflowTitle:'ক্রেতা Order চাপার পর কী হয় দেখুন।',workflowCopy:'Checkout থেকে courier, stock এবং margin tracking পর্যন্ত একটি সংক্ষিপ্ত illustrative run।',workflowRun:'অর্ডার ওয়ার্কফ্লো চালান',workflowWaiting:'অপেক্ষায়',workflowRunning:'চলছে',workflowComplete:'সম্পন্ন',placeOrder:'অর্ডার করুন',workflowDisclaimer:'উদাহরণভিত্তিক ডেমো ডেটা',automationRunner:'অটোমেশন রানার',stepPayment:'পেমেন্ট',stepPaymentTitle:'পেমেন্ট পাওয়া গেছে',stepOrder:'অর্ডার',stepOrderTitle:'অর্ডার এসেছে',stepCourier:'ফুলফিলমেন্ট',stepCourierTitle:'কুরিয়ার বুক করুন',bookCourier:'কুরিয়ার বুক করুন',stepBookedTitle:'কুরিয়ার বুক হয়েছে',stepPickup:'পিকআপ',stepPickupTitle:'কুরিয়ার পণ্য নিয়েছে',collected:'সংগ্রহ করা হয়েছে',stepInventory:'ইনভেন্টরি',stepInventoryTitle:'স্টক আপডেট হয়েছে',stepProfit:'মার্জিন',stepProfitTitle:'প্রফিট বুক হয়েছে',workflowResult:'অর্ডার সম্পন্ন — প্রতিটি পরের কাজ দৃশ্যমান।',workflowResultNote:'উদাহরণ মার্জিন ধরে নেয় merchant cost data কনফিগার করা আছে।',adminTitle:'পরের কাজগুলো একসাথে দেখুন।',adminCopy:'স্টোরফ্রন্ট, প্রোফাইল, পেমেন্ট ও সাম্প্রতিক অর্ডার একই অপারেটিং সারফেসে।',domainTitle:'নিজস্ব ব্র্যান্ডেড ডোমেইন।',domainCopy:'যোগ্য paid plan-এ DNS setup ও verification-এর পর custom domain যুক্ত করা যায়।',
       templatesKicker:'স্টোরফ্রন্ট দিক',templatesTitle:'একই প্ল্যাটফর্ম। আলাদা বিক্রির ব্যক্তিত্ব।',threadsDesc:'এডিটোরিয়াল ফ্যাশন',electronicsDesc:'স্পেসিফিকেশন-কেন্দ্রিক',craftsDesc:'নির্মাতার গল্প',foodDesc:'মেনু-কেন্দ্রিক কমার্স',selectedDirection:'নির্বাচিত দিক',openPreview:'প্রিভিউ খুলুন',useTemplate:'এই টেমপ্লেট ব্যবহার করুন',
       integrationsKicker:'কমার্স কানেকশন',integrationsTitle:'নির্ভর করার আগে কোনটা সক্রিয় জানুন।',integrationsCopy:'সব লোগোকে একইভাবে দেখানোর বদলে EZComo বর্তমান connection state পরিষ্কারভাবে দেখায়।',payments:'পেমেন্ট',delivery:'ডেলিভারি',storefront:'স্টোরফ্রন্ট',autoConnected:'কানেক্ট হলে automated',storeOption:'স্টোরফ্রন্ট অপশন',merchantApi:'Merchant API booking',setupAvailable:'Setup available',customDomain:'Custom domain',eligiblePlans:'যোগ্য paid plan',responsiveStore:'Responsive store',allScreens:'ফোন থেকে ডেস্কটপ',
       calcKicker:'উদাহরণভিত্তিক খরচ হিসাব',calcTitle:'আমাদের নয়, আপনার সংখ্যা ব্যবহার করুন।',calcCopy:'আপনি বর্তমানে যে শতাংশ খরচ দেন, সেটার সাথে নিজের দেয়া EZComo plan amount তুলনা করুন। এটি কোনো competitor fee ধরে নেয় না বা savings প্রতিশ্রুতি দেয় না।',calcNote:'শুধু উদাহরণ — সিদ্ধান্তের আগে আসল plan ও provider charge যাচাই করুন।',monthlySales:'মাসিক বিক্রি',currentCost:'বর্তমান platform / manual cost',planInput:'তুলনার জন্য EZComo plan amount',annualDifference:'উদাহরণভিত্তিক বার্ষিক পার্থক্য',
@@ -72,7 +72,7 @@
     $$('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(i18n[lang][key])el.textContent=i18n[lang][key]});
     $$('[data-i18n-html]').forEach(el=>{const key=el.dataset.i18nHtml;if(i18n[lang][key])el.innerHTML=i18n[lang][key]});
     const toggle=$('#langToggle'); if(toggle){toggle.querySelectorAll('span').forEach((el,i)=>el.classList.toggle('active',(lang==='en'&&i===0)||(lang==='bn'&&i===1))); toggle.querySelectorAll('span').forEach((el,i)=>el.style.color=((lang==='en'&&i===0)||(lang==='bn'&&i===1))?'var(--ink)':'var(--muted)');}
-    renderFaq(); updateTemplateText(); window.__syncEditor?.();
+    renderFaq(); updateTemplateText(); window.__syncEditor?.(); window.__syncWorkflowLanguage?.();
   }
 
   function updateSignup(){
@@ -317,6 +317,84 @@
     selectLayer(selectedLayer);
   }
 
+  // Commerce workflow proof: auto-runs once on view and is replayable.
+  const workflowDemo=$('#workflowDemo');
+  const workflowCard=$('#orderWorkflowCard');
+  const workflowRun=$('#workflowRun');
+  const placeOrderDemo=$('#placeOrderDemo');
+  const workflowStatus=$('#workflowStatus');
+  let workflowRunning=false,workflowPlayed=false,workflowTimers=[];
+  const workflowOrder=['payment','order','courier','booked','pickup','inventory','profit'];
+  const clearWorkflowTimers=()=>{workflowTimers.forEach(clearTimeout);workflowTimers=[]};
+  const setWorkflowStatus=key=>{if(workflowStatus)workflowStatus.textContent=i18n[lang]?.[key]||key};
+  const resetWorkflow=()=>{
+    clearWorkflowTimers();
+    workflowRunning=false;
+    workflowDemo?.classList.remove('running','courier-click','finished');
+    $$('.workflow-step',workflowDemo||document).forEach(step=>step.classList.remove('active','done','just-completed'));
+    if(workflowRun)workflowRun.disabled=false;
+    setWorkflowStatus('workflowWaiting');
+  };
+  const activateWorkflowStep=name=>{
+    const step=$(`.workflow-step[data-step="${name}"]`,workflowDemo||document);
+    if(!step)return;
+    step.classList.add('active');
+  };
+  const completeWorkflowStep=name=>{
+    const step=$(`.workflow-step[data-step="${name}"]`,workflowDemo||document);
+    if(!step)return;
+    step.classList.remove('active');
+    step.classList.add('done','just-completed');
+    setTimeout(()=>step.classList.remove('just-completed'),500);
+  };
+  const runWorkflow=()=>{
+    if(!workflowDemo||workflowRunning)return;
+    resetWorkflow();
+    workflowRunning=true;
+    workflowPlayed=true;
+    workflowRun && (workflowRun.disabled=true);
+    workflowDemo.classList.add('running');
+    setWorkflowStatus('workflowRunning');
+    const reduced=matchMedia('(prefers-reduced-motion:reduce)').matches;
+    let t=reduced?0:500;
+    workflowOrder.forEach(name=>{
+      const hold=reduced?24:(name==='courier'?820:420);
+      const gap=reduced?8:110;
+      workflowTimers.push(setTimeout(()=>{
+        if(name==='courier')workflowDemo.classList.add('courier-click');
+        activateWorkflowStep(name);
+      },t));
+      workflowTimers.push(setTimeout(()=>{
+        completeWorkflowStep(name);
+        if(name==='courier')workflowDemo.classList.remove('courier-click');
+      },t+hold));
+      t+=hold+gap;
+    });
+    workflowTimers.push(setTimeout(()=>{
+      workflowDemo.classList.add('finished');
+      setWorkflowStatus('workflowComplete');
+      workflowRunning=false;
+      if(workflowRun)workflowRun.disabled=false;
+    },t+100));
+  };
+  workflowRun?.addEventListener('click',runWorkflow);
+  placeOrderDemo?.addEventListener('click',runWorkflow);
+  if(workflowCard){
+    const workflowObserver=new IntersectionObserver(entries=>{
+      if(entries.some(e=>e.isIntersecting)&&!workflowPlayed){
+        workflowTimers.push(setTimeout(runWorkflow,450));
+        workflowObserver.disconnect();
+      }
+    },{threshold:.38});
+    workflowObserver.observe(workflowCard);
+  }
+  window.__syncWorkflowLanguage=()=>{
+    if(workflowRunning)setWorkflowStatus('workflowRunning');
+    else if(workflowDemo?.classList.contains('finished'))setWorkflowStatus('workflowComplete');
+    else setWorkflowStatus('workflowWaiting');
+  };
+  resetWorkflow();
+
   const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');observer.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px'});
   $$('.reveal').forEach(el=>{if(!el.classList.contains('is-visible'))observer.observe(el)});
 
@@ -339,7 +417,13 @@
   const sticky=$('#stickyCta'); let heroVisible=true,conversionVisible=false,dismissed=sessionStorage.getItem('ezcomo-v4-sticky')==='1';
   const refreshSticky=()=>{const visible=!heroVisible&&!conversionVisible&&!dismissed;sticky?.classList.toggle('visible',visible);sticky?.setAttribute('aria-hidden',String(!visible))};
   const heroObs=new IntersectionObserver(es=>{heroVisible=es[0].isIntersecting;refreshSticky()},{threshold:.05}); if($('#hero'))heroObs.observe($('#hero'));
-  const convObs=new IntersectionObserver(es=>{conversionVisible=es.some(e=>e.isIntersecting);refreshSticky()},{threshold:.08}); ['#pricing','#closing'].forEach(s=>{const el=$(s);if(el)convObs.observe(el)});
+  const conversionNodes=new Set();
+  const convObs=new IntersectionObserver(es=>{
+    es.forEach(e=>e.isIntersecting?conversionNodes.add(e.target):conversionNodes.delete(e.target));
+    conversionVisible=conversionNodes.size>0;
+    refreshSticky();
+  },{threshold:.08});
+  ['#pricing','#closing','#editorDemo','#orderWorkflowCard'].forEach(s=>{const el=$(s);if(el)convObs.observe(el)});
   $('#stickyClose')?.addEventListener('click',()=>{dismissed=true;sessionStorage.setItem('ezcomo-v4-sticky','1');refreshSticky()});
 
   applyLanguage('en'); selectTemplate('threads'); renderFaq(); updateCalc();
