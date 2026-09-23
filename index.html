@@ -134,7 +134,7 @@
     <article class="product-story-card editor-story reveal" data-spotlight>
       <div class="story-card-head">
         <div><span class="mini-label" data-i18n="builderLabel">01 · STOREFRONT EDITOR</span><h3 data-i18n="builderTitle">Edit a complete storefront right here.</h3><p data-i18n="builderCopy">Move through a real page structure, rewrite the content, reposition content groups and restyle sections without touching code.</p></div>
-        <div class="story-card-note"><i></i><span data-i18n="builderHint">Try changing the hero, then jump to Featured products.</span></div>
+        <div class="story-card-note editor-interaction-cue"><i></i><span data-i18n="builderHint">Drag a section on the left — the storefront preview reorders live.</span></div>
       </div>
 
       <div class="product-shot ui-shot builder-ui editor-demo" id="editorDemo">
@@ -303,6 +303,7 @@
         </div>
         <div class="workflow-runner">
           <div class="runner-top"><span data-i18n="automationRunner">AUTOMATION RUNNER</span><div><i></i><b id="workflowStatus">Waiting</b></div></div>
+          <div class="workflow-now" id="workflowNowPanel"><small data-i18n="workflowNowLabel">NOW HAPPENING</small><strong id="workflowNow" data-i18n="workflowNowReady">Ready to run the order.</strong></div>
           <div class="workflow-steps">
             <div class="workflow-step" data-step="payment"><span class="step-icon">৳</span><div><small data-i18n="stepPayment">PAYMENT</small><strong data-i18n="stepPaymentTitle">Payment received</strong></div><em>৳1,490</em></div>
             <div class="workflow-step" data-step="order"><span class="step-icon">#</span><div><small data-i18n="stepOrder">ORDER</small><strong data-i18n="stepOrderTitle">Order received</strong></div><em>#1051</em></div>
@@ -419,6 +420,7 @@
           <div><span class="mini-label" data-i18n="selectedDirection">SELECTED STRUCTURE</span><h3 id="templateTitle">Fashion</h3><p id="templateDescription">Editorial catalog structure for collections, variants and product-led storytelling.</p><small class="direction-note" data-i18n="directionNote">Illustrative demo content — the structure is the point.</small></div>
           <div><a class="btn btn-primary" data-signup id="templateSignup" href="https://ezcomo.shop/signup?template=fashion" data-i18n="useTemplate">Use this structure</a></div>
         </div>
+        <div class="template-breadth"><span data-i18n="moreStructures">Also built for</span><div><b>Beauty</b><b>Gadgets</b><b>Food</b><b>Crafts</b><b>Single Product</b><b>Wholesale</b><b>Subscriptions</b><b>Real Estate</b></div></div>
       </div>
     </div>
   </div>
@@ -461,8 +463,13 @@
 
 <section class="section pricing-section" id="pricing">
   <div class="shell pricing-panel reveal">
-    <div><p class="kicker" data-i18n="pricingKicker">Pricing</p><h2 data-i18n="pricingTitle">Start free. Upgrade when the business needs more.</h2><p data-i18n="pricingCopy">Current prices and limits are published on the plans page so you can compare before committing.</p></div>
-    <div class="pricing-actions"><a class="btn btn-primary btn-large" data-signup href="https://ezcomo.shop/signup?template=threads" data-i18n="startFree">Start free</a><a class="text-link" href="https://ezcomo.shop/plans"><span data-i18n="comparePlans">Compare current plans</span> ↗</a></div>
+    <div>
+      <p class="kicker" data-i18n="pricingKicker">Pricing</p>
+      <h2 data-i18n="pricingTitle">Start free. Upgrade when the business needs more.</h2>
+      <p data-i18n="pricingCopy">Current prices and limits are published on the plans page so you can compare before committing.</p>
+      <div class="pricing-points" aria-label="What you can build with EZComo"><span data-i18n="pricingPointStore">Launch the storefront</span><span data-i18n="pricingPointOrders">Run structured orders</span><span data-i18n="pricingPointLocal">Connect local commerce</span></div>
+    </div>
+    <div class="pricing-actions"><small data-i18n="pricingActionNote">Start with the product before choosing a paid plan.</small><a class="btn btn-primary btn-large" data-signup href="https://ezcomo.shop/signup?template=threads" data-i18n="startFree">Start free</a><a class="text-link" href="https://ezcomo.shop/plans"><span data-i18n="comparePlans">Compare current plans</span> ↗</a></div>
   </div>
 </section>
 
