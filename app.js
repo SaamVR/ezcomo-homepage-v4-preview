@@ -7,25 +7,25 @@
       name:'Threads',brand:'THREADS',visual:'Built for the city after dark.',eyebrow:'NEW DROP 06',
       body:'Everyday pieces with a sharper point of view.',cta:'Shop collection',secondary:'View lookbook →',
       featured:'Featured products',products:[['Studio Tee','৳1,490','tee'],['Canvas Tote','৳990','tote'],['Rib Mug','৳690','mug']],
-      templateVisual:'Objects for everyday movement.',desc:'Editorial apparel with room for campaigns, collections and strong visual identity.',bn:'ক্যাম্পেইন, কালেকশন ও ব্র্যান্ড স্টোরির জন্য তৈরি এডিটোরিয়াল ফ্যাশন স্টোর।'
+      templateVisual:'Objects for everyday movement.',desc:'Editorial apparel with room for campaigns, collections and strong visual identity.',bn:'কালেকশন, ভ্যারিয়েন্ট আর ব্র্যান্ডের গল্প—ফ্যাশন বিক্রির জন্য সাজানো স্টোরফ্রন্ট।',bnVisual:'শহরের ছন্দে, নিজের স্টাইল।',bnEyebrow:'নতুন কালেকশন ০৬',bnBody:'প্রতিদিনের পোশাক—সহজ, স্বতন্ত্র, আর একটু বেশি নিজের মতো।',bnCta:'কালেকশন দেখুন',bnSecondary:'লুকবুক দেখুন →',bnFeatured:'বাছাই করা পণ্য'
     },
     electronics:{
       name:'Electronics',brand:'NEXUS',visual:'Technology that earns its place.',eyebrow:'FEATURED / PERFORMANCE',
       body:'Clear specifications. Less noise. Better everyday devices.',cta:'Shop devices',secondary:'Compare models →',
       featured:'Popular right now',products:[['Arc Headphones','৳5,990','headphones'],['Nova Phone','৳28,900','phone'],['Key Mini','৳3,490','keyboard']],
-      templateVisual:'Compare less. Choose better.',desc:'Product-first merchandising for shoppers comparing features and specifications.',bn:'ফিচার ও স্পেসিফিকেশন তুলনা করা ক্রেতাদের জন্য প্রোডাক্ট-কেন্দ্রিক স্টোর।'
+      templateVisual:'Compare less. Choose better.',desc:'Product-first merchandising for shoppers comparing features and specifications.',bn:'ফিচার, স্পেসিফিকেশন আর তুলনা—ইলেকট্রনিক্স কেনার সিদ্ধান্ত সহজ করার মতো স্টোর।',bnVisual:'প্রযুক্তি, যা সত্যিই কাজে লাগে।',bnEyebrow:'বাছাই · পারফরম্যান্স',bnBody:'স্পষ্ট স্পেসিফিকেশন, কম ঝামেলা—প্রতিদিনের জন্য ঠিকঠাক ডিভাইস।',bnCta:'ডিভাইস দেখুন',bnSecondary:'মডেল তুলনা করুন →',bnFeatured:'এখন জনপ্রিয়'
     },
     crafts:{
       name:'Crafts',brand:'HANDMADE',visual:'Made slowly. Kept for years.',eyebrow:'MAKER / PROCESS',
       body:'Useful objects shaped by hand, material and small details.',cta:'Shop handmade',secondary:'Meet the makers →',
       featured:'From the studio',products:[['Clay Vessel','৳1,250','pot'],['Market Tote','৳890','tote'],['Block Print','৳1,690','print']],
-      templateVisual:'Every object carries a handprint.',desc:'Maker-led storytelling for handmade products where process and origin matter.',bn:'হ্যান্ডমেড পণ্যে নির্মাতা, প্রক্রিয়া ও গল্পকে সামনে আনে।'
+      templateVisual:'Every object carries a handprint.',desc:'Maker-led storytelling for handmade products where process and origin matter.',bn:'হাতে তৈরি পণ্যের কারিগর, উপকরণ আর গল্পকে সামনে আনার মতো স্টোর।',bnVisual:'হাতে তৈরি। বহুদিনের জন্য।',bnEyebrow:'কারিগর · প্রক্রিয়া',bnBody:'হাতের কাজ, ভালো উপকরণ আর ছোট ছোট যত্নে তৈরি ব্যবহারযোগ্য জিনিস।',bnCta:'হ্যান্ডমেড পণ্য দেখুন',bnSecondary:'কারিগরদের গল্প →',bnFeatured:'স্টুডিও থেকে'
     },
     food:{
       name:'Food',brand:'TABLE',visual:'Good food, ready when you are.',eyebrow:'TODAY / FRESH',
       body:'Fresh picks, clear prices and an ordering path that stays simple.',cta:'Order today',secondary:'See full menu →',
       featured:'Today’s favourites',products:[['Harvest Bowl','৳390','bowl'],['Citrus Drink','৳220','drink'],['Granola Pack','৳480','pack']],
-      templateVisual:'Fresh picks, easy ordering.',desc:'Menu-first presentation that keeps products easy to browse and order.',bn:'পণ্য দ্রুত দেখা ও অর্ডার করার জন্য মেনু-কেন্দ্রিক স্টোর।'
+      templateVisual:'Fresh picks, easy ordering.',desc:'Menu-first presentation that keeps products easy to browse and order.',bn:'খাবার দ্রুত দেখা, দাম বোঝা আর সহজে অর্ডার করার জন্য মেনু-কেন্দ্রিক স্টোর।',bnVisual:'ভালো খাবার, যখন আপনার দরকার।',bnEyebrow:'আজকের · টাটকা',bnBody:'টাটকা পছন্দ, পরিষ্কার দাম, অর্ডারও সহজ।',bnCta:'আজই অর্ডার করুন',bnSecondary:'পুরো মেনু দেখুন →',bnFeatured:'আজকের পছন্দ'
     }
   };
 
@@ -34,26 +34,26 @@
     fashion:{
       name:'Fashion',slug:'fashion',
       desc:'Editorial catalog structure for collections, variants and product-led storytelling.',
-      bn:'কালেকশন, ভ্যারিয়েন্ট ও product-led storytelling-এর জন্য editorial catalog structure।',
-      model:'Product catalog',flow:'Collection → Product → Cart',blocks:'Hero · Collections · Product grid · Cart'
+      bn:'কালেকশন, ভ্যারিয়েন্ট আর পণ্যের গল্প—ফ্যাশন ব্র্যান্ডের বিক্রির ধরন মাথায় রেখে সাজানো স্টোরফ্রন্ট।',
+      model:'Product catalog',flow:'Collection → Product → Cart',blocks:'Hero · Collections · Product grid · Cart',bnModel:'পণ্যের ক্যাটালগ',bnFlow:'কালেকশন → পণ্য → কার্ট',bnBlocks:'হিরো · কালেকশন · প্রোডাক্ট গ্রিড · কার্ট'
     },
     booking:{
       name:'Booking',slug:'booking',
       desc:'Service storefront built around service choice, staff, dates and available time slots.',
-      bn:'Service, staff, date ও available time slot ঘিরে তৈরি booking storefront structure।',
-      model:'Appointment schedule',flow:'Service → Date → Time → Confirm',blocks:'Services · Calendar · Slots · Staff'
+      bn:'সার্ভিস বেছে নেওয়া থেকে তারিখ, সময় ও স্টাফ নির্বাচন—বুকিংয়ের পুরো যাত্রা এক জায়গায়।',
+      model:'Appointment schedule',flow:'Service → Date → Time → Confirm',blocks:'Services · Calendar · Slots · Staff',bnModel:'অ্যাপয়েন্টমেন্ট সূচি',bnFlow:'সার্ভিস → তারিখ → সময় → নিশ্চিত',bnBlocks:'সার্ভিস · ক্যালেন্ডার · সময় · স্টাফ'
     },
     hotel:{
       name:'Hotel',slug:'hotels',
       desc:'Hospitality structure where dates, guests, room inventory and availability drive the journey.',
-      bn:'Date, guest, room inventory ও availability-কেন্দ্রিক hospitality storefront structure।',
-      model:'Room inventory',flow:'Dates → Room → Guest → Reserve',blocks:'Search · Rooms · Amenities · Availability'
+      bn:'তারিখ, অতিথি সংখ্যা, রুম আর খালি থাকার তথ্যকে কেন্দ্র করে সাজানো হোটেল বুকিং অভিজ্ঞতা।',
+      model:'Room inventory',flow:'Dates → Room → Guest → Reserve',blocks:'Search · Rooms · Amenities · Availability',bnModel:'রুম ইনভেন্টরি',bnFlow:'তারিখ → রুম → অতিথি → বুকিং',bnBlocks:'সার্চ · রুম · সুবিধা · খালি থাকার তথ্য'
     },
     digital:{
       name:'Digital',slug:'digital-downloads',
       desc:'Digital-product storefront for previews, bundles, licences and post-payment delivery.',
-      bn:'Preview, bundle, licence ও payment-এর পর file delivery-এর জন্য digital-product storefront।',
-      model:'Digital products',flow:'Preview → Licence → Pay → Download',blocks:'Library · Bundles · Licence · Delivery'
+      bn:'প্রিভিউ, বান্ডল, লাইসেন্স আর পেমেন্টের পর ফাইল ডেলিভারি—ডিজিটাল পণ্যের জন্য তৈরি স্টোরফ্রন্ট।',
+      model:'Digital products',flow:'Preview → Licence → Pay → Download',blocks:'Library · Bundles · Licence · Delivery',bnModel:'ডিজিটাল পণ্য',bnFlow:'প্রিভিউ → লাইসেন্স → পেমেন্ট → ডাউনলোড',bnBlocks:'লাইব্রেরি · বান্ডল · লাইসেন্স · ডেলিভারি'
     }
   };
 
@@ -78,23 +78,24 @@
       product:'Product',support:'Support',helpCenter:'Help center',legal:'Legal',privacy:'Privacy',terms:'Terms',billing:'Billing policy',footerTag:'A storefront customers can use. A workspace merchants can run.',previewLabel:'Design preview · no merchant data is changed here.',stickyText:'Ready to give customers somewhere better than the DM inbox?'
     },
     bn:{
-      announcement:'বাংলাদেশি কমার্সের জন্য তৈরি — bKash, Nagad, COD ও Pathao ওয়ার্কফ্লো।',announcementCta:'স্টোরফ্রন্ট দেখুন',
+      announcement:'বাংলাদেশে অনলাইন বিক্রির জন্য — bKash, Nagad, COD আর Pathao-সহ।',announcementCta:'দেখে নিন',
       navWhy:'প্রোডাক্ট',navFeatures:'ফিচার',navTemplates:'স্টোরফ্রন্ট',navIntegrations:'লোকাল কমার্স',navPricing:'মূল্য',login:'লগ ইন',startFree:'ফ্রি শুরু করুন',
-      heroEyebrow:'বাংলাদেশকে কেন্দ্র করে তৈরি কমার্স',heroTitle:'DM-এর ভিড়ে <em>বিক্রি হারাবেন না।</em>',heroLede:'ক্রেতাদের নিজের মতো ব্রাউজ করার জন্য একটি ব্র্যান্ডেড স্টোর দিন, আর পণ্য, অর্ডার, পেমেন্ট ও ডেলিভারির কাজ একই সিস্টেমে রাখুন।',
-      createStore:'ফ্রি স্টোর তৈরি করুন',seeStores:'এডিটর ব্যবহার করে দেখুন',trustNoCode:'কোড লাগবে না',trustTemplate:'টেমপ্লেট থেকে শুরু',trustLocal:'লোকাল কমার্স ওয়ার্কফ্লো',
-      paymentReady:'পেমেন্ট অপশন',configuredIn:'আপনার ওয়ার্কস্পেসে কনফিগার করা',structuredOrder:'গোছানো অর্ডার',readyFulfilment:'ফুলফিলমেন্টের জন্য প্রস্তুত',proofLabel:'একটি সংযুক্ত পথ',proofIntro:'স্টোরফ্রন্ট থেকে ফুলফিলমেন্ট—একই ধারায়।',proofStore:'স্টোরফ্রন্ট',proofStoreNote:'দেখুন ও পছন্দ করুন',proofCheckout:'চেকআউট',proofCheckoutNote:'পেমেন্ট পদ্ধতি ধরা থাকে',proofOrder:'অর্ডার',proofOrderNote:'ওয়ার্কস্পেসে গোছানো',proofFulfilment:'ফুলফিলমেন্ট',proofFulfilmentNote:'পরের কাজটি দৃশ্যমান থাকে',
-      bdKicker:'বাংলাদেশের জন্য তৈরি',bdTitle:'আপনার ব্যবসার জন্য <em>বিদেশি workaround দরকার হওয়া উচিত নয়।</em>',bdCopy:'EZComo স্থানীয় ব্যবসায়ীদের পরিচিত পেমেন্ট, ডেলিভারি ও স্টোরফ্রন্ট অভ্যাসকে কেন্দ্র করে তৈরি।',
-      bdPay:'পরিচিত উপায়ে বিক্রি করুন',bdPayCopy:'স্টোরে bKash, Nagad ও ক্যাশ অন ডেলিভারি দিন।',bdDeliver:'অর্ডার ডেলিভারিতে পাঠান',bdDeliverCopy:'কনফিগার করা থাকলে Pathao merchant API booking ব্যবহার করা যায়।',bdBrand:'কাস্টমার অভিজ্ঞতা নিজের রাখুন',bdBrandCopy:'নিজস্ব ব্র্যান্ডেড স্টোরফ্রন্ট ও যোগ্য প্ল্যানে কাস্টম ডোমেইন ব্যবহার করুন।',bdTogether:'অপারেশন একসাথে রাখুন',bdTogetherCopy:'পণ্য, অর্ডার, স্টোর সেটিং ও সেলিং সেটআপ একই ওয়ার্কস্পেসে।',
-      painKicker:'পরিবর্তনটা',painTitle:'মেসেজের বিশৃঙ্খলা থেকে ক্রেতার ব্যবহারযোগ্য স্টোরে।',painIntro:'সোশ্যাল চ্যানেল নতুন ক্রেতা আনে, কিন্তু প্রতিটি দাম, সাইজ, অর্ডার আর ডেলিভারি প্রশ্ন হাতে সামলাতে হলে কাজ জটিল হয়ে যায়।',beforeLabel:'আগে · DM',afterLabel:'পরে · EZCOMO',chat1:'দাম কত?',chat2:'কোন সাইজ আছে?',chat3:'COD আছে?',chat4:'আমার অর্ডার কোথায়?',chaosFoot:'গুরুত্বপূর্ণ অর্ডার তথ্য আলাদা আলাদা কথোপকথনে ছড়িয়ে থাকে।',system1:'পণ্যের তথ্য দৃশ্যমান',system2:'অর্ডার ধরা হয়েছে',system3:'পেমেন্ট পদ্ধতি রেকর্ড',system4:'ফুলফিলমেন্ট ওয়ার্কফ্লো',done:'প্রস্তুত',systemFoot:'একটি গোছানো মার্চেন্ট ওয়ার্কফ্লো',
-      howKicker:'কীভাবে কাজ করে',howTitle:'তিন ধাপ। Blank canvas-এর ভয় নেই।',howCopy:'সম্পূর্ণ একটি ডিজাইন থেকে শুরু করুন, নিজের মতো করুন, তারপর একই সিস্টেমে ব্যবসা চালান।',step1:'স্টোরফ্রন্ট বেছে নিন',step1Copy:'আপনার ক্যাটাগরির বিক্রির ধরন অনুযায়ী শুরু করার ডিজাইন বেছে নিন।',step2:'ব্যবসার তথ্য যোগ করুন',step2Copy:'পণ্য, ছবি, ব্র্যান্ড, পেমেন্ট ও ডেলিভারি সেটআপ করুন।',step3:'পাবলিশ ও ম্যানেজ করুন',step3Copy:'গোছানো অর্ডার নিন এবং প্রতিটি বিক্রির পরের কাজ পরিচালনা করুন।',
-      bridgeBefore:'আগে',bridgeInbox:'অর্ডার DM-এ আটকে থাকে',bridgeStore:'স্টোরফ্রন্ট',bridgeStoreTitle:'ক্রেতারা নিজেরাই দেখে অর্ডার করে',bridgeSystem:'EZCOMO',bridgeSystemTitle:'প্রতিটি বিক্রির পরের কাজ গোছানো থাকে',featuresKicker:'CMS ব্যবহার করে দেখুন',featuresTitle:'স্টোর বানান। তারপর বিক্রির পরের কাজ চালান।',featuresCopy:'স্টোরফ্রন্ট থেকেই শুরু করুন। পেজ এডিট করুন, একটি অর্ডার দিন, তারপর একই বিক্রিকে operational workflow-এ এগোতে দেখুন।',builderLabel:'০১ · স্টোরফ্রন্ট এডিটর',builderTitle:'এখানেই একটি সম্পূর্ণ storefront এডিট করুন।',builderCopy:'বাস্তব page structure-এর মধ্যে section বদলান, লেখা rewrite করুন, content group সরান এবং section style করুন—কোড ছাড়াই।',builderHint:'বাম পাশের section drag করুন — storefront preview সঙ্গে সঙ্গে reorder হবে।',editorTitle:'স্টোর এডিটর',editorPreview:'প্রিভিউ',editorLive:'লাইভ পরিবর্তন',editorReset:'ডেমো রিসেট',editorPage:'পেজ',editorAnnouncement:'অ্যানাউন্সমেন্ট',editorHeader:'হেডার',editorHero:'হিরো',editorCategories:'ক্যাটাগরি',editorFeatured:'ফিচার্ড পণ্য',editorPromo:'কালেকশন প্রোমো',editorNew:'নতুন পণ্য',editorStory:'ব্র্যান্ড স্টোরি',editorBenefits:'স্টোর সুবিধা',editorNewsletter:'নিউজলেটার',editorFooter:'ফুটার',editorTry:'চেষ্টা করুন',editorTryHint:'সেকশন drag করুন → edit করুন → content সরান',editorSelected:'নির্বাচিত',editorContentGroup:'কনটেন্ট গ্রুপ',editorText:'নির্বাচিত লেখা',editorColor:'সেকশনের রং',editorPosition:'অবস্থান',editorHelp:'যেকোনো text line এডিট করুন। হ্যান্ডেল টেনে পুরো content group সরান।',payTitle:'লোকাল পেমেন্টের জন্য তৈরি।',payCopy:'bKash, Nagad ও COD; সংযোগ করা থাকলে automated bKash checkout পাওয়া যায়।',deliveryTitle:'অর্ডার থেকে ফুলফিলমেন্টে যান।',deliveryCopy:'কনফিগার করা থাকলে অর্ডার ওয়ার্কফ্লো থেকে Pathao booking করুন।',active:'সক্রিয়',workflowLabel:'০২ · অর্ডার ওয়ার্কফ্লো · সিমুলেশন',workflowTitle:'এবার দেখুন customer Order চাপার পর কী হয়।',workflowCopy:'Storefront থেকে sale system-এ যায়: payment, order, fulfilment, inventory এবং margin tracking এক দৃশ্যমান sequence হয়।',workflowRun:'অর্ডার ওয়ার্কফ্লো চালান',workflowWaiting:'অপেক্ষায়',workflowRunning:'চলছে',workflowComplete:'সম্পন্ন',workflowNowLabel:'এখন যা হচ্ছে',workflowNowReady:'অর্ডার চালানোর জন্য প্রস্তুত।',workflowNowDone:'অর্ডার সম্পন্ন — সব action রেকর্ড হয়েছে।',placeOrder:'অর্ডার করুন',workflowDisclaimer:'উদাহরণভিত্তিক ডেমো ডেটা',automationRunner:'অটোমেশন রানার',stepPayment:'পেমেন্ট',stepPaymentTitle:'পেমেন্ট পাওয়া গেছে',stepOrder:'অর্ডার',stepOrderTitle:'অর্ডার এসেছে',stepCourier:'ফুলফিলমেন্ট',stepCourierTitle:'কুরিয়ার বুক করুন',bookCourier:'কুরিয়ার বুক করুন',stepBookedTitle:'কুরিয়ার বুক হয়েছে',stepPickup:'পিকআপ',stepPickupTitle:'কুরিয়ার পণ্য নিয়েছে',collected:'সংগ্রহ করা হয়েছে',stepInventory:'ইনভেন্টরি',stepInventoryTitle:'স্টক আপডেট হয়েছে',stepProfit:'মার্জিন',stepProfitTitle:'প্রফিট বুক হয়েছে',workflowResult:'অর্ডার সম্পন্ন — প্রতিটি পরের কাজ দৃশ্যমান।',workflowResultNote:'উদাহরণ মার্জিন ধরে নেয় merchant cost data কনফিগার করা আছে।',workspaceLabel:'০৩ · মার্চেন্ট ওয়ার্কস্পেস',workspaceTitle:'Storefront এবং তার পিছনের কাজ connected থাকে।',workspaceCopy:'Products, orders, payment setup এবং fulfilment status—সব এক operating surface-এ। এখানে illustrative sample data দেখানো হচ্ছে।',domainTitle:'নিজস্ব ব্র্যান্ডেড ডোমেইন।',domainCopy:'যোগ্য paid plan-এ DNS setup ও verification-এর পর custom domain যুক্ত করা যায়।',
-      templatesKicker:'স্টোরফ্রন্ট স্ট্রাকচার',templatesTitle:'ভিন্ন ব্যবসার জন্য ভিন্ন storefront structure দরকার।',templatesCopy:'Business model বদলে দেখুন—শুধু রং নয়, page architecture, customer flow এবং primary action-ও বদলায়।',fashionDesc:'Catalog + variants',bookingDesc:'Services + time slots',hotelDesc:'Rooms + availability',digitalDesc:'Files + licences',selectedDirection:'নির্বাচিত স্ট্রাকচার',directionNote:'এগুলো illustrative demo content — মূল বিষয় হলো structure।',moreStructures:'আরও যেসব ব্যবসার জন্য',openPreview:'প্রিভিউ খুলুন',useTemplate:'এই স্ট্রাকচার ব্যবহার করুন',
-      localKicker:'এখানকার বিক্রির জন্য তৈরি',localTitle:'Local commerce যেন native লাগে, patchwork নয়।',localCopy:'EZComo বাংলাদেশের merchants-এর পরিচিত payment habit, delivery workflow এবং storefront expectation ঘিরে তৈরি।',localPayTitle:'পরিচিত checkout',localPayCopy:'Storefront-এ bKash, Nagad এবং cash on delivery দেখানো যায়।',localDeliveryTitle:'Order flow-এর ভেতর delivery',localDeliveryCopy:'Configure করা থাকলে Pathao merchant-API booking পাওয়া যায়।',localBrandTitle:'আপনার storefront, আপনার domain',localBrandCopy:'যোগ্য paid plan verified custom domain connect করতে পারে।',connectionState:'কানেকশন স্টেট',connectionTitle:'নির্ভর করার আগে কোনটা active জানুন।',available:'available',setup:'setup',payments:'পেমেন্ট',delivery:'ডেলিভারি',storefront:'স্টোরফ্রন্ট',autoConnected:'কানেক্ট হলে automated',storeOption:'স্টোরফ্রন্ট অপশন',merchantApi:'Merchant API booking',setupAvailable:'Setup available',customDomain:'Custom domain',eligiblePlans:'যোগ্য paid plan',responsiveStore:'Responsive store',allScreens:'ফোন থেকে ডেস্কটপ',
-      calcKicker:'উদাহরণভিত্তিক খরচ হিসাব',calcTitle:'আমাদের নয়, আপনার সংখ্যা ব্যবহার করুন।',calcCopy:'আপনি বর্তমানে যে শতাংশ খরচ দেন, সেটার সাথে নিজের দেয়া EZComo plan amount তুলনা করুন। এটি কোনো competitor fee ধরে নেয় না বা savings প্রতিশ্রুতি দেয় না।',calcNote:'শুধু উদাহরণ — সিদ্ধান্তের আগে আসল plan ও provider charge যাচাই করুন।',monthlySales:'মাসিক বিক্রি',currentCost:'বর্তমান platform / manual cost',planInput:'তুলনার জন্য EZComo plan amount',annualDifference:'উদাহরণভিত্তিক বার্ষিক পার্থক্য',
-      pricingKicker:'মূল্য',pricingTitle:'ফ্রি শুরু করুন। ব্যবসার প্রয়োজন বাড়লে upgrade করুন।',pricingCopy:'বর্তমান মূল্য ও limit public plans page-এ দেখা যায়, তাই commit করার আগে compare করতে পারবেন।',pricingPointStore:'স্টোরফ্রন্ট চালু করুন',pricingPointOrders:'গোছানো অর্ডার চালান',pricingPointLocal:'লোকাল কমার্স যুক্ত করুন',pricingActionNote:'Paid plan বেছে নেওয়ার আগে product ব্যবহার করে শুরু করুন।',comparePlans:'বর্তমান plan তুলনা করুন',
-      faqTitle:'DM-এর বাইরে যাওয়ার আগে গুরুত্বপূর্ণ প্রশ্নগুলো।',faqStart:'শুরু করা',faqPayments:'পেমেন্ট',faqDelivery:'ডেলিভারি',faqDomains:'ডোমেইন',anotherQuestion:'আরও প্রশ্ন আছে?',talkSupport:'সাপোর্টের সাথে কথা বলুন',
-      closingKicker:'আপনার পরের স্টোরফ্রন্ট',closingTitle:'ক্রেতাদের নিজে কেনাকাটা করতে দিন, আপনি ব্যবসা চালাতে ফিরুন।',closingCopy:'একটি দিক বেছে নিন, ফ্রি শুরু করুন, আর সেই স্টোরফ্রন্ট পছন্দ setup-এ সাথে নিয়ে যান।',browseAgain:'আবার স্টোরফ্রন্ট দেখুন',
-      product:'প্রোডাক্ট',support:'সাপোর্ট',helpCenter:'হেল্প সেন্টার',legal:'লিগ্যাল',privacy:'প্রাইভেসি',terms:'টার্মস',billing:'বিলিং পলিসি',footerTag:'ক্রেতার ব্যবহারযোগ্য স্টোরফ্রন্ট। মার্চেন্টের চালানোর মতো ওয়ার্কস্পেস।',previewLabel:'ডিজাইন প্রিভিউ · এখানে merchant data পরিবর্তন হয় না।',stickyText:'DM inbox-এর চেয়ে ভালো জায়গা ক্রেতাদের দিতে প্রস্তুত?'
+      heroEyebrow:'বাংলাদেশের অনলাইন ব্যবসার জন্য',heroTitle:'DM-এ অর্ডার সামলাতে সামলাতে <em>বিক্রি হারাবেন না।</em>',heroLede:'ক্রেতাকে দিন নিজের মতো দেখে, পছন্দ করে অর্ডার করার একটি ব্র্যান্ডেড স্টোর। আর পণ্য, অর্ডার, পেমেন্ট ও ডেলিভারির কাজ রাখুন একই জায়গায়।',
+      createStore:'ফ্রি স্টোর খুলুন',seeStores:'এডিটর ঘুরে দেখুন',trustNoCode:'কোড জানা লাগবে না',trustTemplate:'রেডি ডিজাইন থেকে শুরু',trustLocal:'বাংলাদেশি বিক্রির কাজ মাথায় রেখে',
+      paymentReady:'পেমেন্টের অপশন',configuredIn:'আপনার স্টোরে যেগুলো চালু আছে',structuredOrder:'গোছানো অর্ডার',readyFulfilment:'ডেলিভারির জন্য প্রস্তুত',proofLabel:'এক অর্ডার, এক ধারায়',proofIntro:'ক্রেতার অর্ডার থেকে ডেলিভারি—কোনো তথ্য যেন পথে হারিয়ে না যায়।',proofStore:'স্টোরফ্রন্ট',proofStoreNote:'দেখে পছন্দ করে',proofCheckout:'চেকআউট',proofCheckoutNote:'পেমেন্ট পদ্ধতি বেছে নেয়',proofOrder:'অর্ডার',proofOrderNote:'সব তথ্য একসাথে থাকে',proofFulfilment:'ডেলিভারি',proofFulfilmentNote:'এরপর কী করতে হবে, পরিষ্কার',
+      bdKicker:'বাংলাদেশে বিক্রির কথা ভেবেই',bdTitle:'আপনার ব্যবসাকে <em>বিদেশি নিয়মে মানিয়ে নিতে হবে কেন?</em>',bdCopy:'এখানকার ক্রেতারা যেভাবে পেমেন্ট করেন, ব্যবসায়ীরা যেভাবে ডেলিভারি দেন, আর social media থেকে যেভাবে বিক্রি আসে—EZComo সেই বাস্তবতার জন্য তৈরি।',
+      bdPay:'ক্রেতার পরিচিত পেমেন্ট',bdPayCopy:'bKash, Nagad আর Cash on Delivery—স্টোরে দিন ক্রেতার পরিচিত অপশন।',bdDeliver:'অর্ডার থেকে কুরিয়ারে',bdDeliverCopy:'Pathao সেটআপ করা থাকলে অর্ডার থেকেই merchant API booking করা যায়।',bdBrand:'ব্র্যান্ডটা থাকুক আপনার',bdBrandCopy:'নিজের ব্র্যান্ডে স্টোর চালান; যোগ্য প্ল্যানে কাস্টম ডোমেইনও যুক্ত করতে পারবেন।',bdTogether:'এদিক-ওদিক নয়, এক জায়গায়',bdTogetherCopy:'পণ্য, অর্ডার, স্টোর সেটিং আর বিক্রির প্রয়োজনীয় সেটআপ একই ওয়ার্কস্পেসে রাখুন।',
+      painKicker:'যেখানে সময় বাঁচে',painTitle:'“দাম কত?”, “সাইজ আছে?”, “COD হবে?”—সব প্রশ্ন DM-এ সামলাতে হবে না।',painIntro:'Social media ক্রেতা এনে দিতে পারে। কিন্তু প্রতিটি পণ্যের তথ্য, অর্ডার আর ডেলিভারি আপডেট যদি চ্যাটে চ্যাটে খুঁজতে হয়, ব্যবসা বড় হওয়ার সাথে ঝামেলাও বড় হয়।',beforeLabel:'আগে · DM',afterLabel:'পরে · EZCOMO',chat1:'দাম কত?',chat2:'কোন সাইজ আছে?',chat3:'COD আছে?',chat4:'আমার অর্ডার কোথায়?',chaosFoot:'অর্ডারের দরকারি তথ্য ছড়িয়ে আছে আলাদা আলাদা চ্যাটে।',system1:'পণ্যের তথ্য ক্রেতার সামনেই',system2:'অর্ডার একবারেই গোছানো',system3:'পেমেন্ট পদ্ধতি সংরক্ষিত',system4:'ডেলিভারির পরের ধাপ প্রস্তুত',done:'প্রস্তুত',systemFoot:'একটি অর্ডার, একটিই পরিষ্কার কাজের ধারা',
+      howKicker:'শুরু করা সহজ',howTitle:'তিন ধাপেই নিজের স্টোর। শূন্য পেজ থেকে শুরু নয়।',howCopy:'রেডি একটি স্টোরফ্রন্ট বেছে নিন, নিজের ব্র্যান্ডে সাজান, তারপর একই জায়গা থেকে অর্ডারের কাজ চালান।',step1:'একটি স্টোরফ্রন্ট বেছে নিন',step1Copy:'আপনার ব্যবসার ধরন অনুযায়ী তৈরি একটি সাজানো কাঠামো থেকে শুরু করুন।',step2:'নিজের মতো সাজান',step2Copy:'পণ্য, ছবি, ব্র্যান্ড, পেমেন্ট আর ডেলিভারি সেটিং যোগ করুন।',step3:'পাবলিশ করে বিক্রি শুরু করুন',step3Copy:'অর্ডার নিন, আর প্রতিটি বিক্রির পর কী করতে হবে তা একই জায়গায় সামলান।',
+      bridgeBefore:'আগে',bridgeInbox:'অর্ডার DM-এ আটকে থাকে',bridgeStore:'স্টোরফ্রন্ট',bridgeStoreTitle:'ক্রেতা নিজেই দেখে অর্ডার করে',bridgeSystem:'EZCOMO',bridgeSystemTitle:'অর্ডারের পরের কাজও গুছিয়ে থাকে',featuresKicker:'এখন নিজেই ব্যবহার করে দেখুন',featuresTitle:'স্টোর বানান। অর্ডার এলে পরের কাজও এখানেই করুন।',featuresCopy:'পেজ এডিট করুন, একটি ডেমো অর্ডার দিন, তারপর দেখুন একই অর্ডার কীভাবে পেমেন্ট, কুরিয়ার, স্টক আর মার্জিনের ধাপ পেরোয়।',builderLabel:'০১ · স্টোরফ্রন্ট এডিটর',builderTitle:'এই পেজেই একটি পুরো স্টোর সাজিয়ে দেখুন।',builderCopy:'সেকশন সরান, লেখা বদলান, কনটেন্টের অবস্থান পাল্টান, রং ঠিক করুন—কোড লিখতে হবে না।',builderHint:'বাম দিক থেকে একটি সেকশন টেনে সরান—প্রিভিউ সঙ্গে সঙ্গেই বদলে যাবে।',editorTitle:'স্টোর এডিটর',editorPreview:'প্রিভিউ',editorLive:'লাইভ পরিবর্তন',editorReset:'ডেমো রিসেট',editorPage:'পেজ',editorAnnouncement:'ঘোষণা',editorHeader:'হেডার',editorHero:'হিরো',editorCategories:'ক্যাটাগরি',editorFeatured:'ফিচার্ড পণ্য',editorPromo:'কালেকশন প্রোমো',editorNew:'নতুন পণ্য',editorStory:'ব্র্যান্ডের গল্প',editorBenefits:'স্টোরের সুবিধা',editorNewsletter:'নিউজলেটার',editorFooter:'ফুটার',editorTry:'নিজে করে দেখুন',editorTryHint:'সেকশন সরান → লেখা বদলান → কনটেন্ট সাজান',editorSelected:'নির্বাচিত',editorContentGroup:'কনটেন্ট গ্রুপ',editorText:'নির্বাচিত লেখা',editorColor:'সেকশনের রং',editorPosition:'অবস্থান',editorHelp:'যে লেখাটি বদলাতে চান সেটি নির্বাচন করুন। হ্যান্ডেল ধরে পুরো কনটেন্ট ব্লকও সরাতে পারবেন।',payTitle:'ক্রেতার পরিচিত পেমেন্ট অপশন।',payCopy:'bKash, Nagad ও COD ব্যবহার করুন। bKash সংযোগ করা থাকলে automated checkout-ও চালু থাকে।',deliveryTitle:'অর্ডার এলো, এবার কুরিয়ারে পাঠান।',deliveryCopy:'Pathao কনফিগার করা থাকলে অর্ডার ওয়ার্কফ্লো থেকেই বুকিং করা যায়। অন্য কুরিয়ারগুলোর জন্যও সেটআপের পথ আছে।',active:'সক্রিয়',workflowLabel:'০২ · অর্ডারের পর কী হয় · ডেমো',workflowTitle:'ক্রেতা “অর্ডার করুন” চাপার পর কী হয়, দেখে নিন।',workflowCopy:'পেমেন্ট, অর্ডার, কুরিয়ার, স্টক আর মার্জিন—একই অর্ডারের প্রতিটি ধাপ চোখের সামনে এগোয়।',workflowRun:'ডেমো অর্ডার চালান',workflowWaiting:'অপেক্ষায়',workflowRunning:'চলছে',workflowComplete:'সম্পন্ন',workflowNowLabel:'এখন যা হচ্ছে',workflowNowReady:'ডেমো অর্ডার চালানোর জন্য প্রস্তুত।',workflowNowDone:'অর্ডারের সব ধাপ সম্পন্ন—রেকর্ডও রাখা হয়েছে।',placeOrder:'অর্ডার করুন',workflowDisclaimer:'ডেমো বোঝানোর জন্য নমুনা ডেটা',automationRunner:'অর্ডার অটোমেশন',stepPayment:'পেমেন্ট',stepPaymentTitle:'পেমেন্ট এসেছে',stepOrder:'অর্ডার',stepOrderTitle:'অর্ডার তৈরি হয়েছে',stepCourier:'ডেলিভারি',stepCourierTitle:'কুরিয়ার বুক করুন',bookCourier:'কুরিয়ার বুক করুন',stepBookedTitle:'কুরিয়ার বুকিং হয়েছে',stepPickup:'পিকআপ',stepPickupTitle:'কুরিয়ার পার্সেল নিয়েছে',collected:'পিকআপ সম্পন্ন',stepInventory:'স্টক',stepInventoryTitle:'স্টক কমানো হয়েছে',stepProfit:'মার্জিন',stepProfitTitle:'মার্জিন হিসাব হয়েছে',workflowResult:'অর্ডার সম্পন্ন—এরপর কী হয়েছে, প্রতিটি ধাপই দেখা যাচ্ছে।',workflowResultNote:'মার্জিনের উদাহরণটি ধরে নেয় যে পণ্যের খরচ আগে থেকে সেট করা আছে।',workspaceLabel:'০৩ · ব্যবসার ওয়ার্কস্পেস',workspaceTitle:'ক্রেতার স্টোর আর আপনার কাজ—দুটোই একই সিস্টেমে যুক্ত।',workspaceCopy:'পণ্য, অর্ডার, পেমেন্ট সেটআপ আর ডেলিভারির অবস্থা—সব এক জায়গা থেকে দেখুন ও সামলান। এখানে নমুনা ডেটা দেখানো হচ্ছে।',domainTitle:'নিজের ডোমেইনেই নিজের স্টোর।',domainCopy:'যোগ্য পেইড প্ল্যানে DNS সেটআপ ও যাচাই শেষে কাস্টম ডোমেইন যুক্ত করা যায়।',
+      templatesKicker:'ব্যবসা ভেদে স্টোরও আলাদা',templatesTitle:'ফ্যাশন, বুকিং, হোটেল বা ডিজিটাল পণ্য—সব ব্যবসা একইভাবে বিক্রি করে না।',templatesCopy:'ব্যবসার ধরন বদলে দেখুন। শুধু রং নয়—পেজের কাঠামো, ক্রেতার পথ আর মূল অ্যাকশনও বদলে যায়।',fashionDesc:'ক্যাটালগ + ভ্যারিয়েন্ট',bookingDesc:'সার্ভিস + সময়',hotelDesc:'রুম + খালি থাকা',digitalDesc:'ফাইল + লাইসেন্স',selectedDirection:'যে কাঠামো দেখছেন',directionNote:'ডেমোর কনটেন্ট নমুনা; এখানে মূল বিষয় হলো বিক্রির কাঠামো।',moreStructures:'আরও যেসব ব্যবসায় মানিয়ে যায়',openPreview:'লাইভ প্রিভিউ দেখুন',useTemplate:'এই ডিজাইন দিয়ে শুরু করুন',
+      localKicker:'এখানকার ব্যবসার জন্য',localTitle:'বাংলাদেশে বিক্রি করতে যা লাগে, সেগুলো যেন আলাদা আলাদা জোড়া দিতে না হয়।',localCopy:'পেমেন্ট, কুরিয়ার আর স্টোরফ্রন্ট—বাংলাদেশি ব্যবসায়ীরা যেভাবে কাজ করেন, EZComo সেই কাজের ধারার সাথে মানিয়ে তৈরি।',localPayTitle:'ক্রেতার পরিচিত চেকআউট',localPayCopy:'স্টোরফ্রন্টে bKash, Nagad ও Cash on Delivery দেখাতে পারবেন।',localDeliveryTitle:'অর্ডার থেকেই ডেলিভারি',localDeliveryCopy:'Pathao কনফিগার করা থাকলে merchant API দিয়ে বুকিং করা যায়।',localBrandTitle:'আপনার স্টোর, আপনার ডোমেইন',localBrandCopy:'যোগ্য পেইড প্ল্যানে যাচাই করা কাস্টম ডোমেইন যুক্ত করা যায়।',connectionState:'কোন সংযোগ চালু',connectionTitle:'যেটা চালু নেই, সেটার ওপর যেন ভুল করে নির্ভর না করেন।',available:'চালু করা যাবে',setup:'সেটআপ',payments:'পেমেন্ট',delivery:'ডেলিভারি',storefront:'স্টোরফ্রন্ট',autoConnected:'সংযুক্ত থাকলে অটোমেটেড',storeOption:'স্টোরে দেখানো যাবে',merchantApi:'Merchant API বুকিং',setupAvailable:'সেটআপ করা যাবে',customDomain:'কাস্টম ডোমেইন',eligiblePlans:'যোগ্য পেইড প্ল্যান',responsiveStore:'সব স্ক্রিনে মানানসই',allScreens:'মোবাইল থেকে ডেস্কটপ',
+      calcKicker:'নিজের খরচ মিলিয়ে দেখুন',calcTitle:'হিসাবটা আপনার সংখ্যাতেই হোক।',calcCopy:'এখন যে শতাংশ খরচ হচ্ছে, সেটি আপনার দেওয়া EZComo প্ল্যানের অঙ্কের সাথে তুলনা করুন। আমরা কোনো প্রতিযোগীর ফি ধরে নিচ্ছি না, সেভিংসের প্রতিশ্রুতিও দিচ্ছি না।',calcNote:'এটি শুধু তুলনার উদাহরণ। সিদ্ধান্তের আগে বর্তমান প্ল্যান ও পেমেন্ট/সার্ভিস প্রোভাইডারের চার্জ যাচাই করুন।',monthlySales:'মাসিক বিক্রি',currentCost:'বর্তমান প্ল্যাটফর্ম / ম্যানুয়াল খরচ',planInput:'তুলনার জন্য EZComo প্ল্যানের অঙ্ক',annualDifference:'উদাহরণভিত্তিক বার্ষিক পার্থক্য',
+      pricingKicker:'মূল্য',pricingTitle:'ফ্রি দিয়ে শুরু করুন। ব্যবসা বাড়লে প্রয়োজনমতো আপগ্রেড করুন।',pricingCopy:'কোন প্ল্যানে কী আছে এবং বর্তমান দাম কত—প্ল্যান পেজেই দেখে তারপর সিদ্ধান্ত নিন।',pricingPointStore:'নিজের স্টোর চালু করুন',pricingPointOrders:'অর্ডার গুছিয়ে নিন',pricingPointLocal:'লোকাল পেমেন্ট ও ডেলিভারি যুক্ত করুন',pricingActionNote:'আগে ব্যবহার করে দেখুন, তারপর দরকার হলে পেইড প্ল্যান নিন।',comparePlans:'প্ল্যান ও দাম দেখুন',
+      faqTitle:'DM থেকে নিজের স্টোরে যাওয়ার আগে যে প্রশ্নগুলোর উত্তর জানা দরকার।',faqStart:'শুরু করা',faqPayments:'পেমেন্ট',faqDelivery:'ডেলিভারি',faqDomains:'ডোমেইন',anotherQuestion:'আরও কিছু জানতে চান?',talkSupport:'সাপোর্টে কথা বলুন',
+      closingKicker:'এবার আপনার স্টোর',closingTitle:'ক্রেতা নিজে পণ্য দেখে অর্ডার করুক। আপনি সময় দিন ব্যবসা বড় করতে।',closingCopy:'আপনার ব্যবসার জন্য একটি স্টোরফ্রন্ট বেছে নিন, ফ্রি শুরু করুন, তারপর নিজের ব্র্যান্ডে সাজিয়ে নিন।',browseAgain:'আরও স্টোরফ্রন্ট দেখুন',
+      product:'প্রোডাক্ট',support:'সাপোর্ট',helpCenter:'হেল্প সেন্টার',legal:'আইনি তথ্য',privacy:'প্রাইভেসি',terms:'শর্তাবলি',billing:'বিলিং নীতি',footerTag:'ক্রেতার জন্য সহজ স্টোর। আপনার জন্য গোছানো ব্যবসা।',previewLabel:'ডিজাইন প্রিভিউ · এখানে আপনার আসল স্টোরের কোনো ডেটা বদলাবে না।',stickyText:'DM-এর বদলে ক্রেতাকে নিজের স্টোরে নিতে চান?'
+
     }
   };
 
@@ -106,10 +107,11 @@
       domains:[['Can I use my own domain?','Yes, when custom-domain access is enabled for your store and you have an eligible active paid plan. DNS setup and verification are required.'],['Can I change the storefront later?','Yes. You can change visual presentation without recreating the product catalog from zero.']]
     },
     bn:{
-      start:[['কোড জানা লাগবে?','না। সম্পূর্ণ একটি storefront থেকে শুরু করে visual control দিয়ে স্টোর নিজের মতো করুন।'],['Start free চাপার পর কী হবে?','Account তৈরি করুন, store name ও URL দিন, storefront direction নিশ্চিত করুন, setup শেষ করে merchant workspace-এ যান।'],['Social media-তে বিক্রি চালিয়ে যেতে পারি?','হ্যাঁ। Social channel discovery আনতে পারে, আর EZComo structured storefront ও order path দেয়।']],
-      payments:[['কোন payment method দিতে পারি?','Storefront-এ bKash, Nagad ও cash on delivery support আছে। Supported merchant connection active থাকলে automated bKash checkout পাওয়া যায়।'],['EZComo কি zero gateway fee প্রতিশ্রুতি দেয়?','না। Gateway বা provider fee আপনার merchant arrangement-এর ওপর নির্ভর করে। Launch-এর আগে provider terms ও current plan details দেখুন।']],
-      delivery:[['কোন courier flow active?','Configure করা থাকলে order workflow থেকে Pathao merchant-API booking পাওয়া যায়।'],['অন্য courier কী হবে?','Steadfast, REDX, eCourier ও Paperfly-এর setup flow আছে। Automation-এর ওপর নির্ভর করার আগে store connection state দেখুন।']],
-      domains:[['নিজের domain ব্যবহার করতে পারি?','হ্যাঁ, যদি custom-domain access enabled থাকে এবং eligible active paid plan থাকে। DNS setup ও verification লাগবে।'],['পরে storefront বদলাতে পারি?','হ্যাঁ। Product catalog নতুন করে না বানিয়ে visual presentation বদলানো যায়।']]
+      start:[['কোড জানতে হবে?','না। রেডি একটি স্টোরফ্রন্ট থেকে শুরু করুন, তারপর ভিজ্যুয়াল এডিটরেই নিজের মতো করে সাজান।'],['“ফ্রি শুরু করুন” চাপলে কী হবে?','অ্যাকাউন্ট খুলে স্টোরের নাম ও URL দিন, পছন্দের স্টোরফ্রন্ট বেছে সেটআপ শেষ করুন। এরপর সরাসরি আপনার মার্চেন্ট ওয়ার্কস্পেসে কাজ শুরু করতে পারবেন।'],['Facebook বা Instagram-এ বিক্রি চালিয়ে যেতে পারব?','অবশ্যই। Social media থেকে মানুষ আসবে, আর EZComo-র স্টোরে তারা পণ্য দেখে গোছানোভাবে অর্ডার করতে পারবে।']],
+      payments:[['কোন কোন পেমেন্ট অপশন দিতে পারব?','স্টোরফ্রন্টে bKash, Nagad ও Cash on Delivery রাখা যায়। Supported merchant connection চালু থাকলে automated bKash checkout-ও ব্যবহার করা যায়।'],['EZComo কি gateway fee শূন্য থাকার গ্যারান্টি দেয়?','না। Gateway বা provider charge আপনার merchant arrangement-এর ওপর নির্ভর করে। চালু করার আগে provider-এর শর্ত ও বর্তমান প্ল্যানের তথ্য দেখে নিন।']],
+      delivery:[['কোন কুরিয়ার অটোমেশন এখন কাজ করে?','Pathao কনফিগার করা থাকলে অর্ডার ওয়ার্কফ্লো থেকেই merchant API booking করা যায়।'],['অন্য কুরিয়ার ব্যবহার করতে চাইলে?','Steadfast, REDX, eCourier ও Paperfly-এর জন্য setup flow আছে। Automation-এর ওপর নির্ভর করার আগে আপনার স্টোরে কোন connection চালু আছে দেখে নিন।']],
+      domains:[['নিজের ডোমেইন ব্যবহার করতে পারব?','হ্যাঁ। আপনার স্টোরে custom-domain access চালু থাকতে হবে এবং যোগ্য active paid plan থাকতে হবে। এরপর DNS setup ও verification সম্পন্ন করতে হবে।'],['পরে স্টোরের ডিজাইন বদলানো যাবে?','হ্যাঁ। পণ্যের ক্যাটালগ নতুন করে না বানিয়েই স্টোরফ্রন্টের ডিজাইন ও উপস্থাপন বদলাতে পারবেন।']]
+
     }
   };
 
@@ -120,7 +122,15 @@
     $$('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(i18n[lang][key])el.textContent=i18n[lang][key]});
     $$('[data-i18n-html]').forEach(el=>{const key=el.dataset.i18nHtml;if(i18n[lang][key])el.innerHTML=i18n[lang][key]});
     const toggle=$('#langToggle'); if(toggle){toggle.querySelectorAll('span').forEach((el,i)=>el.classList.toggle('active',(lang==='en'&&i===0)||(lang==='bn'&&i===1))); toggle.querySelectorAll('span').forEach((el,i)=>el.style.color=((lang==='en'&&i===0)||(lang==='bn'&&i===1))?'var(--ink)':'var(--muted)');}
-    renderFaq(); updateTemplateText(); window.__syncEditor?.(); window.__syncWorkflowLanguage?.();
+    renderFaq(); updateTemplateText();
+    const activeHeroData=templates[$('.store-tab.active')?.dataset.template||'threads']||templates.threads;
+    if($('#heroStoreEyebrow')) $('#heroStoreEyebrow').textContent=lang==='bn'?(activeHeroData.bnEyebrow||activeHeroData.eyebrow):activeHeroData.eyebrow;
+    if($('#visualHeadline')) $('#visualHeadline').textContent=lang==='bn'?(activeHeroData.bnVisual||activeHeroData.visual):activeHeroData.visual;
+    if($('#heroStoreBody')) $('#heroStoreBody').textContent=lang==='bn'?(activeHeroData.bnBody||activeHeroData.body):activeHeroData.body;
+    if($('#heroStoreCta')) $('#heroStoreCta').textContent=lang==='bn'?(activeHeroData.bnCta||activeHeroData.cta):activeHeroData.cta;
+    const heroSecondary=$('.storefront-cta-row span'); if(heroSecondary) heroSecondary.textContent=lang==='bn'?(activeHeroData.bnSecondary||activeHeroData.secondary):activeHeroData.secondary;
+    if($('#heroFeaturedTitle')) $('#heroFeaturedTitle').textContent=lang==='bn'?(activeHeroData.bnFeatured||activeHeroData.featured):activeHeroData.featured;
+    window.__syncEditor?.(); window.__syncWorkflowLanguage?.();
   }
 
   function updateSignup(){
@@ -148,12 +158,12 @@
     }
     const title=$('#heroWindowTitle'); if(title) title.textContent=data.name;
     if($('#heroStoreBrand')) $('#heroStoreBrand').textContent=data.brand;
-    if($('#heroStoreEyebrow')) $('#heroStoreEyebrow').textContent=data.eyebrow;
-    if($('#visualHeadline')) $('#visualHeadline').textContent=data.visual;
-    if($('#heroStoreBody')) $('#heroStoreBody').textContent=data.body;
-    if($('#heroStoreCta')) $('#heroStoreCta').textContent=data.cta;
-    const heroSecondary=$('.storefront-cta-row span'); if(heroSecondary) heroSecondary.textContent=data.secondary;
-    if($('#heroFeaturedTitle')) $('#heroFeaturedTitle').textContent=data.featured;
+    if($('#heroStoreEyebrow')) $('#heroStoreEyebrow').textContent=lang==='bn'?(data.bnEyebrow||data.eyebrow):data.eyebrow;
+    if($('#visualHeadline')) $('#visualHeadline').textContent=lang==='bn'?(data.bnVisual||data.visual):data.visual;
+    if($('#heroStoreBody')) $('#heroStoreBody').textContent=lang==='bn'?(data.bnBody||data.body):data.body;
+    if($('#heroStoreCta')) $('#heroStoreCta').textContent=lang==='bn'?(data.bnCta||data.cta):data.cta;
+    const heroSecondary=$('.storefront-cta-row span'); if(heroSecondary) heroSecondary.textContent=lang==='bn'?(data.bnSecondary||data.secondary):data.secondary;
+    if($('#heroFeaturedTitle')) $('#heroFeaturedTitle').textContent=lang==='bn'?(data.bnFeatured||data.featured):data.featured;
     data.products.forEach((product,index)=>{
       const n=index+1;
       const name=$(`#heroProduct${n}Name`),price=$(`#heroProduct${n}Price`);
@@ -174,10 +184,10 @@
     $$('[data-direction-panel]').forEach(panel=>panel.classList.toggle('active',panel.dataset.directionPanel===id));
     if($('#templateTitle')) $('#templateTitle').textContent=data.name;
     if($('#templateDescription')) $('#templateDescription').textContent=lang==='bn'?data.bn:data.desc;
-    if($('#templateLabel')) $('#templateLabel').textContent=`${data.name} · structure`;
-    if($('#directionModel')) $('#directionModel').textContent=data.model;
-    if($('#directionFlow')) $('#directionFlow').textContent=data.flow;
-    if($('#directionBlocks')) $('#directionBlocks').textContent=data.blocks;
+    if($('#templateLabel')) $('#templateLabel').textContent=lang==='bn'?`${data.name} · স্টোরের ধরন`:`${data.name} · structure`;
+    if($('#directionModel')) $('#directionModel').textContent=lang==='bn'?(data.bnModel||data.model):data.model;
+    if($('#directionFlow')) $('#directionFlow').textContent=lang==='bn'?(data.bnFlow||data.flow):data.flow;
+    if($('#directionBlocks')) $('#directionBlocks').textContent=lang==='bn'?(data.bnBlocks||data.blocks):data.blocks;
     const index=Object.keys(directions).indexOf(id)+1;
     if($('#templateCount')) $('#templateCount').textContent=String(index).padStart(2,'0');
     updateSignup();
@@ -186,6 +196,9 @@
   function updateTemplateText(){
     const data=directions[directionSelected]||directions.fashion;
     if($('#templateDescription')) $('#templateDescription').textContent=lang==='bn'?data.bn:data.desc;
+    if($('#directionModel')) $('#directionModel').textContent=lang==='bn'?(data.bnModel||data.model):data.model;
+    if($('#directionFlow')) $('#directionFlow').textContent=lang==='bn'?(data.bnFlow||data.flow):data.flow;
+    if($('#directionBlocks')) $('#directionBlocks').textContent=lang==='bn'?(data.bnBlocks||data.blocks):data.blocks;
     updateSignup();
   }
 
@@ -552,7 +565,7 @@
   let activeWorkflowStep=null;
   const workflowNarration={
     en:{payment:'Receiving customer payment…',order:'Creating order #1051 in the workspace…',courier:'Booking Pathao pickup…',booked:'Saving courier booking PX-84721…',pickup:'Tracking courier pickup…',inventory:'Reducing Studio Tee stock 18 → 17…',profit:'Calculating order margin…'},
-    bn:{payment:'Customer payment গ্রহণ করা হচ্ছে…',order:'Workspace-এ order #1051 তৈরি হচ্ছে…',courier:'Pathao pickup বুক করা হচ্ছে…',booked:'Courier booking PX-84721 save হচ্ছে…',pickup:'Courier pickup track করা হচ্ছে…',inventory:'Studio Tee stock 18 → 17 করা হচ্ছে…',profit:'Order margin হিসাব করা হচ্ছে…'}
+    bn:{payment:'পেমেন্ট গ্রহণ করা হচ্ছে…',order:'ওয়ার্কস্পেসে #1051 অর্ডার তৈরি হচ্ছে…',courier:'Pathao-তে পিকআপ বুক করা হচ্ছে…',booked:'PX-84721 কুরিয়ার বুকিং সংরক্ষণ করা হচ্ছে…',pickup:'কুরিয়ারের পিকআপ ট্র্যাক করা হচ্ছে…',inventory:'Studio Tee-এর স্টক ১৮ থেকে ১৭ করা হচ্ছে…',profit:'অর্ডারের মার্জিন হিসাব করা হচ্ছে…'}
   };
   const syncWorkflowNow=()=>{
     if(!workflowNow)return;
