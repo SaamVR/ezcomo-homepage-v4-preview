@@ -643,3 +643,72 @@ body.v6-mature .sticky-cta{background:color-mix(in srgb,#20231f 93%,transparent)
   body.v6-mature .product-story-card{border-radius:16px}
   body.v6-mature .template-showcase{background:transparent}
 }
+
+/* --- V6.1 storefront structures --- */
+.template-lede{max-width:720px;margin:16px 0 0;color:#8b9187;font-size:14px;line-height:1.65}
+.direction-stage{position:relative;min-height:520px;background:#e9e2d8;color:#171916;overflow:hidden}
+.direction-preview{display:none;min-height:520px;background:#eee8df;color:#171916}
+.direction-preview.active{display:block;animation:directionIn .42s cubic-bezier(.2,.8,.2,1)}
+.direction-nav{height:54px;display:flex;align-items:center;gap:26px;padding:0 24px;border-bottom:1px solid rgba(23,25,22,.13);font-size:8px;text-transform:uppercase;letter-spacing:.09em}
+.direction-nav>b{font-size:12px;letter-spacing:.16em;margin-right:auto}.direction-nav>div{display:flex;gap:18px}.direction-nav>em{font-style:normal;font-size:8px;font-weight:800}
+.direction-data{display:grid;grid-template-columns:.8fr 1fr 1.15fr;border:1px solid #b7afa4;border-top:0;background:#ddd5ca;color:#171916}
+.direction-data>div{padding:14px 16px;min-width:0}.direction-data>div+div{border-left:1px solid #b7afa4}.direction-data span,.direction-data strong{display:block}.direction-data span{font:750 7px/1.2 monospace;letter-spacing:.1em;color:#777b72}.direction-data strong{margin-top:5px;font-size:10px;line-height:1.45}
+.direction-note{display:block;margin-top:8px;color:#777b72;font-size:9px}
+
+/* Fashion structure */
+.direction-fashion{background:#eee7dc}
+.fashion-hero{height:280px;display:grid;grid-template-columns:.92fr 1.08fr;align-items:center}
+.fashion-copy{padding:34px 36px}.fashion-copy small,.booking-intro>small,.hotel-hero small,.digital-hero small{font:800 7px/1 monospace;letter-spacing:.15em;color:#7a766e}
+.fashion-copy h3,.booking-intro h3,.hotel-hero h3,.digital-hero h3{margin:11px 0 12px;font-size:34px;line-height:.92;letter-spacing:-.055em}
+.fashion-copy p,.hotel-hero p,.digital-hero p{margin:0 0 18px;max-width:340px;color:#676960;font-size:9px;line-height:1.65}
+.fashion-copy button,.digital-actions button{border:0;background:#33483d;color:#f0ebe2;padding:10px 14px;border-radius:2px;font-size:8px;font-weight:800}
+.fashion-art{position:relative;height:100%;background:#c6b6a6;overflow:hidden}
+.fashion-art i{position:absolute;bottom:-22px;border-radius:44% 44% 8px 8px;background:#33483d}
+.fashion-art i:nth-child(1){width:32%;height:78%;left:10%;transform:rotate(-6deg)}.fashion-art i:nth-child(2){width:31%;height:67%;left:38%;background:#9b5845;transform:rotate(4deg)}.fashion-art i:nth-child(3){width:25%;height:57%;right:7%;background:#6c7369;transform:rotate(-3deg)}
+.fashion-art b{position:absolute;right:7%;top:18px;text-align:right;font:800 8px/1.25 monospace;letter-spacing:.08em;color:#f0ebe2}
+.fashion-products{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#c8c0b5;border-top:1px solid #c8c0b5}
+.fashion-products article{background:#eee7dc;padding:13px 14px 15px}.fashion-products b,.fashion-products span{display:block}.fashion-products b{font-size:9px;margin-top:8px}.fashion-products span{margin-top:2px;color:#74776f;font-size:7px}
+.fashion-product-art{height:82px;background:#d7d0c6;position:relative;overflow:hidden}.fashion-product-art:before{content:"";position:absolute;inset:14px 31%;background:#33483d;border-radius:14px 14px 4px 4px}.fp-two:before{inset:10px 34% 5px;background:#6d716a;border-radius:10px}.fp-three:before{inset:18px 27% 8px;background:#9b5845;border-radius:3px 3px 10px 10px}
+
+/* Booking structure */
+.direction-booking{background:#d9d6cc}
+.booking-nav{background:#26362f;color:#f0ebe2;border-color:#405148}
+.booking-layout{display:grid;grid-template-columns:.92fr 1.08fr;min-height:466px}
+.booking-intro{padding:42px 38px;background:#e8e1d8}.booking-intro h3{font-size:36px}
+.service-list{display:grid;gap:7px;margin-top:28px}.service-list button{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 12px;border:1px solid #c2b9ae;background:transparent;text-align:left;color:#171916}.service-list button.active{background:#33483d;color:#f0ebe2;border-color:#33483d}.service-list b,.service-list span{display:block}.service-list b{font-size:9px}.service-list span{font-size:7px;opacity:.68}
+.booking-card{margin:28px;background:#f4eee5;border:1px solid #bdb4a8;padding:22px;box-shadow:0 18px 45px rgba(23,25,22,.09)}
+.booking-card-head,.booking-month{display:flex;align-items:center;justify-content:space-between}.booking-card-head span small,.booking-card-head span b{display:block}.booking-card-head small,.slot-label{font:750 6.5px/1 monospace;letter-spacing:.1em;color:#7b7d74}.booking-card-head b{font-size:13px;margin-top:4px}.booking-card-head em{font-style:normal;font-size:8px;color:#70746c}
+.booking-month{margin:22px 0 12px;padding-top:14px;border-top:1px solid #d2c9bd}.booking-month b{font-size:9px}.booking-month button{border:0;background:transparent;font-size:14px}
+.booking-days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.booking-days span{font:700 6px monospace;text-align:center;color:#8a8c84}.booking-days i{height:25px;display:grid;place-items:center;font-style:normal;font-size:7px;border-radius:50%}.booking-days i.chosen{background:#9b5845;color:#fff}
+.slot-label{display:block;margin:17px 0 8px}.booking-slots{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.booking-slots button{height:28px;border:1px solid #c5bcb0;background:#eee7de;font-size:7px}.booking-slots button.active{background:#33483d;color:#f0ebe2;border-color:#33483d}
+.booking-cta{width:100%;height:36px;margin-top:12px;border:0;background:#9b5845;color:#fff;font-size:8px;font-weight:800}
+
+/* Hotel structure */
+.direction-hotel{background:#d8d0c3}
+.hotel-nav{background:#1f2925;color:#f0ebe2;border-color:#3b4641}
+.hotel-hero{height:205px;display:grid;grid-template-columns:1fr .7fr;align-items:center;padding:28px 32px;background:#b7aa99}.hotel-hero h3{font-size:35px}.hotel-hero p{color:#494f49;margin-bottom:0}
+.hotel-mark{justify-self:end;width:142px;height:142px;border-radius:50%;border:1px solid rgba(23,25,22,.28);display:grid;place-items:center;position:relative}.hotel-mark i{position:absolute;width:75px;height:75px;border:1px solid rgba(23,25,22,.28);transform:rotate(45deg)}.hotel-mark span{text-align:center;font:800 9px/1.3 monospace;letter-spacing:.12em}
+.hotel-search{display:grid;grid-template-columns:1fr 1fr .9fr auto;align-items:stretch;background:#f2ece3;border-bottom:1px solid #bcb3a7}.hotel-search label{padding:13px 16px;border-right:1px solid #c8bfb3}.hotel-search span,.hotel-search b{display:block}.hotel-search span{font:700 6px monospace;color:#85867e;letter-spacing:.09em}.hotel-search b{font-size:9px;margin-top:4px}.hotel-search button{border:0;background:#33483d;color:#f0ebe2;padding:0 20px;font-size:8px;font-weight:800}
+.hotel-rooms{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#c6bdb1}.hotel-rooms article{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:14px;background:#e9e2d8}.room-art{position:relative;height:96px;background:#b7a996;overflow:hidden}.room-art i:first-child{position:absolute;left:12px;right:12px;bottom:13px;height:40px;background:#ddd5ca}.room-art i:last-child{position:absolute;left:25px;right:25px;bottom:27px;height:24px;background:#72786e}.room-two{background:#9b8878}.room-two i:last-child{background:#33483d}
+.hotel-rooms small,.hotel-rooms b,.hotel-rooms span,.hotel-rooms strong{display:block}.hotel-rooms small{font:700 6px monospace;color:#777b73}.hotel-rooms b{font-size:10px;margin:5px 0 3px}.hotel-rooms span{font-size:7px;color:#72766e}.hotel-rooms strong{font-size:10px;margin-top:12px}.hotel-rooms strong em{font-style:normal;font-weight:500;font-size:7px;color:#777b73}
+
+/* Digital structure */
+.direction-digital{background:#e6e0d8}
+.digital-nav{background:#262925;color:#f0ebe2;border-color:#3d403a}
+.digital-hero{height:278px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;padding:34px;background:#d9d1c5}.digital-hero h3{font-size:36px}.digital-actions{display:flex;align-items:center;gap:12px}.digital-actions span{font-size:7px;color:#656a61}
+.digital-stack{position:relative;height:195px}.digital-stack i{position:absolute;display:grid;place-items:center;width:112px;height:142px;border:1px solid #6e746c;background:#f0ebe2;font:800 12px monospace;font-style:normal;box-shadow:0 16px 30px rgba(23,25,22,.08)}.digital-stack i:nth-child(1){right:85px;top:25px;transform:rotate(-8deg)}.digital-stack i:nth-child(2){right:45px;top:18px;transform:rotate(4deg);background:#788379;color:#fff}.digital-stack i:nth-child(3){right:0;top:37px;transform:rotate(10deg);background:#9b5845;color:#fff}.digital-stack b{position:absolute;right:8px;bottom:3px;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;text-align:center;background:#33483d;color:#f0ebe2;font-size:17px;line-height:.7}.digital-stack b small{font-size:6px;letter-spacing:.12em}
+.digital-library{display:grid}.digital-library article{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:10px;padding:12px 20px;border-top:1px solid #c3baae}.digital-library article>span{font:700 7px monospace;color:#9b5845}.digital-library b,.digital-library small{display:block}.digital-library b{font-size:9px}.digital-library small{font-size:7px;color:#74786f;margin-top:2px}.digital-library em{font-style:normal;font-size:7px;color:#5e645d}
+
+@keyframes directionIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+
+@media(max-width:700px){
+  .template-lede{font-size:12px}
+  .direction-stage,.direction-preview{min-height:610px}
+  .direction-nav{height:48px;padding:0 14px}.direction-nav>div{display:none}
+  .direction-data{grid-template-columns:1fr}.direction-data>div+div{border-left:0;border-top:1px solid #b7afa4}
+  .fashion-hero{height:310px;grid-template-columns:1fr}.fashion-copy{padding:25px 22px}.fashion-copy h3{font-size:30px}.fashion-art{display:none}.fashion-products{grid-template-columns:1fr 1fr}.fashion-products article:last-child{display:none}.fashion-product-art{height:105px}
+  .booking-layout{grid-template-columns:1fr}.booking-intro{padding:24px 20px}.booking-intro h3{font-size:30px}.service-list{margin-top:18px}.service-list button:nth-child(3){display:none}.booking-card{margin:14px 20px 20px}
+  .hotel-hero{height:230px;grid-template-columns:1fr;padding:24px 20px}.hotel-hero h3{font-size:30px}.hotel-mark{display:none}.hotel-search{grid-template-columns:1fr 1fr}.hotel-search label:nth-child(3){border-top:1px solid #c8bfb3}.hotel-search button{min-height:48px}.hotel-rooms{grid-template-columns:1fr}.hotel-rooms article:nth-child(2){display:none}.hotel-rooms article{grid-template-columns:100px 1fr}
+  .digital-hero{height:340px;grid-template-columns:1fr;padding:25px 20px}.digital-hero h3{font-size:30px}.digital-stack{height:110px}.digital-stack i{width:74px;height:92px}.digital-stack i:nth-child(1){left:10px;right:auto;top:8px}.digital-stack i:nth-child(2){left:70px;right:auto;top:4px}.digital-stack i:nth-child(3){left:130px;right:auto;top:14px}.digital-stack b{right:2px;bottom:2px}
+  .digital-library article{padding-inline:15px}
+}
