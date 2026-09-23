@@ -712,3 +712,26 @@ body.v6-mature .sticky-cta{background:color-mix(in srgb,#20231f 93%,transparent)
   .digital-hero{height:340px;grid-template-columns:1fr;padding:25px 20px}.digital-hero h3{font-size:30px}.digital-stack{height:110px}.digital-stack i{width:74px;height:92px}.digital-stack i:nth-child(1){left:10px;right:auto;top:8px}.digital-stack i:nth-child(2){left:70px;right:auto;top:4px}.digital-stack i:nth-child(3){left:130px;right:auto;top:14px}.digital-stack b{right:2px;bottom:2px}
   .digital-library article{padding-inline:15px}
 }
+
+/* --- V6.2 slower workflow + live section reorder --- */
+.section-drag-grip{width:13px;height:18px;display:grid;place-items:center;flex:0 0 13px;color:#6f8177;font-size:10px;line-height:1;letter-spacing:-2px;cursor:grab;user-select:none;touch-action:none;opacity:.5;transition:opacity .18s,color .18s,transform .18s}
+.editor-block-btn{grid-template-columns:13px 15px minmax(0,1fr) auto}
+.editor-block-btn:hover .section-drag-grip,.editor-block-btn.active .section-drag-grip{opacity:.95;color:#ae9461}
+.editor-block-btn.reordering{z-index:5;opacity:.76;border-color:#8e755f!important;background:#322f28!important;box-shadow:0 10px 22px rgba(0,0,0,.18);cursor:grabbing}
+.editor-block-btn.reordering .section-drag-grip{color:#d1b57a;opacity:1;transform:scale(1.08)}
+.editor-palette.is-reordering .editor-block-btn:not(.reordering){transition:transform .16s ease,background .16s ease,border-color .16s ease}
+.editor-block-btn.reorder-settled{animation:sectionOrderSettle .38s cubic-bezier(.2,.8,.2,1)}
+@keyframes sectionOrderSettle{0%{transform:scale(.97);background:#3a342a}65%{transform:scale(1.02)}100%{transform:none}}
+
+.workflow-step.active:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent-strong);transform:scaleX(0);transform-origin:left center;opacity:.72;animation:workflowReadProgress var(--workflow-hold,3600ms) linear both}
+body.v6-mature .workflow-step.active:after{background:var(--clay-light)}
+@keyframes workflowReadProgress{to{transform:scaleX(1)}}
+
+@media(max-width:700px){
+  .editor-block-btn{grid-template-columns:13px 12px minmax(70px,1fr) auto}
+  .section-drag-grip{height:28px}
+}
+@media(prefers-reduced-motion:reduce){
+  .editor-block-btn.reorder-settled,.workflow-step.active:after{animation:none!important}
+  .workflow-step.active:after{display:none}
+}
