@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07110e">
+  <meta name="description" content="EZComo helps Bangladeshi merchants launch branded online stores and manage products, orders, payments and delivery from one workspace.">
+  <title>EZComo — Build your store. Run the business behind it.</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="noise" aria-hidden="true"></div>
+<div class="announcement" id="announcement">
+  <div class="shell announcement-inner">
+    <span data-i18n="announcement">Built for Bangladesh commerce — bKash, Nagad, COD and Pathao workflows.</span>
+    <a href="#templates" data-i18n="announcementCta">Explore storefronts</a>
+    <button type="button" id="announcementClose" aria-label="Dismiss announcement">×</button>
+  </div>
+</div>
+
+<header class="site-nav" id="top">
+  <div class="shell nav-inner">
+    <a class="brand" href="#top" aria-label="EZComo home"><span class="brand-symbol">E</span><span>EZCOMO</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#why" data-i18n="navWhy">Why EZComo</a>
+      <a href="#features" data-i18n="navFeatures">Features</a>
+      <a href="#templates" data-i18n="navTemplates">Templates</a>
+      <a href="#integrations" data-i18n="navIntegrations">Integrations</a>
+      <a href="#pricing" data-i18n="navPricing">Pricing</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-control" id="themeToggle" type="button" aria-label="Switch theme">◐</button>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language"><span>EN</span><span>বাংলা</span></button>
+      <a class="nav-login" href="https://ezcomo.shop/login" data-i18n="login">Log in</a>
+      <a class="btn btn-primary nav-cta" data-signup href="https://ezcomo.shop/signup?template=threads" data-i18n="startFree">Start free</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="#why" data-i18n="navWhy">Why EZComo</a><a href="#features" data-i18n="navFeatures">Features</a><a href="#templates" data-i18n="navTemplates">Templates</a><a href="#integrations" data-i18n="navIntegrations">Integrations</a><a href="#pricing" data-i18n="navPricing">Pricing</a><a href="https://ezcomo.shop/login" data-i18n="login">Log in</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="hero">
+  <div class="ambient a1" aria-hidden="true"></div><div class="ambient a2" aria-hidden="true"></div><div class="hero-grid-lines" aria-hidden="true"></div>
+  <div class="shell hero-grid">
+    <div class="hero-copy reveal is-visible">
+      <div class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">Commerce built around Bangladesh</span></div>
+      <h1 data-i18n-html="heroTitle">Stop losing sales <em>inside the DMs.</em></h1>
+      <p class="hero-lede" data-i18n="heroLede">Give customers a branded store they can browse on their own, while products, orders, payments and delivery stay connected behind it.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-large" data-signup href="https://ezcomo.shop/signup?template=threads"><span data-i18n="createStore">Create free store</span><b>→</b></a>
+        <a class="btn btn-ghost btn-large" href="#templates"><span data-i18n="seeStores">See storefronts</span><b>↓</b></a>
+      </div>
+      <div class="hero-trust" aria-label="Product assurances">
+        <span data-i18n="trustNoCode">No code required</span><i></i><span data-i18n="trustTemplate">Start from a template</span><i></i><span data-i18n="trustLocal">Local commerce workflows</span>
+      </div>
+    </div>
+
+    <div class="hero-stage reveal is-visible" id="heroStage">
+      <div class="stage-glow" aria-hidden="true"></div>
+      <div class="store-window">
+        <div class="window-top">
+          <div class="window-lights"><i></i><i></i><i></i></div>
+          <span id="heroWindowTitle">Threads · live preview</span>
+          <span class="window-state"><i></i> STOREFRONT</span>
+        </div>
+        <div class="hero-preview-frame">
+          <img id="heroStoreImage" src="./assets/threads.webp" width="900" height="598" fetchpriority="high" alt="Threads storefront preview">
+          <div class="preview-sheen" aria-hidden="true"></div>
+        </div>
+        <div class="store-tabs" role="tablist" aria-label="Choose storefront preview">
+          <button class="store-tab active" type="button" data-template="threads" aria-selected="true">Threads</button>
+          <button class="store-tab" type="button" data-template="electronics" aria-selected="false">Electronics</button>
+          <button class="store-tab" type="button" data-template="crafts" aria-selected="false">Crafts</button>
+          <button class="store-tab" type="button" data-template="food" aria-selected="false">Food</button>
+        </div>
+      </div>
+      <div class="float-state fs-payment">
+        <span class="float-label" data-i18n="paymentReady">PAYMENT OPTIONS</span>
+        <strong>bKash · Nagad · COD</strong>
+        <small data-i18n="configuredIn">Configured in your workspace</small>
+      </div>
+      <div class="float-state fs-order">
+        <span class="state-icon">✓</span>
+        <div><span class="float-label" data-i18n="structuredOrder">STRUCTURED ORDER</span><strong data-i18n="readyFulfilment">Ready for fulfilment</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proof-rail" aria-label="EZComo commerce capabilities">
+  <div class="shell proof-rail-inner">
+    <span class="proof-intro" data-i18n="proofIntro">One storefront. The work behind it, too.</span>
+    <div class="proof-marquee"><div class="proof-track">
+      <span>bKash</span><span>Nagad</span><span>Cash on delivery</span><span>Pathao</span><span>Custom domain</span><span>Responsive storefront</span>
+      <span aria-hidden="true">bKash</span><span aria-hidden="true">Nagad</span><span aria-hidden="true">Cash on delivery</span><span aria-hidden="true">Pathao</span><span aria-hidden="true">Custom domain</span><span aria-hidden="true">Responsive storefront</span>
+    </div></div>
+  </div>
+</section>
+
+<section class="section bangladesh" id="why">
+  <div class="shell">
+    <div class="section-heading reveal">
+      <p class="kicker" data-i18n="bdKicker">Built for Bangladesh</p>
+      <h2 data-i18n-html="bdTitle">Your business shouldn't need a <em>foreign workaround.</em></h2>
+      <p data-i18n="bdCopy">EZComo is designed around the payment habits, delivery workflows and storefront expectations local merchants already work with.</p>
+    </div>
+    <div class="bd-grid">
+      <article class="bd-card reveal"><span>01</span><h3 data-i18n="bdPay">Sell in familiar ways</h3><p data-i18n="bdPayCopy">Offer bKash, Nagad and cash on delivery in the storefront.</p></article>
+      <article class="bd-card reveal"><span>02</span><h3 data-i18n="bdDeliver">Move orders into delivery</h3><p data-i18n="bdDeliverCopy">Pathao merchant-API booking is available when configured.</p></article>
+      <article class="bd-card reveal"><span>03</span><h3 data-i18n="bdBrand">Own the customer experience</h3><p data-i18n="bdBrandCopy">Use a branded storefront and connect an eligible custom domain.</p></article>
+      <article class="bd-card reveal"><span>04</span><h3 data-i18n="bdTogether">Keep operations together</h3><p data-i18n="bdTogetherCopy">Products, orders, store settings and selling setup live in one workspace.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section contrast-section">
+  <div class="shell">
+    <div class="section-heading split reveal">
+      <div><p class="kicker" data-i18n="painKicker">The shift</p><h2 data-i18n="painTitle">From message chaos to a store customers can use.</h2></div>
+      <p data-i18n="painIntro">Social channels are great for discovery. They become painful when every product question, order detail and delivery update has to be handled manually.</p>
+    </div>
+    <div class="contrast-stage">
+      <article class="chaos-card reveal">
+        <div class="contrast-top"><span class="mini-label" data-i18n="beforeLabel">BEFORE · DMs</span><i class="alert-dot"></i></div>
+        <div class="chat-stack">
+          <div class="bubble left" data-i18n="chat1">Price please?</div>
+          <div class="bubble right" data-i18n="chat2">Which size is available?</div>
+          <div class="bubble left" data-i18n="chat3">Do you have COD?</div>
+          <div class="bubble right" data-i18n="chat4">Where is my order?</div>
+        </div>
+        <div class="chaos-foot" data-i18n="chaosFoot">Important order details scattered across conversations.</div>
+      </article>
+      <div class="transform-arrow" aria-hidden="true"><span>→</span></div>
+      <article class="system-card reveal">
+        <div class="contrast-top"><span class="mini-label" data-i18n="afterLabel">AFTER · EZCOMO</span><i class="healthy-dot"></i></div>
+        <div class="system-list">
+          <div><span>01</span><b data-i18n="system1">Product details visible</b><em data-i18n="done">ready</em></div>
+          <div><span>02</span><b data-i18n="system2">Order captured</b><em data-i18n="done">ready</em></div>
+          <div><span>03</span><b data-i18n="system3">Payment method recorded</b><em data-i18n="done">ready</em></div>
+          <div><span>04</span><b data-i18n="system4">Fulfilment workflow</b><em data-i18n="done">ready</em></div>
+        </div>
+        <div class="system-foot"><span class="pulse-dot"></span><span data-i18n="systemFoot">One structured merchant workflow</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section process-section">
+  <div class="shell">
+    <div class="section-heading centered reveal"><p class="kicker" data-i18n="howKicker">How it works</p><h2 data-i18n="howTitle">Three steps. No blank-canvas anxiety.</h2><p data-i18n="howCopy">Start from something complete, make it yours, then run the business from the same system.</p></div>
+    <div class="process-line reveal">
+      <article><span class="process-num">01</span><div class="process-icon">▦</div><h3 data-i18n="step1">Pick a storefront</h3><p data-i18n="step1Copy">Choose a starting point shaped for the way your category sells.</p></article>
+      <i></i>
+      <article><span class="process-num">02</span><div class="process-icon">◫</div><h3 data-i18n="step2">Add your business</h3><p data-i18n="step2Copy">Products, imagery, brand details, payment options and delivery setup.</p></article>
+      <i></i>
+      <article><span class="process-num">03</span><div class="process-icon">↗</div><h3 data-i18n="step3">Publish and manage</h3><p data-i18n="step3Copy">Receive structured orders and manage the work behind each sale.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section features-section" id="features">
+  <div class="shell">
+    <div class="section-heading split reveal"><div><p class="kicker" data-i18n="featuresKicker">Commerce workspace</p><h2 data-i18n="featuresTitle">Beautiful outside. Operational underneath.</h2></div><p data-i18n="featuresCopy">The storefront is only one surface. The same system keeps the products, orders, payment setup and delivery work that power it.</p></div>
+    <div class="bento">
+      <article class="bento-card bento-hero reveal" data-spotlight>
+        <div class="bento-copy"><span class="mini-label">STOREFRONT BUILDER</span><h3 data-i18n="builderTitle">Make the storefront feel like your brand.</h3><p data-i18n="builderCopy">Start from a complete design and adjust theme, sections and presentation without touching code.</p></div>
+        <div class="product-shot"><img src="./assets/theme-controls.webp" loading="lazy" width="1176" height="641" alt="EZComo theme controls"></div>
+      </article>
+      <article class="bento-card bento-pay reveal" data-spotlight><span class="bento-mark">৳</span><h3 data-i18n="payTitle">Payments that make sense locally.</h3><p data-i18n="payCopy">bKash, Nagad and cash-on-delivery options, with automated bKash checkout available when connected.</p><div class="chip-row"><span>bKash</span><span>Nagad</span><span>COD</span></div></article>
+      <article class="bento-card bento-delivery reveal" data-spotlight><span class="bento-mark">→</span><h3 data-i18n="deliveryTitle">Orders that move into fulfilment.</h3><p data-i18n="deliveryCopy">Book Pathao from the order workflow when configured, with additional courier setup paths available.</p><div class="status-row"><i></i><span>Pathao API</span><em data-i18n="active">active</em></div></article>
+      <article class="bento-card bento-admin reveal" data-spotlight>
+        <div class="bento-copy"><span class="mini-label">MERCHANT WORKSPACE</span><h3 data-i18n="adminTitle">The next jobs that need attention, together.</h3><p data-i18n="adminCopy">Storefront, store profile, payments and recent orders stay visible in the same operating surface.</p></div>
+        <div class="product-shot"><img src="./assets/admin-dashboard.webp" loading="lazy" width="1176" height="641" alt="EZComo merchant dashboard"></div>
+      </article>
+      <article class="bento-card bento-domain reveal" data-spotlight><span class="bento-mark">◎</span><h3 data-i18n="domainTitle">Your own branded domain.</h3><p data-i18n="domainCopy">Eligible paid plans can connect a custom domain after DNS setup and verification.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section templates-section" id="templates">
+  <div class="shell">
+    <div class="template-heading reveal"><div><p class="kicker" data-i18n="templatesKicker">Storefront directions</p><h2 data-i18n="templatesTitle">Same platform. Different selling personality.</h2></div><div class="template-count"><span id="templateCount">01</span><i></i><span>04</span></div></div>
+    <div class="template-showcase reveal">
+      <div class="template-nav" role="tablist" aria-label="Storefront templates">
+        <button type="button" class="template-option active" data-template-full="threads" aria-selected="true"><span>01</span><div><b>Threads</b><small data-i18n="threadsDesc">Editorial apparel</small></div></button>
+        <button type="button" class="template-option" data-template-full="electronics" aria-selected="false"><span>02</span><div><b>Electronics</b><small data-i18n="electronicsDesc">Specification-led</small></div></button>
+        <button type="button" class="template-option" data-template-full="crafts" aria-selected="false"><span>03</span><div><b>Crafts</b><small data-i18n="craftsDesc">Maker storytelling</small></div></button>
+        <button type="button" class="template-option" data-template-full="food" aria-selected="false"><span>04</span><div><b>Food</b><small data-i18n="foodDesc">Menu-first commerce</small></div></button>
+      </div>
+      <div class="template-canvas">
+        <div class="template-browser">
+          <div class="window-top"><div class="window-lights"><i></i><i></i><i></i></div><span id="templateLabel">Threads · template</span><span class="window-state"><i></i> PREVIEW</span></div>
+          <div class="template-image-wrap"><img id="templateImage" src="./assets/threads.webp" width="900" height="598" loading="lazy" alt="Threads EZComo storefront template"></div>
+        </div>
+        <div class="template-footer"><div><span class="mini-label" data-i18n="selectedDirection">SELECTED DIRECTION</span><h3 id="templateTitle">Threads</h3><p id="templateDescription">Editorial apparel with room for campaigns, collections and strong visual identity.</p></div><div><a class="btn btn-outline" id="templatePreviewLink" href="https://ecomcms-homepage-preview-production.up.railway.app/template-snapshot/threads" target="_blank" rel="noreferrer" data-i18n="openPreview">Open preview</a><a class="btn btn-primary" data-signup id="templateSignup" href="https://ezcomo.shop/signup?template=threads" data-i18n="useTemplate">Use this template</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section integrations-section" id="integrations">
+  <div class="shell">
+    <div class="section-heading centered reveal"><p class="kicker" data-i18n="integrationsKicker">Commerce connections</p><h2 data-i18n="integrationsTitle">Know what is active before you depend on it.</h2><p data-i18n="integrationsCopy">EZComo exposes connection state clearly instead of pretending every logo means the same thing.</p></div>
+    <div class="integration-board reveal">
+      <div class="integration-column"><span class="mini-label" data-i18n="payments">PAYMENTS</span><div class="integration-item active"><b>bKash</b><span data-i18n="autoConnected">Automated when connected</span><i></i></div><div class="integration-item"><b>Nagad</b><span data-i18n="storeOption">Storefront option</span><i></i></div><div class="integration-item"><b>COD</b><span data-i18n="storeOption">Storefront option</span><i></i></div></div>
+      <div class="integration-column"><span class="mini-label" data-i18n="delivery">DELIVERY</span><div class="integration-item active"><b>Pathao</b><span data-i18n="merchantApi">Merchant API booking</span><i></i></div><div class="integration-item setup"><b>Steadfast</b><span data-i18n="setupAvailable">Setup available</span><i></i></div><div class="integration-item setup"><b>REDX</b><span data-i18n="setupAvailable">Setup available</span><i></i></div></div>
+      <div class="integration-column"><span class="mini-label" data-i18n="storefront">STOREFRONT</span><div class="integration-item"><b data-i18n="customDomain">Custom domain</b><span data-i18n="eligiblePlans">Eligible paid plans</span><i></i></div><div class="integration-item"><b data-i18n="responsiveStore">Responsive store</b><span data-i18n="allScreens">Phone to desktop</span><i></i></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section calculator-section" id="calculator">
+  <div class="shell calculator-layout">
+    <div class="calculator-copy reveal"><p class="kicker" data-i18n="calcKicker">Illustrative cost check</p><h2 data-i18n="calcTitle">Use your numbers, not ours.</h2><p data-i18n="calcCopy">Compare the percentage cost you currently enter with an EZComo plan amount you enter. This tool does not assume a competitor fee or promise savings.</p><div class="calc-note"><i></i><span data-i18n="calcNote">Illustrative only — verify real plan and provider charges before deciding.</span></div></div>
+    <div class="calculator reveal">
+      <label><span data-i18n="monthlySales">Monthly sales</span><strong>৳<span id="salesValue">100,000</span></strong><input id="salesRange" type="range" min="10000" max="2000000" step="10000" value="100000"></label>
+      <label><span data-i18n="currentCost">Current platform / manual cost</span><strong><span id="costValue">2.5</span>%</strong><input id="costRange" type="range" min="0" max="5" step=".1" value="2.5"></label>
+      <label><span data-i18n="planInput">EZComo plan amount to compare</span><strong>৳<span id="planValue">500</span>/mo</strong><input id="planRange" type="range" min="0" max="10000" step="100" value="500"></label>
+      <div class="calc-result"><span data-i18n="annualDifference">Illustrative annual difference</span><strong id="annualValue">৳24,000</strong><small id="annualDetail">Current cost estimate ৳30,000/yr · EZComo input ৳6,000/yr</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section pricing-section" id="pricing">
+  <div class="shell pricing-panel reveal">
+    <div><p class="kicker" data-i18n="pricingKicker">Pricing</p><h2 data-i18n="pricingTitle">Start free. Upgrade when the business needs more.</h2><p data-i18n="pricingCopy">Current prices and limits are published on the plans page so you can compare before committing.</p></div>
+    <div class="pricing-actions"><a class="btn btn-primary btn-large" data-signup href="https://ezcomo.shop/signup?template=threads" data-i18n="startFree">Start free</a><a class="text-link" href="https://ezcomo.shop/plans"><span data-i18n="comparePlans">Compare current plans</span> ↗</a></div>
+  </div>
+</section>
+
+<section class="section faq-section" id="faq">
+  <div class="shell">
+    <div class="section-heading centered reveal"><p class="kicker">FAQ</p><h2 data-i18n="faqTitle">The questions that matter before you move beyond DMs.</h2></div>
+    <div class="faq-categories reveal" role="tablist" aria-label="FAQ categories"><button class="faq-tab active" type="button" data-faq="start" data-i18n="faqStart">Getting started</button><button class="faq-tab" type="button" data-faq="payments" data-i18n="faqPayments">Payments</button><button class="faq-tab" type="button" data-faq="delivery" data-i18n="faqDelivery">Delivery</button><button class="faq-tab" type="button" data-faq="domains" data-i18n="faqDomains">Domains</button></div>
+    <div class="faq-list reveal" id="faqList"></div>
+    <div class="faq-help reveal"><span data-i18n="anotherQuestion">Have another question?</span><a href="https://ezcomo.shop/support"><span data-i18n="talkSupport">Talk to support</span> →</a></div>
+  </div>
+</section>
+
+<section class="closing-section" id="closing">
+  <div class="closing-ambient" aria-hidden="true"></div>
+  <div class="shell closing-panel reveal">
+    <div><p class="kicker" data-i18n="closingKicker">Your next storefront</p><h2 data-i18n="closingTitle">Let customers shop while you get back to running the business.</h2><p data-i18n="closingCopy">Pick a direction, start free and carry that storefront choice directly into setup.</p></div>
+    <div class="closing-actions"><a class="btn btn-light btn-large" data-signup id="closingSignup" href="https://ezcomo.shop/signup?template=threads">Start with Threads</a><a href="#templates" class="closing-link"><span data-i18n="browseAgain">Browse storefronts again</span> ↑</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-grid">
+    <div class="footer-brand"><a class="brand" href="#top"><span class="brand-symbol">E</span><span>EZCOMO</span></a><p data-i18n="footerTag">A storefront customers can use. A workspace merchants can run.</p></div>
+    <div><b data-i18n="product">Product</b><a href="#features" data-i18n="navFeatures">Features</a><a href="#templates" data-i18n="navTemplates">Templates</a><a href="#integrations" data-i18n="navIntegrations">Integrations</a><a href="#pricing" data-i18n="navPricing">Pricing</a></div>
+    <div><b data-i18n="support">Support</b><a href="https://ezcomo.shop/support" data-i18n="helpCenter">Help center</a><a href="#faq">FAQ</a><a href="https://ezcomo.shop/login" data-i18n="login">Log in</a></div>
+    <div><b data-i18n="legal">Legal</b><a href="https://ezcomo.shop/privacy" data-i18n="privacy">Privacy</a><a href="https://ezcomo.shop/terms" data-i18n="terms">Terms</a><a href="https://ezcomo.shop/billing-policy" data-i18n="billing">Billing policy</a></div>
+  </div>
+  <div class="shell footer-bottom"><span>© 2026 EZComo</span><span data-i18n="previewLabel">Design preview · no merchant data is changed here.</span></div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta" aria-hidden="true"><div class="shell sticky-inner"><div><span class="status-dot"></span><b data-i18n="stickyText">Ready to give customers somewhere better than the DM inbox?</b></div><div><a class="btn btn-primary" data-signup href="https://ezcomo.shop/signup?template=threads" data-i18n="startFree">Start free</a><button id="stickyClose" type="button" aria-label="Dismiss">×</button></div></div></div>
+<script src="./app.js" defer></script>
+</body>
+</html>
