@@ -433,7 +433,7 @@
   wireTabKeyboard('.faq-tab',btn=>{faqCategory=btn.dataset.faq;renderFaq()});
   wireTabKeyboard('.guide-step',btn=>selectJourney(btn.dataset.guidePanel));
 
-  $('.brand[href="#pageTop"]').forEach(link=>link.addEventListener('click',e=>{
+  $$('.brand[href="#pageTop"]').forEach(link=>link.addEventListener('click',e=>{
     e.preventDefault();
     history.replaceState(null,'',location.pathname+location.search);
     scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
@@ -756,7 +756,7 @@
     if(workspaceNextText)workspaceNextText.textContent=lang==='bn'?'ধাপ ০২ চালিয়ে অর্ডারটি তৈরি করুন':'Run step 02 to create order #1051';
     if(workspaceNextNote)workspaceNextNote.textContent=lang==='bn'?'অর্ডার তৈরি হলে delivery action চালু হবে।':'Delivery action appears after the sample order is created.';
     if(workspacePrepareDelivery){workspacePrepareDelivery.disabled=false;workspacePrepareDelivery.textContent=i18n[lang]?.workspacePrepareDelivery||'Prepare delivery';}
-    $('.workflow-step',workflowDemo||document).forEach(step=>{step.classList.remove('active','done','just-completed');step.style.removeProperty('--workflow-hold');});
+    $$('.workflow-step',workflowDemo||document).forEach(step=>{step.classList.remove('active','done','just-completed');step.style.removeProperty('--workflow-hold');});
     if(workflowRun)workflowRun.disabled=false;
     setWorkflowStatus('workflowWaiting');
     syncWorkflowNow();
