@@ -1213,3 +1213,23 @@ html[data-theme="dark"] .pricing-compare .btn-ghost{background:#242722;color:#f0
   .pricing-compare .btn{font-size:12px;min-height:42px}.plan-features li{font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){.journey-panel.active{animation:none!important}}
+
+/* --- V8.1 finishing fixes --- */
+html[data-theme="light"] body.v6-mature .pricing-compare article .btn.btn-ghost{
+  background:#ffffff!important;color:#171916!important;border-color:#bfc8bf!important;
+  box-shadow:0 6px 18px rgba(23,25,22,.06)!important;
+}
+html[data-theme="light"] body.v6-mature .pricing-compare article .btn.btn-ghost:hover{
+  background:#eef3ee!important;color:#171916!important;border-color:#758678!important;
+}
+html[data-theme="dark"] body.v6-mature .pricing-compare article .btn.btn-ghost{
+  background:#242722!important;color:#f0ebe2!important;border-color:#52584f!important;
+}
+@media(max-width:700px){
+  .store-example-grid.compact{display:flex;overflow-x:auto;gap:12px;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:none}
+  .store-example-grid.compact::-webkit-scrollbar{display:none}
+  .store-example-grid.compact .store-example-card{min-width:84vw;scroll-snap-align:start}
+  .onboarding-inner ol{display:flex;overflow-x:auto;gap:8px;scroll-snap-type:x proximity;scrollbar-width:none}
+  .onboarding-inner ol::-webkit-scrollbar{display:none}
+  .onboarding-inner li{min-width:72vw;scroll-snap-align:start}
+}
