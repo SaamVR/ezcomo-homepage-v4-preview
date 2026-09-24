@@ -359,7 +359,7 @@
   }));
 
   const wireTabKeyboard=(selector,activate)=>{
-    const items=$(selector);
+    const items=$$(selector);
     items.forEach((btn,index)=>{
       btn.addEventListener('keydown',e=>{
         let next=index;
