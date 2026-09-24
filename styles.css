@@ -1115,3 +1115,101 @@ html[data-theme="light"] body.v6-mature .pricing-v7{background:#eef1ed}
   .pricing-compare{grid-template-columns:1fr}.pricing-compare article:last-child{grid-column:auto}.pricing-compare article{min-height:0}.pricing-fineprint{align-items:flex-start;flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){.store-example-image img,.guide-step{transition:none!important}}
+
+/* --- V8 connected merchant journey polish --- */
+.page-top-anchor{position:absolute;inset:0 auto auto 0;width:1px;height:1px;pointer-events:none}
+
+/* Keep the guided demo as one chapter rather than three stacked sections. */
+.journey-stage{position:relative}
+.journey-panel[hidden]{display:none!important}
+.journey-panel.active{animation:journeyPanelIn .34s cubic-bezier(.2,.8,.2,1)}
+@keyframes journeyPanelIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.guided-demo-rail{position:sticky;top:86px;z-index:4;padding:8px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(16px)}
+.guide-step{min-height:72px}
+.guide-step[aria-selected="true"]{box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--forest) 50%,transparent)}
+.product-story-card.journey-panel{margin-top:16px}
+
+/* Homepage controls should be readable, not miniature. */
+.editor-top-actions button{font-size:12px;padding:8px 10px}
+.editor-panel-label{font-size:10px}
+.editor-block-btn{font-size:12px;min-height:38px}
+.editor-block-btn b{font-size:10px}
+.editor-palette-tip span{font-size:10px}
+.editor-inspector label,.editor-position-readout,.editor-help{font-size:12px;line-height:1.45}
+.inspector-name small{font-size:10px}.inspector-name strong{font-size:12px}
+.editor-inspector input{font-size:12px;padding:9px}
+.inspector-options button{font-size:11px;padding:8px 5px}
+.workflow-run{font-size:12px;padding:10px 14px}
+.place-order-btn{font-size:12px}
+.workflow-step small{font-size:10px}.workflow-step strong{font-size:13px}.workflow-step em{font-size:10px}
+.workspace-top button{font-size:12px;padding:10px 13px}
+.workspace-nav span{font-size:12px}
+
+/* Interactive order detail: same Studio Tee / #1051 journey as the checkout demo. */
+.workspace-order-flow{grid-template-columns:1.28fr .72fr}
+.workspace-order-row{width:100%;margin-top:12px;display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);padding:13px;text-align:left;cursor:pointer}
+.workspace-order-row span b,.workspace-order-row span small{display:block}.workspace-order-row span b{font-size:12px}.workspace-order-row span small{margin-top:3px;font-size:10px;color:var(--muted)}
+.workspace-order-row>strong{font-size:12px}.workspace-order-row>em{font:800 9px monospace;color:var(--accent-strong);font-style:normal}
+.workspace-order-row.open{border-color:color-mix(in srgb,var(--forest) 48%,var(--line));box-shadow:0 0 0 3px color-mix(in srgb,var(--forest) 8%,transparent)}
+.workspace-order-detail{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:9px}
+.workspace-order-detail>div{padding:12px;border:1px solid var(--line);border-radius:9px;background:var(--surface)}
+.workspace-order-detail span,.workspace-order-detail b,.workspace-order-detail small{display:block}
+.workspace-order-detail span{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.workspace-order-detail b{margin-top:4px;font-size:12px}.workspace-order-detail small{margin-top:3px;font-size:9px;color:var(--muted)}
+.workspace-next-primary{min-height:54px}.workspace-next button{margin-top:3px;border:0;border-radius:9px;background:var(--forest);color:var(--bone);padding:11px 12px;font-size:12px;font-weight:850;cursor:pointer}
+.workspace-next button:disabled{opacity:.62;cursor:default}.workspace-next>small{font-size:10px;line-height:1.45;color:var(--muted)}
+.workspace-demo.delivery-prepared .workspace-next-primary i{background:var(--brass);box-shadow:0 0 0 5px rgba(174,148,97,.08)}
+
+/* Template chooser and finished proof live in one section. */
+.template-outcomes{margin-top:22px;padding-top:22px;border-top:1px solid var(--line)}
+.template-outcomes-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:14px}
+.template-outcomes-head strong{max-width:600px;font-size:22px;letter-spacing:-.035em}
+.store-example-grid.compact{grid-template-columns:repeat(3,1fr)}
+.storefront-shot{position:relative;min-height:270px;background:#ece8df;overflow:hidden}
+.demo-browser-bar{height:28px;display:flex;align-items:center;gap:5px;padding:0 9px;background:#171916;color:#8d948a;font:700 7px monospace}
+.demo-browser-bar i{width:6px;height:6px;border-radius:50%;background:#4a4d47}.demo-browser-bar span{margin-left:6px}
+.demo-store-nav{height:42px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;background:#f9f7f2;color:#20231f;border-bottom:1px solid #dad6cd}.demo-store-nav b{font-size:10px;letter-spacing:.12em}.demo-store-nav span{font-size:7px}
+.demo-store-hero{position:relative;height:200px;overflow:hidden}.demo-store-hero>img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.78) contrast(.98)}.demo-store-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,22,19,.62),rgba(20,22,19,.05) 68%)}
+.demo-store-hero>div{position:absolute;z-index:2;left:16px;top:50%;transform:translateY(-50%);color:#fff;display:grid;gap:6px}.demo-store-hero small{font:800 7px monospace;letter-spacing:.1em}.demo-store-hero strong{font-size:22px;line-height:.95;letter-spacing:-.04em}.demo-store-hero span{font-size:8px;font-weight:800}
+.demo-phone{position:absolute;right:12px;bottom:10px;width:70px;height:124px;border:4px solid #151815;border-radius:14px;background:#f7f4ed;box-shadow:0 12px 30px rgba(0,0,0,.28);overflow:hidden;z-index:3}.demo-phone>span{display:block;height:20px;padding:6px 7px 0;font:850 6px monospace;color:#1d211d}.demo-phone img{width:100%;height:100px;object-fit:cover;display:block}
+.store-example-copy ul{display:grid;gap:6px;margin:12px 0 15px;padding:0;list-style:none}.store-example-copy li{position:relative;padding-left:14px;font-size:11px;color:var(--muted)}.store-example-copy li:before{content:"";position:absolute;left:0;top:.45em;width:6px;height:6px;border-radius:50%;background:var(--clay)}
+.store-example-copy a{display:inline-flex;align-items:center;font-size:12px;font-weight:850;color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.demo-proof-note{display:block;margin-top:12px;color:var(--muted);font-size:10px}
+.store-examples-section{display:none}
+
+/* Compact onboarding rather than another oversized chapter. */
+.onboarding-strip{padding:22px 0;background:var(--surface);border-block:1px solid var(--line)}
+.onboarding-inner{display:grid;grid-template-columns:.72fr 1.28fr;gap:28px;align-items:center}.onboarding-inner>div strong{display:block;margin-top:5px;font-size:18px}.onboarding-inner ol{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;list-style:none;margin:0;padding:0}.onboarding-inner li{display:grid;grid-template-columns:auto 1fr;gap:8px;align-items:center;padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}.onboarding-inner li b{font:800 8px monospace;color:var(--clay)}.onboarding-inner li span{font-size:10px;font-weight:750;line-height:1.35}
+
+/* Pricing readability and verified capability differences. */
+.plan-features{display:grid;gap:8px;margin:0 0 22px;padding:0;list-style:none}
+.plan-features li{position:relative;padding-left:18px;font-size:12px;line-height:1.45;color:var(--muted)}
+.plan-features li:before{content:"✓";position:absolute;left:0;top:0;color:var(--accent-strong);font-weight:900}
+.pricing-compare article.featured .plan-features li{color:#d6ddd7}.pricing-compare article.featured .plan-features li:before{color:#e6d7ad}
+.pricing-compare article{min-height:390px}
+.pricing-compare .btn-ghost{border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.pricing-compare .btn-ghost:hover{border-color:var(--forest);background:color-mix(in srgb,var(--forest) 6%,var(--bg));color:var(--ink)}
+html[data-theme="light"] .pricing-compare .btn-ghost{background:#fff;color:#171916;border-color:#cbd2ca}
+html[data-theme="light"] .pricing-compare .btn-ghost:hover{background:#f0f4f0;color:#171916}
+html[data-theme="dark"] .pricing-compare .btn-ghost{background:#242722;color:#f0ebe2;border-color:#4a4e46}
+
+/* Footer tells visitors what support actually is without inventing company claims. */
+.footer-brand small{display:block;max-width:310px;margin-top:10px;color:var(--muted);font-size:10px;line-height:1.5}
+
+@media(max-width:1020px){
+  .guided-demo-rail{top:76px}
+  .workspace-order-flow{grid-template-columns:1fr}
+  .template-outcomes-head{align-items:flex-start;flex-direction:column;gap:6px}
+  .store-example-grid.compact{grid-template-columns:1fr 1fr}.store-example-grid.compact .store-example-card:last-child{grid-column:1/-1}
+  .onboarding-inner{grid-template-columns:1fr}.onboarding-inner ol{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+  .guided-demo-rail{position:relative;top:auto;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px}.guide-step{min-width:78vw;scroll-snap-align:start}
+  .editor-top-actions button,.workflow-run,.place-order-btn,.workspace-top button,.workspace-next button{font-size:12px}
+  .editor-palette{height:auto;min-height:54px}.editor-block-btn{font-size:12px;min-height:36px}.editor-block-btn b{display:none}
+  .editor-product-card strong{font-size:9px}.editor-product-card span{font-size:9px}.editor-product-card small{font-size:8px}
+  .workspace-order-row{grid-template-columns:1fr auto;gap:9px}.workspace-order-row>em{grid-column:1/-1}.workspace-order-detail{grid-template-columns:1fr}.workspace-next{display:grid}
+  .store-example-grid.compact{grid-template-columns:1fr}.store-example-grid.compact .store-example-card:last-child{grid-column:auto}.storefront-shot{min-height:250px}
+  .onboarding-inner ol{grid-template-columns:1fr}.onboarding-inner li span{font-size:11px}
+  .pricing-compare .btn{font-size:12px;min-height:42px}.plan-features li{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.journey-panel.active{animation:none!important}}

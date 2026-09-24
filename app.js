@@ -138,6 +138,43 @@
     editorHelp:'লেখা বেছে edit করুন। Handle টেনে content সরান; drag ছাড়াও section button-এ Alt + ↑/↓ দিয়ে reorder করা যাবে।'
   });
 
+  Object.assign(i18n.en,{
+    proofLabel:'ONE CONNECTED BUSINESS',proofIntro:'The storefront and the work behind it stay in the same flow.',proofStoreNote:'Customers browse',proofProducts:'Products',proofProductsNote:'Catalog + stock',proofOrder:'Orders',proofOrderNote:'Structured details',proofPayments:'Payments',proofPaymentsNote:'Paid or COD',proofStock:'Inventory',proofStockNote:'Stock stays visible',proofDelivery:'Delivery',proofDeliveryNote:'Next action ready',
+    featuresKicker:'See the workflow',featuresTitle:'Build your store. Take your first order. Keep everything moving.',featuresCopy:'Follow one Studio Tee order from storefront editing to checkout and the merchant workspace. Each step uses the same sample product and order.',
+    guide1Title:'Make it yours',guide1Copy:'Change content, color or section order.',guide2Title:'Take an order',guide2Copy:'Watch checkout become order #1051.',guide3Title:'Move it forward',guide3Copy:'Inspect payment, stock and delivery.',
+    builderTitle:'Make the storefront feel like your business.',builderCopy:'Change the headline, color or section order and watch the storefront update immediately.',builderHint:'Try one clear change: edit the headline or move a section.',
+    workflowTitle:'Take a sample order and follow what changes.',workflowCopy:'Studio Tee · order #1051 moves from checkout to payment and stock so the cause-and-effect stays clear.',workflowResult:'Order #1051 is ready in the workspace.',workflowResultNote:'Payment, stock and estimated margin are recorded. Delivery is the next merchant action.',
+    workspaceLabel:'03 · MERCHANT WORKSPACE · INTERACTIVE DEMO',workspaceTitle:'Know what needs your attention today.',workspaceCopy:'Open the same Studio Tee order #1051, check its payment and stock, then prepare Pathao delivery.',workspaceHint:'Interactive demo · sample data',workspaceGreeting:'One order is ready for your next action.',workspaceNewOrder:'Open order #1051',
+    workspaceMetricOrders:'Order',workspaceMetricPayments:'Payment',workspaceMetricStock:'Stock',workspaceMetricStockNote:'Studio Tee remaining',workspaceMetricCourier:'Delivery',workspaceRecent:'Order #1051',workspaceSample:'interactive demo',
+    workspacePaymentLabel:'Payment',workspaceStockLabel:'Inventory',workspaceStockRecorded:'Stock updated',workspaceDeliveryLabel:'Delivery',workspaceDeliveryReady:'Ready to book Pathao',workspaceNext:'NEXT ACTION',workspaceNextBook:'Book Pathao for order #1051',workspacePrepareDelivery:'Prepare delivery',workspaceNextNote:'Open the order first to inspect payment and stock.',workspaceCourierBooked:'Courier booked',workspaceAwaitPickup:'Await courier pickup',workspacePrepared:'Delivery prepared',workspaceOpenFirst:'Open order #1051 first.',
+    templatesTitle:'See what your business could look like online.',templatesCopy:'Choose a business type, explore its customer journey, then open a finished demo storefront.',directionNote:'Interactive demo · sample content.',examplesKicker:'FINISHED DEMO STORES',examplesTitle:'Open a complete example, not just a category photo.',examplesCopy:'Interactive demo stores use sample businesses and sample data; they are not merchant testimonials.',openDemoStore:'Open demo store ↗',
+    onboardKicker:'FROM SIGNUP TO LIVE',onboardTitle:'Four practical steps to launch.',onboard1:'Create your account',onboard2:'Add products and brand details',onboard3:'Set up payment and delivery',onboard4:'Publish your storefront',
+    pricingTitle:'Start free. Choose the tools you need as you grow.',pricingCopy:'Current plan prices and capabilities are summarized from the live EZComo plan catalog. External payment, courier, messaging and domain-provider charges remain separate where they apply.',
+    priceFreeNote:'Start one storefront on an EZComo-managed URL and upgrade later without rebuilding it.',freeFeature1:'1 storefront',freeFeature2:'EZComo-managed store URL',freeFeature3:'No trial countdown',
+    priceBasicNote:'For one store that needs the core CMS, theme tools and manual or assisted payments.',basicFeature1:'1 storefront',basicFeature2:'Core CMS blocks + theme tools',basicFeature3:'14-day trial configured',chooseBasic:'Choose Basic',
+    priceAdvancedNote:'For growing teams running campaigns and richer storefront operations.',advancedFeature1:'Up to 3 storefronts',advancedFeature2:'Campaigns, teams, coupons + reviews',advancedFeature3:'14-day trial configured',chooseAdvanced:'Choose Advanced',
+    pricingFineprint:'Plan availability is checked at signup. Custom domains are available only on eligible paid plans and still require DNS setup and verification.',comparePlans:'Compare full plan details',
+    footerIdentity:'Bangladesh-first commerce platform · Platform support available from the support page.'
+  });
+  Object.assign(i18n.bn,{
+    proofLabel:'এক ব্যবসা, এক ধারায়',proofIntro:'ক্রেতার স্টোর আর বিক্রির পরের কাজ একই ধারায় থাকুক।',proofStoreNote:'ক্রেতা পণ্য দেখে',proofProducts:'পণ্য',proofProductsNote:'ক্যাটালগ ও স্টক',proofOrder:'অর্ডার',proofOrderNote:'সব তথ্য গুছানো',proofPayments:'পেমেন্ট',proofPaymentsNote:'পেইড বা COD',proofStock:'স্টক',proofStockNote:'স্টক চোখের সামনে',proofDelivery:'ডেলিভারি',proofDeliveryNote:'পরের কাজ প্রস্তুত',
+    featuresKicker:'কাজের ধারাটি দেখুন',featuresTitle:'স্টোর বানান। প্রথম অর্ডার নিন। এরপরের কাজও এগিয়ে নিন।',featuresCopy:'একই Studio Tee আর #1051 অর্ডার দিয়ে দেখুন—স্টোর edit করা থেকে checkout, তারপর merchant workspace পর্যন্ত সব কীভাবে যুক্ত থাকে।',
+    guide1Title:'নিজের মতো করুন',guide1Copy:'লেখা, রং বা section order বদলান।',guide2Title:'অর্ডার নিন',guide2Copy:'#1051 অর্ডার কীভাবে তৈরি হয় দেখুন।',guide3Title:'পরের কাজ এগিয়ে নিন',guide3Copy:'পেমেন্ট, স্টক আর ডেলিভারির অবস্থা দেখুন।',
+    builderTitle:'স্টোরটাকে নিজের ব্যবসার মতো করে সাজান।',builderCopy:'শিরোনাম, রং বা section order বদলালেই storefront-এ সঙ্গে সঙ্গে পরিবর্তন দেখুন।',builderHint:'একটি কাজ দিয়ে শুরু করুন—শিরোনাম edit করুন বা একটি section সরান।',
+    workflowTitle:'একটি নমুনা অর্ডার নিন, তারপর কী বদলায় দেখুন।',workflowCopy:'Studio Tee-এর #1051 অর্ডার checkout থেকে payment আর stock update পর্যন্ত এগোয়—প্রতিটি কাজের ফল পরিষ্কার দেখা যায়।',workflowResult:'#1051 অর্ডার এখন workspace-এ প্রস্তুত।',workflowResultNote:'Payment, stock আর estimated margin রেকর্ড হয়েছে। Delivery এখন পরের কাজ।',
+    workspaceLabel:'০৩ · মার্চেন্ট ওয়ার্কস্পেস · ইন্টার‌্যাকটিভ ডেমো',workspaceTitle:'আজ কোন কাজটা আগে দরকার, এক নজরে বুঝুন।',workspaceCopy:'একই Studio Tee-এর #1051 অর্ডার খুলুন, পেমেন্ট ও স্টক দেখুন, তারপর Pathao delivery প্রস্তুত করুন।',workspaceHint:'ইন্টার‌্যাকটিভ ডেমো · নমুনা ডেটা',workspaceGreeting:'একটি অর্ডার আপনার পরের কাজের জন্য প্রস্তুত।',workspaceNewOrder:'#1051 অর্ডার খুলুন',
+    workspaceMetricOrders:'অর্ডার',workspaceMetricPayments:'পেমেন্ট',workspaceMetricStock:'স্টক',workspaceMetricStockNote:'Studio Tee বাকি',workspaceMetricCourier:'ডেলিভারি',workspaceRecent:'#1051 অর্ডার',workspaceSample:'ইন্টার‌্যাকটিভ ডেমো',
+    workspacePaymentLabel:'পেমেন্ট',workspaceStockLabel:'স্টক',workspaceStockRecorded:'স্টক আপডেট হয়েছে',workspaceDeliveryLabel:'ডেলিভারি',workspaceDeliveryReady:'Pathao বুক করার জন্য প্রস্তুত',workspaceNext:'পরের কাজ',workspaceNextBook:'#1051 অর্ডারের জন্য Pathao বুক করুন',workspacePrepareDelivery:'ডেলিভারি প্রস্তুত করুন',workspaceNextNote:'আগে অর্ডারটি খুলে পেমেন্ট ও স্টক দেখে নিন।',workspaceCourierBooked:'কুরিয়ার বুক হয়েছে',workspaceAwaitPickup:'এখন পিকআপের অপেক্ষা',workspacePrepared:'ডেলিভারি প্রস্তুত',workspaceOpenFirst:'আগে #1051 অর্ডারটি খুলুন।',
+    templatesTitle:'অনলাইনে আপনার ব্যবসা দেখতে কেমন হতে পারে, দেখে নিন।',templatesCopy:'ব্যবসার ধরন বেছে customer journey দেখুন, তারপর একটি সম্পূর্ণ demo storefront খুলে দেখুন।',directionNote:'ইন্টার‌্যাকটিভ ডেমো · নমুনা কনটেন্ট।',examplesKicker:'সম্পূর্ণ ডেমো স্টোর',examplesTitle:'শুধু ছবি নয়—পুরো একটি উদাহরণ খুলে দেখুন।',examplesCopy:'Demo store-গুলো নমুনা ব্যবসা ও নমুনা ডেটা ব্যবহার করে; এগুলো কোনো merchant testimonial নয়।',openDemoStore:'ডেমো স্টোর খুলুন ↗',
+    onboardKicker:'সাইনআপ থেকে লাইভ স্টোর',onboardTitle:'চারটি বাস্তব ধাপে স্টোর চালু করুন।',onboard1:'অ্যাকাউন্ট খুলুন',onboard2:'পণ্য ও ব্র্যান্ডের তথ্য যোগ করুন',onboard3:'পেমেন্ট ও ডেলিভারি সেটআপ করুন',onboard4:'স্টোরফ্রন্ট প্রকাশ করুন',
+    pricingTitle:'ফ্রি দিয়ে শুরু করুন। ব্যবসা বাড়লে দরকারি টুল বেছে নিন।',pricingCopy:'EZComo-র live plan catalog অনুযায়ী বর্তমান দাম ও মূল সুবিধাগুলো এখানে সংক্ষেপে দেখানো হয়েছে। Payment, courier, messaging বা domain provider-এর আলাদা charge থাকলে সেটি পৃথক।',
+    priceFreeNote:'EZComo-managed URL-এ একটি storefront দিয়ে শুরু করুন; পরে upgrade করলেও নতুন করে store বানাতে হবে না।',freeFeature1:'১টি storefront',freeFeature2:'EZComo-managed store URL',freeFeature3:'Trial countdown নেই',
+    priceBasicNote:'একটি store-এর জন্য core CMS, theme tools এবং manual/assisted payment দরকার হলে।',basicFeature1:'১টি storefront',basicFeature2:'Core CMS blocks + theme tools',basicFeature3:'১৪ দিনের trial configured',chooseBasic:'Basic বেছে নিন',
+    priceAdvancedNote:'Growing team, campaign আর richer storefront operation-এর জন্য।',advancedFeature1:'সর্বোচ্চ ৩টি storefront',advancedFeature2:'Campaign, team, coupon + review',advancedFeature3:'১৪ দিনের trial configured',chooseAdvanced:'Advanced বেছে নিন',
+    pricingFineprint:'Signup-এর সময় plan availability যাচাই হয়। Custom domain শুধু যোগ্য paid plan-এ পাওয়া যায় এবং DNS setup ও verification লাগবে।',comparePlans:'সব plan details দেখুন',
+    footerIdentity:'বাংলাদেশকেন্দ্রিক commerce platform · Support page থেকে platform support পাওয়া যাবে।'
+  });
+
   const faq = {
     en:{
       start:[['Do I need to code?','No. Start from a complete storefront and use visual controls to shape the store.'],['What happens after Start free?','Create your account, name the store, choose its URL, confirm a storefront direction, complete setup, then continue into the merchant workspace.'],['Can I keep selling through social media?','Yes. Social channels can continue to drive discovery while EZComo gives customers a structured storefront and order path.']],
@@ -178,6 +215,11 @@
     const close=$('#closingSignup'); if(close) close.textContent=lang==='bn'?`${direction.name} দিয়ে শুরু করুন`:`Start with ${direction.name}`;
     const templateSignup=$('#templateSignup');
     if(templateSignup) templateSignup.href=`https://ezcomo.shop/signup?template=${encodeURIComponent(direction.slug)}`;
+    $$('.plan-signup').forEach(a=>{
+      const planId=a.dataset.planId||'free';
+      a.href=`https://ezcomo.shop/signup?planId=${encodeURIComponent(planId)}&template=${encodeURIComponent(direction.slug)}`;
+    });
+
   }
 
   function selectTemplate(id){
@@ -353,10 +395,22 @@
     });
   }
 
-  $$('.guide-step').forEach(btn=>btn.addEventListener('click',()=>{
-    $$('.guide-step').forEach(x=>x.classList.toggle('active',x===btn));
-    document.getElementById(btn.dataset.guideTarget)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'center'});
-  }));
+  const selectJourney=panel=>{
+    const target=panel||'editor';
+    $$('.guide-step').forEach(btn=>{
+      const active=btn.dataset.guidePanel===target;
+      btn.classList.toggle('active',active);
+      btn.setAttribute('aria-selected',String(active));
+      btn.tabIndex=active?0:-1;
+    });
+    $$('[data-journey-panel]').forEach(card=>{
+      const active=card.dataset.journeyPanel===target;
+      card.hidden=!active;
+      card.classList.toggle('active',active);
+    });
+  };
+  $$('.guide-step').forEach(btn=>btn.addEventListener('click',()=>selectJourney(btn.dataset.guidePanel)));
+
 
   const wireTabKeyboard=(selector,activate)=>{
     const items=$$(selector);
@@ -377,6 +431,13 @@
   wireTabKeyboard('.store-tab',btn=>selectTemplate(btn.dataset.template));
   wireTabKeyboard('.template-option',btn=>selectDirection(btn.dataset.templateFull));
   wireTabKeyboard('.faq-tab',btn=>{faqCategory=btn.dataset.faq;renderFaq()});
+  wireTabKeyboard('.guide-step',btn=>selectJourney(btn.dataset.guidePanel));
+
+  $('.brand[href="#pageTop"]').forEach(link=>link.addEventListener('click',e=>{
+    e.preventDefault();
+    history.replaceState(null,'',location.pathname+location.search);
+    scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
+  }));
 
   const menu=$('#mobileNav'), menuBtn=$('#menuToggle');
   const closeMenu=()=>{menu?.classList.remove('open');menu?.setAttribute('aria-hidden','true');menuBtn?.setAttribute('aria-expanded','false')};
@@ -617,6 +678,48 @@
 
   // Commerce workflow proof: auto-runs once on view and is replayable.
   const workflowDemo=$('#workflowDemo');
+  const workspaceDemo=$('#workspaceDemo');
+  const workspaceOrdersBtn=$('#workspaceOrdersBtn');
+  const workspaceOrderRow=$('#workspaceOrderRow');
+  const workspaceOrderDetail=$('#workspaceOrderDetail');
+  const workspacePrepareDelivery=$('#workspacePrepareDelivery');
+  const workspaceDeliveryState=$('#workspaceDeliveryState');
+  const workspaceCourierMetric=$('#workspaceCourierMetric');
+  const workspaceCourierRef=$('#workspaceCourierRef');
+  const workspaceOrderState=$('#workspaceOrderState');
+  const workspaceNextText=$('#workspaceNextText');
+  const workspaceNextNote=$('#workspaceNextNote');
+  let workspaceOrderOpen=false,workspaceDeliveryPrepared=false;
+  const openWorkspaceOrder=()=>{
+    workspaceOrderOpen=true;
+    if(workspaceOrderDetail)workspaceOrderDetail.hidden=false;
+    workspaceOrderRow?.classList.add('open');
+    if(workspaceNextNote)workspaceNextNote.textContent=i18n[lang]?.workspaceNextBook||'Book Pathao for order #1051';
+  };
+  const prepareWorkspaceDelivery=()=>{
+    if(workspaceDeliveryPrepared)return;
+    if(!workspaceOrderOpen){
+      if(workspaceNextNote)workspaceNextNote.textContent=i18n[lang]?.workspaceOpenFirst||'Open order #1051 first.';
+      workspaceOrdersBtn?.focus();
+      return;
+    }
+    workspaceDeliveryPrepared=true;
+    workspaceDemo?.classList.add('delivery-prepared');
+    if(workspaceDeliveryState)workspaceDeliveryState.textContent=i18n[lang]?.workspaceCourierBooked||'Courier booked';
+    if(workspaceCourierMetric)workspaceCourierMetric.textContent=i18n[lang]?.workspacePrepared||'Prepared';
+    if(workspaceCourierRef)workspaceCourierRef.textContent='PX-84721';
+    if(workspaceOrderState)workspaceOrderState.textContent=i18n[lang]?.workspaceBooked||'Booked';
+    if(workspaceNextText)workspaceNextText.textContent=i18n[lang]?.workspaceAwaitPickup||'Await courier pickup';
+    if(workspaceNextNote)workspaceNextNote.textContent='Pathao · PX-84721';
+    if(workspacePrepareDelivery){
+      workspacePrepareDelivery.disabled=true;
+      workspacePrepareDelivery.textContent=i18n[lang]?.workspacePrepared||'Delivery prepared';
+    }
+  };
+  workspaceOrdersBtn?.addEventListener('click',openWorkspaceOrder);
+  workspaceOrderRow?.addEventListener('click',openWorkspaceOrder);
+  workspacePrepareDelivery?.addEventListener('click',prepareWorkspaceDelivery);
+
   const workflowCard=$('#orderWorkflowCard');
   const workflowRun=$('#workflowRun');
   const placeOrderDemo=$('#placeOrderDemo');
@@ -634,7 +737,7 @@
     else workflowNow.textContent=i18n[lang]?.workflowNowReady||'Ready to run the order.';
   };
   let workflowRunning=false,workflowPlayed=false,workflowTimers=[];
-  const workflowOrder=['payment','order','courier','booked','pickup','inventory','profit'];
+  const workflowOrder=['payment','order','inventory','profit'];
   const clearWorkflowTimers=()=>{workflowTimers.forEach(clearTimeout);workflowTimers=[]};
   const setWorkflowStatus=key=>{if(workflowStatus)workflowStatus.textContent=i18n[lang]?.[key]||key};
   const resetWorkflow=()=>{
@@ -642,7 +745,18 @@
     workflowRunning=false;
     workflowDemo?.classList.remove('running','courier-click','finished');
     activeWorkflowStep=null;
-    $$('.workflow-step',workflowDemo||document).forEach(step=>{step.classList.remove('active','done','just-completed');step.style.removeProperty('--workflow-hold');});
+    workspaceDeliveryPrepared=false;
+    workspaceDemo?.classList.remove('delivery-prepared');
+    if($('#workspacePaymentMetric'))$('#workspacePaymentMetric').textContent=lang==='bn'?'অপেক্ষায়':'Pending';
+    if($('#workspaceStockMetric'))$('#workspaceStockMetric').textContent='18';
+    if(workspaceCourierMetric)workspaceCourierMetric.textContent=lang==='bn'?'অপেক্ষায়':'Waiting';
+    if(workspaceOrderState)workspaceOrderState.textContent=lang==='bn'?'অপেক্ষায়':'Waiting';
+    if(workspaceDeliveryState)workspaceDeliveryState.textContent=i18n[lang]?.workspaceDeliveryReady||'Ready to book Pathao';
+    if(workspaceCourierRef)workspaceCourierRef.textContent='—';
+    if(workspaceNextText)workspaceNextText.textContent=lang==='bn'?'ধাপ ০২ চালিয়ে অর্ডারটি তৈরি করুন':'Run step 02 to create order #1051';
+    if(workspaceNextNote)workspaceNextNote.textContent=lang==='bn'?'অর্ডার তৈরি হলে delivery action চালু হবে।':'Delivery action appears after the sample order is created.';
+    if(workspacePrepareDelivery){workspacePrepareDelivery.disabled=false;workspacePrepareDelivery.textContent=i18n[lang]?.workspacePrepareDelivery||'Prepare delivery';}
+    $('.workflow-step',workflowDemo||document).forEach(step=>{step.classList.remove('active','done','just-completed');step.style.removeProperty('--workflow-hold');});
     if(workflowRun)workflowRun.disabled=false;
     setWorkflowStatus('workflowWaiting');
     syncWorkflowNow();
@@ -660,6 +774,10 @@
     if(!step)return;
     step.classList.remove('active');
     step.classList.add('done','just-completed');
+    if(name==='payment'&&$('#workspacePaymentMetric'))$('#workspacePaymentMetric').textContent=lang==='bn'?'পেইড':'Paid';
+    if(name==='order'&&workspaceOrderState)workspaceOrderState.textContent=lang==='bn'?'অর্ডার এসেছে':'Received';
+    if(name==='inventory'&&$('#workspaceStockMetric'))$('#workspaceStockMetric').textContent='17';
+    if(name==='profit'&&workspaceNextText)workspaceNextText.textContent=i18n[lang]?.workspaceNextBook||'Book Pathao for order #1051';
     setTimeout(()=>step.classList.remove('just-completed'),500);
   };
   const runWorkflow=()=>{
@@ -680,12 +798,10 @@
       const hold=name==='courier'?workflowTiming.courier:workflowTiming.step;
       const gap=workflowTiming.gap;
       workflowTimers.push(setTimeout(()=>{
-        if(name==='courier')workflowDemo.classList.add('courier-click');
-        activateWorkflowStep(name,hold);
+          activateWorkflowStep(name,hold);
       },t));
       workflowTimers.push(setTimeout(()=>{
         completeWorkflowStep(name);
-        if(name==='courier')workflowDemo.classList.remove('courier-click');
       },t+hold));
       t+=hold+gap;
     });
@@ -696,6 +812,10 @@
       syncWorkflowNow();
       workflowRunning=false;
       if(workflowRun)workflowRun.disabled=false;
+      if(workspaceCourierMetric)workspaceCourierMetric.textContent=i18n[lang]?.workspaceReady||'Ready';
+      if(workspaceOrderState)workspaceOrderState.textContent=i18n[lang]?.workspaceReady||'Ready';
+      if(workspaceNextText)workspaceNextText.textContent=i18n[lang]?.workspaceNextBook||'Book Pathao for order #1051';
+      if(workspaceNextNote)workspaceNextNote.textContent=i18n[lang]?.workspaceNextNote||'Open the order first to inspect payment and stock.';
     },t+workflowTiming.finish));
   };
   workflowRun?.addEventListener('click',runWorkflow);
@@ -714,8 +834,15 @@
     else if(workflowDemo?.classList.contains('finished'))setWorkflowStatus('workflowComplete');
     else setWorkflowStatus('workflowWaiting');
     syncWorkflowNow();
+    if(workspaceDeliveryPrepared){
+      if(workspaceDeliveryState)workspaceDeliveryState.textContent=i18n[lang]?.workspaceCourierBooked||'Courier booked';
+      if(workspaceCourierMetric)workspaceCourierMetric.textContent=i18n[lang]?.workspacePrepared||'Prepared';
+      if(workspaceNextText)workspaceNextText.textContent=i18n[lang]?.workspaceAwaitPickup||'Await courier pickup';
+      if(workspacePrepareDelivery)workspacePrepareDelivery.textContent=i18n[lang]?.workspacePrepared||'Delivery prepared';
+    }
   };
   resetWorkflow();
+  selectJourney('editor');
 
   const revealItems=$$('.reveal').filter(el=>!el.classList.contains('is-visible'));
   if('IntersectionObserver' in window){
