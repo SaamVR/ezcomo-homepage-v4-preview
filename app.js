@@ -174,7 +174,7 @@
 
   function updateSignup(){
     const direction=directions[directionSelected]||directions.fashion;
-    $('[data-signup]:not(#templateSignup)').forEach(a=>a.href=`https://ezcomo.shop/signup?template=${encodeURIComponent(direction.slug)}`);
+    $$('[data-signup]:not(#templateSignup)').forEach(a=>a.href=`https://ezcomo.shop/signup?template=${encodeURIComponent(direction.slug)}`);
     const close=$('#closingSignup'); if(close) close.textContent=lang==='bn'?`${direction.name} দিয়ে শুরু করুন`:`Start with ${direction.name}`;
     const templateSignup=$('#templateSignup');
     if(templateSignup) templateSignup.href=`https://ezcomo.shop/signup?template=${encodeURIComponent(direction.slug)}`;
@@ -216,7 +216,7 @@
     directionSelected=id;
     const data=directions[id];
     $$('.template-option').forEach(b=>{const active=b.dataset.templateFull===id;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active))});
-    $('[data-direction-panel]').forEach(panel=>{const active=panel.dataset.directionPanel===id;panel.classList.toggle('active',active);panel.hidden=!active});
+    $$('[data-direction-panel]').forEach(panel=>{const active=panel.dataset.directionPanel===id;panel.classList.toggle('active',active);panel.hidden=!active});
     if($('#templateTitle')) $('#templateTitle').textContent=data.name;
     if($('#templateDescription')) $('#templateDescription').textContent=lang==='bn'?data.bn:data.desc;
     if($('#templateLabel')) $('#templateLabel').textContent=lang==='bn'?`${data.name} · স্টোরের ধরন`:`${data.name} · structure`;
@@ -353,8 +353,8 @@
     });
   }
 
-  $('.guide-step').forEach(btn=>btn.addEventListener('click',()=>{
-    $('.guide-step').forEach(x=>x.classList.toggle('active',x===btn));
+  $$('.guide-step').forEach(btn=>btn.addEventListener('click',()=>{
+    $$('.guide-step').forEach(x=>x.classList.toggle('active',x===btn));
     document.getElementById(btn.dataset.guideTarget)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'center'});
   }));
 
@@ -387,7 +387,7 @@
   $('#announcementClose')?.addEventListener('click',()=>{ann?.classList.add('hide');sessionStorage.setItem('ezcomo-v4-announcement','1')});
 
   function renderFaq(){
-    const list=$('#faqList'); if(!list)return; $('.faq-tab').forEach(b=>{const active=b.dataset.faq===faqCategory;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1});
+    const list=$('#faqList'); if(!list)return; $$('.faq-tab').forEach(b=>{const active=b.dataset.faq===faqCategory;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1});
     list.innerHTML=faq[lang][faqCategory].map((x,i)=>`<article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a-${i}"><span>${x[0]}</span><b aria-hidden="true">+</b></button><div class="faq-answer" id="faq-a-${i}">${x[1]}</div></article>`).join('');
     $$('.faq-question',list).forEach(btn=>btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!open));btn.querySelector('b').textContent=open?'+':'−'}));
   }
