@@ -99,6 +99,45 @@
     }
   };
 
+  Object.assign(i18n.en,{
+    heroTitle:'Your online store. Your daily business. <em>Connected.</em>',
+    heroLede:'Build a branded storefront and manage products, orders, payments, stock and delivery from one workspace—built around selling in Bangladesh.',
+    heroSupport:'Selling through Facebook or Instagram? Keep them for discovery—move browsing and orders into your own store.',
+    heroWorkspaceLabel:'SAMPLE MERCHANT WORKSPACE',heroWorkspaceLive:'Today at a glance',heroOrders:'Orders',heroPayments:'Payment',heroStock:'Low stock',heroNeedsAction:'needs action',heroCourier:'Courier',heroPreviewLabel:'QUICK STOREFRONT EXAMPLES',
+    featuresKicker:'Try the platform',featuresTitle:'Three guided actions show the whole business flow.',featuresCopy:'Make the storefront yours, receive a sample order, then move into the merchant workspace to manage payment, stock and delivery.',
+    guide1Title:'Make it yours',guide1Copy:'Change content, color or section order.',guide2Title:'Receive an order',guide2Copy:'See checkout become a structured order.',guide3Title:'Manage the next step',guide3Copy:'Check payment, stock and delivery actions.',
+    workflowCodNote:'This run shows paid bKash. COD stays unpaid until collection/settlement.',stepProfit:'EST. MARGIN',stepProfitTitle:'Estimated margin',
+    workspaceKicker:'Merchant workspace',workspaceHeading:'The website is only the front door.',workspaceLead:'After an order arrives, keep payment state, stock, courier actions and daily priorities visible in the same operating surface.',
+    workspaceLabel:'03 · MERCHANT WORKSPACE · SAMPLE DATA',workspaceTitle:'Run the work behind each sale.',workspaceCopy:'Illustrative operational data shows how orders, payment state, inventory and fulfilment can sit together without turning the homepage into a miniature admin manual.',workspaceHint:'Fewer panels, larger information, clearer next actions.',
+    workspaceOverview:'Overview',workspaceOrders:'Orders',workspaceProducts:'Products',workspacePayments:'Payments',workspaceDelivery:'Delivery',workspaceToday:'TODAY · SAMPLE WORKSPACE',workspaceGreeting:'Good evening. Here is what needs attention.',workspaceNewOrder:'View orders',
+    workspaceMetricOrders:'Orders today',workspaceMetricPayments:'Payment checks',workspaceMetricPaymentsNote:'includes COD',workspaceMetricStock:'Low stock',workspaceMetricStockNote:'reorder soon',workspaceMetricCourier:'Ready for courier',workspaceRecent:'Recent orders',workspaceSample:'illustrative',workspacePaid:'Paid',workspaceReady:'Ready',workspaceBooked:'Booked',workspacePending:'Pending',workspaceReview:'Review',workspaceNext:'NEXT ACTIONS',workspaceAction1:'Book 4 courier pickups',workspaceAction2:'Review 2 low-stock items',workspaceAction3:'Check 3 payment states',
+    templatesKicker:'Choose a starting point',templatesTitle:'Start with a storefront shaped for how your business sells.',templatesCopy:'Compare Fashion, Booking, Hotel and Digital examples. Each changes the customer journey and primary action—not just the color palette.',selectedDirection:'YOUR STARTING POINT',useTemplate:'Choose this starting point',
+    connectionState:'SETUP REQUIREMENTS',connectionTitle:'Know what is supported and what needs merchant setup.',connectionDemo:'DEMO STATUS',supported:'supported',setupRequired:'setup required',autoConnected:'Supported · connect merchant account',storeOption:'Supported storefront checkout option',codOption:'Supported · payment collected later',merchantApi:'Automated booking when configured',
+    examplesKicker:'Finished storefront examples',examplesTitle:'Show the outcome, not only the builder.',examplesCopy:'These are illustrative design examples—not merchant claims. They show the level of storefront presentation the platform is aiming to produce.',exampleFashion:'Collections, variants and strong brand presentation without losing the path to purchase.',exampleHotel:'Dates, guests and room choice stay central instead of forcing a product-catalog layout.',exampleFood:'Menu-first presentation keeps products, pricing and the primary order action easy to scan.',illustrativeExample:'Illustrative storefront example',
+    pricingTitle:'See the price before you leave the homepage.',pricingCopy:'A compact comparison of the current plan prices and storefront limits shown on the plans page. Check the plans page for exact feature availability and external provider charges.',priceFree:'Free',priceFreeNote:'Try the platform with one storefront.',priceBasicNote:'For a merchant ready to move beyond the free tier.',priceAdvancedNote:'More storefront capacity for a growing operation.',storefrontLimit:'storefront limit shown',storefrontLimitPlural:'storefronts limit shown',viewPlanDetails:'View plan details',pricingFineprint:'Custom-domain access depends on eligible paid features. Payment gateway and courier provider charges, where applicable, are separate.',
+    helpCenter:'Contact support',previewLabel:'Redesign preview · demo/sample data is labeled where it appears.',
+    editorHelp:'Select text to rewrite it. Drag the handle to move content; use Alt + ↑/↓ on a section button to reorder without dragging.'
+  });
+  Object.assign(i18n.bn,{
+    heroTitle:'আপনার অনলাইন স্টোর। প্রতিদিনের ব্যবসা। <em>সব একসাথে।</em>',
+    heroLede:'ব্র্যান্ডেড স্টোর বানান, আর পণ্য, অর্ডার, পেমেন্ট, স্টক ও ডেলিভারির কাজ একই ওয়ার্কস্পেস থেকে সামলান—বাংলাদেশে বিক্রির বাস্তবতা মাথায় রেখে।',
+    heroSupport:'Facebook বা Instagram-এ বিক্রি করেন? মানুষ খুঁজে পাক সেখানেই—কিন্তু পণ্য দেখা ও অর্ডার হোক আপনার নিজের স্টোরে।',
+    heroWorkspaceLabel:'নমুনা মার্চেন্ট ওয়ার্কস্পেস',heroWorkspaceLive:'আজকের অবস্থা',heroOrders:'অর্ডার',heroPayments:'পেমেন্ট',heroStock:'কম স্টক',heroNeedsAction:'কাজ দরকার',heroCourier:'কুরিয়ার',heroPreviewLabel:'দ্রুত স্টোরফ্রন্ট উদাহরণ',
+    featuresKicker:'প্ল্যাটফর্ম ঘুরে দেখুন',featuresTitle:'তিনটি সহজ ধাপে পুরো ব্যবসার flow দেখুন।',featuresCopy:'স্টোর নিজের মতো করুন, একটি নমুনা অর্ডার নিন, তারপর ওয়ার্কস্পেসে গিয়ে পেমেন্ট, স্টক আর ডেলিভারির পরের কাজ দেখুন।',
+    guide1Title:'নিজের মতো করুন',guide1Copy:'লেখা, রং বা section order বদলান।',guide2Title:'অর্ডার নিন',guide2Copy:'Checkout কীভাবে structured order হয় দেখুন।',guide3Title:'পরের কাজ সামলান',guide3Copy:'পেমেন্ট, স্টক ও ডেলিভারির অবস্থা দেখুন।',
+    workflowCodNote:'এই run-এ paid bKash দেখানো হচ্ছে। COD-এ collection/settlement না হওয়া পর্যন্ত payment pending থাকে।',stepProfit:'আনুমানিক মার্জিন',stepProfitTitle:'আনুমানিক মার্জিন',
+    workspaceKicker:'মার্চেন্ট ওয়ার্কস্পেস',workspaceHeading:'ওয়েবসাইট শুধু সামনের দরজা।',workspaceLead:'অর্ডার আসার পর payment state, stock, courier action আর দৈনিক priority—সব একই operating surface-এ রাখুন।',
+    workspaceLabel:'০৩ · মার্চেন্ট ওয়ার্কস্পেস · নমুনা ডেটা',workspaceTitle:'প্রতিটি বিক্রির পেছনের কাজও একই জায়গায় চালান।',workspaceCopy:'নমুনা operational data দিয়ে দেখানো হচ্ছে—অর্ডার, payment state, inventory আর fulfilment কীভাবে এক জায়গায় দেখা যায়।',workspaceHint:'কম panel, বড় তথ্য, পরিষ্কার next action.',
+    workspaceOverview:'ওভারভিউ',workspaceOrders:'অর্ডার',workspaceProducts:'পণ্য',workspacePayments:'পেমেন্ট',workspaceDelivery:'ডেলিভারি',workspaceToday:'আজ · নমুনা ওয়ার্কস্পেস',workspaceGreeting:'শুভ সন্ধ্যা। যেগুলো এখন নজর চাইছে।',workspaceNewOrder:'অর্ডার দেখুন',
+    workspaceMetricOrders:'আজকের অর্ডার',workspaceMetricPayments:'পেমেন্ট যাচাই',workspaceMetricPaymentsNote:'COD-সহ',workspaceMetricStock:'কম স্টক',workspaceMetricStockNote:'শিগগির restock',workspaceMetricCourier:'কুরিয়ারের জন্য প্রস্তুত',workspaceRecent:'সাম্প্রতিক অর্ডার',workspaceSample:'নমুনা',workspacePaid:'পেইড',workspaceReady:'প্রস্তুত',workspaceBooked:'বুকড',workspacePending:'পেন্ডিং',workspaceReview:'দেখুন',workspaceNext:'পরের কাজ',workspaceAction1:'৪টি courier pickup বুক করুন',workspaceAction2:'২টি low-stock item দেখুন',workspaceAction3:'৩টি payment state যাচাই করুন',
+    templatesKicker:'শুরু করার ডিজাইন বেছে নিন',templatesTitle:'আপনার ব্যবসা যেভাবে বিক্রি করে, সেইভাবে সাজানো storefront দিয়ে শুরু করুন।',templatesCopy:'Fashion, Booking, Hotel ও Digital উদাহরণ তুলনা করুন। শুধু রং নয়—customer journey আর primary action-ও বদলায়।',selectedDirection:'আপনার শুরু করার ডিজাইন',useTemplate:'এই ডিজাইন দিয়ে শুরু করুন',
+    connectionState:'কী সেটআপ লাগবে',connectionTitle:'কোনটি supported আর কোনটিতে merchant setup দরকার—স্পষ্টভাবে দেখুন।',connectionDemo:'ডেমো স্ট্যাটাস',supported:'supported',setupRequired:'setup দরকার',autoConnected:'Supported · merchant account connect করতে হবে',storeOption:'Supported storefront checkout option',codOption:'Supported · পরে payment collect হবে',merchantApi:'Configured থাকলে automated booking',
+    examplesKicker:'সম্পূর্ণ storefront উদাহরণ',examplesTitle:'শুধু builder নয়—শেষ ফলটাও দেখান।',examplesCopy:'এগুলো illustrative design example, কোনো merchant claim নয়। Platform দিয়ে কী ধরনের storefront presentation করা যায় সেটাই দেখানো হচ্ছে।',exampleFashion:'Collection, variant আর brand presentation—purchase path পরিষ্কার রেখেই।',exampleHotel:'Date, guest আর room choice সামনে থাকে; product catalog-এর মতো জোর করে সাজানো নয়।',exampleFood:'Menu-first presentation-এ product, price আর order action দ্রুত বোঝা যায়।',illustrativeExample:'নমুনা storefront example',
+    pricingTitle:'Homepage থেকেই দাম দেখে নিন।',pricingCopy:'Plans page-এ দেখানো বর্তমান plan price ও storefront limit-এর compact comparison। Exact feature availability ও external provider charge-এর জন্য plans page দেখুন।',priceFree:'ফ্রি',priceFreeNote:'একটি storefront দিয়ে platform ব্যবহার করে দেখুন।',priceBasicNote:'Free tier-এর পর নিয়মিত merchant operation-এর জন্য।',priceAdvancedNote:'বড় operation-এর জন্য বেশি storefront capacity।',storefrontLimit:'storefront limit দেখানো',storefrontLimitPlural:'storefront limit দেখানো',viewPlanDetails:'Plan details দেখুন',pricingFineprint:'Custom-domain access eligible paid feature-এর ওপর নির্ভর করে। Payment gateway ও courier provider-এর আলাদা charge থাকলে সেটি পৃথক।',
+    helpCenter:'সাপোর্টে যোগাযোগ',previewLabel:'Redesign preview · demo/sample data যেখানে আছে, সেখানেই চিহ্নিত করা হয়েছে।',
+    editorHelp:'লেখা বেছে edit করুন। Handle টেনে content সরান; drag ছাড়াও section button-এ Alt + ↑/↓ দিয়ে reorder করা যাবে।'
+  });
+
   const faq = {
     en:{
       start:[['Do I need to code?','No. Start from a complete storefront and use visual controls to shape the store.'],['What happens after Start free?','Create your account, name the store, choose its URL, confirm a storefront direction, complete setup, then continue into the merchant workspace.'],['Can I keep selling through social media?','Yes. Social channels can continue to drive discovery while EZComo gives customers a structured storefront and order path.']],
@@ -134,11 +173,9 @@
   }
 
   function updateSignup(){
-    const data=directions[selected]||templates[selected]||directions.fashion;
-    const slug=data.slug||selected;
-    $$('[data-signup]:not(#templateSignup)').forEach(a=>a.href=`https://ezcomo.shop/signup?template=${encodeURIComponent(slug)}`);
-    const close=$('#closingSignup'); if(close) close.textContent=lang==='bn'?`${data.name} দিয়ে শুরু করুন`:`Start with ${data.name}`;
     const direction=directions[directionSelected]||directions.fashion;
+    $('[data-signup]:not(#templateSignup)').forEach(a=>a.href=`https://ezcomo.shop/signup?template=${encodeURIComponent(direction.slug)}`);
+    const close=$('#closingSignup'); if(close) close.textContent=lang==='bn'?`${direction.name} দিয়ে শুরু করুন`:`Start with ${direction.name}`;
     const templateSignup=$('#templateSignup');
     if(templateSignup) templateSignup.href=`https://ezcomo.shop/signup?template=${encodeURIComponent(direction.slug)}`;
   }
@@ -172,16 +209,14 @@
       if(price)price.textContent=product[1];
       if(art)art.className=`flat-product flat-${product[2]}`;
     });
-    updateSignup();
   }
 
   function selectDirection(id){
     if(!directions[id]) return;
-    selected=id;
     directionSelected=id;
     const data=directions[id];
     $$('.template-option').forEach(b=>{const active=b.dataset.templateFull===id;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active))});
-    $$('[data-direction-panel]').forEach(panel=>panel.classList.toggle('active',panel.dataset.directionPanel===id));
+    $('[data-direction-panel]').forEach(panel=>{const active=panel.dataset.directionPanel===id;panel.classList.toggle('active',active);panel.hidden=!active});
     if($('#templateTitle')) $('#templateTitle').textContent=data.name;
     if($('#templateDescription')) $('#templateDescription').textContent=lang==='bn'?data.bn:data.desc;
     if($('#templateLabel')) $('#templateLabel').textContent=lang==='bn'?`${data.name} · স্টোরের ধরন`:`${data.name} · structure`;
@@ -318,6 +353,31 @@
     });
   }
 
+  $('.guide-step').forEach(btn=>btn.addEventListener('click',()=>{
+    $('.guide-step').forEach(x=>x.classList.toggle('active',x===btn));
+    document.getElementById(btn.dataset.guideTarget)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'center'});
+  }));
+
+  const wireTabKeyboard=(selector,activate)=>{
+    const items=$(selector);
+    items.forEach((btn,index)=>{
+      btn.addEventListener('keydown',e=>{
+        let next=index;
+        if(e.key==='ArrowRight'||e.key==='ArrowDown')next=(index+1)%items.length;
+        else if(e.key==='ArrowLeft'||e.key==='ArrowUp')next=(index-1+items.length)%items.length;
+        else if(e.key==='Home')next=0;
+        else if(e.key==='End')next=items.length-1;
+        else return;
+        e.preventDefault();
+        items[next].focus();
+        activate(items[next]);
+      });
+    });
+  };
+  wireTabKeyboard('.store-tab',btn=>selectTemplate(btn.dataset.template));
+  wireTabKeyboard('.template-option',btn=>selectDirection(btn.dataset.templateFull));
+  wireTabKeyboard('.faq-tab',btn=>{faqCategory=btn.dataset.faq;renderFaq()});
+
   const menu=$('#mobileNav'), menuBtn=$('#menuToggle');
   const closeMenu=()=>{menu?.classList.remove('open');menu?.setAttribute('aria-hidden','true');menuBtn?.setAttribute('aria-expanded','false')};
   menuBtn?.addEventListener('click',()=>{const open=menuBtn.getAttribute('aria-expanded')!=='true';menuBtn.setAttribute('aria-expanded',String(open));menu?.classList.toggle('open',open);menu?.setAttribute('aria-hidden',String(!open))});
@@ -327,7 +387,7 @@
   $('#announcementClose')?.addEventListener('click',()=>{ann?.classList.add('hide');sessionStorage.setItem('ezcomo-v4-announcement','1')});
 
   function renderFaq(){
-    const list=$('#faqList'); if(!list)return; $$('.faq-tab').forEach(b=>b.classList.toggle('active',b.dataset.faq===faqCategory));
+    const list=$('#faqList'); if(!list)return; $('.faq-tab').forEach(b=>{const active=b.dataset.faq===faqCategory;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1});
     list.innerHTML=faq[lang][faqCategory].map((x,i)=>`<article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a-${i}"><span>${x[0]}</span><b aria-hidden="true">+</b></button><div class="faq-answer" id="faq-a-${i}">${x[1]}</div></article>`).join('');
     $$('.faq-question',list).forEach(btn=>btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!open));btn.querySelector('b').textContent=open?'+':'−'}));
   }

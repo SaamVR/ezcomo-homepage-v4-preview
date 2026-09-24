@@ -1027,3 +1027,91 @@ body.lamp-rope-compact .navbar-lamp .lamp-weight{top:24px}
 @media(prefers-reduced-motion:reduce){
   .navbar-lamp .lamp-pull,.navbar-lamp .lamp-cord,.navbar-lamp .lamp-weight{transition:none}
 }
+
+/* --- V7 business-platform redesign preview --- */
+/* Broader platform promise and visible operations proof */
+.hero-platform-note{max-width:650px;margin-top:17px;color:#98a39a;font-size:12px;line-height:1.55}
+.hero-ops-dock{margin:0 14px 12px;padding:12px;border:1px solid #3c443c;border-radius:12px;background:#1b1f1b}
+.hero-ops-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.hero-ops-head>span,.store-tabs-label{font:800 7px/1 monospace;letter-spacing:.11em;color:#90998f;text-transform:uppercase}
+.hero-ops-head b{display:flex;align-items:center;gap:6px;font-size:8px;color:#cbd3cb}.hero-ops-head i{width:6px;height:6px;border-radius:50%;background:var(--brass)}
+.hero-ops-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.hero-ops-grid>div{padding:9px;border:1px solid #383e37;border-radius:9px;background:#242722}
+.hero-ops-grid small,.hero-ops-grid strong,.hero-ops-grid em{display:block}.hero-ops-grid small{font-size:8px;color:#9da49b}.hero-ops-grid strong{margin-top:4px;font-size:13px;color:#f0ebe2}.hero-ops-grid em{margin-top:2px;font:650 7px/1.2 monospace;color:#baaa82;font-style:normal}
+.store-tabs-label{display:block;margin:0 16px 7px}
+
+/* Guided product narrative */
+.guided-demo-rail{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:18px}
+.guide-step{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;padding:15px;border:1px solid var(--line);border-radius:13px;background:var(--surface);color:var(--ink);text-align:left;cursor:pointer;transition:.22s}
+.guide-step:hover,.guide-step.active{border-color:color-mix(in srgb,var(--forest) 55%,var(--line));background:color-mix(in srgb,var(--forest) 8%,var(--surface));transform:translateY(-2px)}
+.guide-step>span{font:800 8px monospace;color:var(--clay)}.guide-step b,.guide-step small{display:block}.guide-step b{font-size:13px}.guide-step small{margin-top:3px;font-size:10px;line-height:1.4;color:var(--muted)}.guide-step i{font-style:normal;color:var(--clay)}
+
+/* Make demos readable instead of miniature */
+.editor-block-btn{font-size:11px}.editor-block-btn b,.editor-panel-label{font-size:9px}.editor-palette-tip strong{font-size:11px}.editor-palette-tip span{font-size:9px}
+.editor-inspector label,.editor-position-readout,.editor-help{font-size:10px}.inspector-name small{font-size:9px}.inspector-name strong{font-size:11px}.editor-inspector input{font-size:11px}
+.workflow-step small{font-size:9px}.workflow-step strong{font-size:13px}.workflow-step em{font-size:10px}
+.workflow-cod-note{display:block;margin-top:8px;padding-top:8px;border-top:1px solid color-mix(in srgb,var(--line) 70%,transparent);font-size:9px!important;line-height:1.45!important}
+
+/* Merchant workspace becomes a first-class chapter */
+.workspace-section{background:var(--surface-2);border-block:1px solid var(--line)}
+.workspace-story{margin-top:0;background:var(--surface)}
+.workspace-demo{min-height:470px}.workspace-main{padding:26px}.workspace-nav span{font-size:11px}.workspace-top small{font-size:9px}.workspace-top strong{font-size:20px}.workspace-top button{font-size:10px}
+.workspace-metrics span{font-size:9px}.workspace-metrics small{font-size:8px}.workspace-table>div{font-size:10px}.workspace-title,.workspace-title span{font-size:10px}.workspace-next b{font-size:10px}
+
+/* Local commerce status is explanatory, not a fake live connection */
+.connection-live{color:var(--brass)}.connection-row.active em{color:var(--forest);border-color:color-mix(in srgb,var(--forest) 35%,var(--line));background:color-mix(in srgb,var(--forest) 7%,var(--surface))}
+html[data-theme="dark"] .connection-row.active em{color:#c8d7ca}.connection-row b{font-size:13px}.connection-row span{font-size:11px;line-height:1.35}.connection-row em{font-size:9px}
+.local-principles b{font-size:14px}.local-principles small{font-size:11px}.connection-head strong{font-size:20px}
+
+/* Finished storefront examples */
+.store-examples-section{background:var(--bg)}
+.store-example-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.store-example-card{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:0 24px 60px rgba(23,25,22,.08)}
+.store-example-image{aspect-ratio:1.35/1;overflow:hidden;background:var(--surface-2)}.store-example-image img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.78) contrast(.97);transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.store-example-card:hover img{transform:scale(1.035)}
+.store-example-copy{padding:18px}.store-example-copy>span{font:800 8px monospace;letter-spacing:.12em;color:var(--clay)}.store-example-copy h3{margin:8px 0 6px;font-size:22px;letter-spacing:-.035em}.store-example-copy p{font-size:13px;line-height:1.55;color:var(--muted)}.store-example-copy small{display:block;margin-top:13px;padding-top:11px;border-top:1px solid var(--line);font-size:9px;color:var(--muted)}
+
+/* Homepage pricing now answers the first buying question */
+.pricing-v7{background:var(--surface-2);border-block:1px solid var(--line)}
+.pricing-compare{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.pricing-compare article{display:flex;flex-direction:column;min-height:345px;padding:24px;border:1px solid var(--line);border-radius:17px;background:var(--surface)}
+.pricing-compare article.featured{background:var(--forest);color:var(--bone);border-color:#5f7164;box-shadow:0 28px 70px rgba(51,72,61,.18)}
+.pricing-plan{font:850 8px monospace;letter-spacing:.12em;color:var(--clay)}.pricing-compare article.featured .pricing-plan{color:#d4be8d}
+.pricing-compare h3{margin:12px 0 6px;font-size:25px}.pricing-compare p{min-height:48px;font-size:12px;line-height:1.55;color:var(--muted)}.pricing-compare article.featured p{color:#c8d0c9}
+.pricing-compare>article>strong{display:flex;align-items:baseline;gap:4px;margin:24px 0 16px;font-size:35px;letter-spacing:-.05em}.pricing-compare strong small{font-size:11px;letter-spacing:0;opacity:.7}
+.pricing-compare article>div{display:flex;align-items:center;gap:8px;padding:13px 0;border-block:1px solid var(--line);margin-bottom:20px}.pricing-compare article.featured>div{border-color:rgba(240,235,226,.18)}.pricing-compare article>div b{font-size:19px}.pricing-compare article>div span{font-size:11px;color:var(--muted)}.pricing-compare article.featured>div span{color:#c8d0c9}
+.pricing-compare .btn{margin-top:auto;width:100%}.pricing-compare article.featured .btn-primary{background:var(--bone);color:var(--forest)}
+.pricing-fineprint{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:17px;padding-top:15px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}.pricing-fineprint a{color:var(--ink);font-weight:800;white-space:nowrap}
+
+/* Light theme should feel cool white, beige only as an editorial accent */
+html[data-theme="light"]{--bg:#f7f9f7;--surface:#ffffff;--surface-2:#eef1ed;--line:#d8ddd7;--bone:#f7f9f7;--shadow:0 26px 68px rgba(31,43,36,.09)}
+html[data-theme="light"] body.v6-mature .store-examples-section{background:#f7f9f7}
+html[data-theme="light"] body.v6-mature .pricing-v7{background:#eef1ed}
+
+/* Tab focus/selected clarity */
+.store-tab[aria-selected="true"],.template-option[aria-selected="true"],.faq-tab[aria-selected="true"]{box-shadow:0 0 0 2px color-mix(in srgb,var(--clay) 18%,transparent)}
+.template-option:focus-visible,.faq-tab:focus-visible,.store-tab:focus-visible,.guide-step:focus-visible{outline:3px solid color-mix(in srgb,var(--clay) 45%,transparent);outline-offset:2px}
+
+@media(max-width:1020px){
+  .hero-ops-grid{grid-template-columns:repeat(2,1fr)}
+  .guided-demo-rail{grid-template-columns:1fr}
+  .store-example-grid{grid-template-columns:1fr 1fr}.store-example-card:last-child{grid-column:1/-1}
+  .pricing-compare{grid-template-columns:1fr 1fr}.pricing-compare article:last-child{grid-column:1/-1}
+  /* Inspector remains available as a bottom sheet instead of disappearing. */
+  .editor-demo.builder-ui{grid-template-columns:128px minmax(0,1fr);grid-template-rows:46px 650px auto;grid-template-areas:"top top" "palette stage" "inspector inspector"}
+  .editor-inspector{display:grid;grid-template-columns:1.2fr 1.5fr 1fr auto;gap:12px;align-items:end;border-left:0;border-top:1px solid #3a3d36}
+  .editor-inspector .inspector-name,.editor-inspector .editor-position-readout,.editor-inspector .editor-help{margin:0}.editor-inspector .editor-help{display:none}
+}
+@media(max-width:700px){
+  .hero-platform-note{font-size:12px}.hero-ops-dock{margin-inline:8px}.hero-ops-head{align-items:flex-start;flex-direction:column}.hero-ops-grid{grid-template-columns:1fr 1fr}.hero-ops-grid small{font-size:9px}.hero-ops-grid strong{font-size:14px}
+  .guided-demo-rail{gap:6px}.guide-step{padding:12px}.guide-step b{font-size:13px}.guide-step small{font-size:10px}
+  .editor-demo.builder-ui{grid-template-columns:1fr;grid-template-rows:42px 48px 520px auto;grid-template-areas:"top" "palette" "stage" "inspector";min-height:0}
+  .editor-stage{min-height:0}.editor-canvas{height:500px}
+  .editor-inspector{display:grid;grid-template-columns:1fr;gap:10px;padding:14px;border-left:0;border-top:1px solid #3a3d36}
+  .editor-inspector label,.editor-position-readout,.inspector-name strong,.editor-help{font-size:11px}.inspector-name small{font-size:9px}.editor-inspector input{font-size:12px;padding:10px}
+  .editor-inspector .editor-help{display:grid;font-size:10px}
+  .editor-block-btn{font-size:11px}
+  .workspace-demo{grid-template-columns:1fr}.workspace-nav{font-size:11px}.workspace-metrics{grid-template-columns:1fr 1fr}.workspace-grid{grid-template-columns:1fr}.workspace-next{display:grid}.workspace-table>div{grid-template-columns:.55fr 1fr .75fr}.workspace-table em{display:none}
+  .store-example-grid{grid-template-columns:1fr}.store-example-card:last-child{grid-column:auto}.store-example-copy h3{font-size:21px}.store-example-copy p{font-size:13px}
+  .pricing-compare{grid-template-columns:1fr}.pricing-compare article:last-child{grid-column:auto}.pricing-compare article{min-height:0}.pricing-fineprint{align-items:flex-start;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){.store-example-image img,.guide-step{transition:none!important}}

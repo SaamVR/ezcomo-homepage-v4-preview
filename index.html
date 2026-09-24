@@ -56,12 +56,13 @@
   <div class="shell hero-grid">
     <div class="hero-copy reveal is-visible">
       <div class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">Commerce built around Bangladesh</span></div>
-      <h1 data-i18n-html="heroTitle">Stop losing sales <em>inside the DMs.</em></h1>
-      <p class="hero-lede" data-i18n="heroLede">Give customers a branded store they can browse on their own, while products, orders, payments and delivery stay connected behind it.</p>
+      <h1 data-i18n-html="heroTitle">Your online store. Your daily business. <em>Connected.</em></h1>
+      <p class="hero-lede" data-i18n="heroLede">Build a branded storefront and manage products, orders, payments, stock and delivery from one workspace—built around selling in Bangladesh.</p>
       <div class="hero-actions">
         <a class="btn btn-primary btn-large" data-signup href="https://ezcomo.shop/signup?template=threads"><span data-i18n="createStore">Create free store</span><b>→</b></a>
         <a class="btn btn-ghost btn-large" href="#features"><span data-i18n="seeStores">Try the editor</span><b>↓</b></a>
       </div>
+      <p class="hero-platform-note" data-i18n="heroSupport">Selling through Facebook or Instagram? Keep them for discovery—move browsing and orders into your own store.</p>
     </div>
 
     <div class="hero-stage reveal is-visible" id="heroStage">
@@ -95,11 +96,21 @@
           </div>
           <div class="preview-sheen" aria-hidden="true"></div>
         </div>
+        <aside class="hero-ops-dock" aria-label="Sample merchant workspace">
+          <div class="hero-ops-head"><span data-i18n="heroWorkspaceLabel">SAMPLE MERCHANT WORKSPACE</span><b><i></i><span data-i18n="heroWorkspaceLive">Today at a glance</span></b></div>
+          <div class="hero-ops-grid">
+            <div><small data-i18n="heroOrders">Orders</small><strong>14</strong><em>+4 today</em></div>
+            <div><small data-i18n="heroPayments">Payment</small><strong>11 paid</strong><em>3 COD</em></div>
+            <div><small data-i18n="heroStock">Low stock</small><strong>2</strong><em data-i18n="heroNeedsAction">needs action</em></div>
+            <div><small data-i18n="heroCourier">Courier</small><strong>4 ready</strong><em>Pathao</em></div>
+          </div>
+        </aside>
+        <span class="store-tabs-label" data-i18n="heroPreviewLabel">QUICK STOREFRONT EXAMPLES</span>
         <div class="store-tabs" role="tablist" aria-label="Choose storefront preview">
-          <button class="store-tab active" type="button" data-template="threads" aria-selected="true">Threads</button>
-          <button class="store-tab" type="button" data-template="electronics" aria-selected="false">Electronics</button>
-          <button class="store-tab" type="button" data-template="crafts" aria-selected="false">Crafts</button>
-          <button class="store-tab" type="button" data-template="food" aria-selected="false">Food</button>
+          <button class="store-tab active" role="tab" type="button" data-template="threads" aria-selected="true" aria-controls="heroStoreVisual">Threads</button>
+          <button class="store-tab" role="tab" type="button" data-template="electronics" aria-selected="false" aria-controls="heroStoreVisual">Electronics</button>
+          <button class="store-tab" role="tab" type="button" data-template="crafts" aria-selected="false" aria-controls="heroStoreVisual">Crafts</button>
+          <button class="store-tab" role="tab" type="button" data-template="food" aria-selected="false" aria-controls="heroStoreVisual">Food</button>
         </div>
       </div>
     </div>
@@ -127,8 +138,14 @@
 <section class="section features-section cms-story-section" id="features">
   <div class="shell">
     <div class="section-heading split reveal">
-      <div><p class="kicker" data-i18n="featuresKicker">Try the CMS</p><h2 data-i18n="featuresTitle">Build the store. Then run what happens next.</h2></div>
-      <p data-i18n="featuresCopy">Start with the storefront itself. Edit the page, place an order, then follow the same sale into the operational workflow.</p>
+      <div><p class="kicker" data-i18n="featuresKicker">Try the platform</p><h2 data-i18n="featuresTitle">Three guided actions show the whole business flow.</h2></div>
+      <p data-i18n="featuresCopy">Make the storefront yours, receive a sample order, then move into the merchant workspace to manage payment, stock and delivery.</p>
+    </div>
+
+        <div class="guided-demo-rail reveal" aria-label="Three guided product actions">
+      <button type="button" class="guide-step active" data-guide-target="editorDemo"><span>01</span><div><b data-i18n="guide1Title">Make it yours</b><small data-i18n="guide1Copy">Change content, color or section order.</small></div><i>→</i></button>
+      <button type="button" class="guide-step" data-guide-target="orderWorkflowCard"><span>02</span><div><b data-i18n="guide2Title">Receive an order</b><small data-i18n="guide2Copy">See checkout become a structured order.</small></div><i>→</i></button>
+      <button type="button" class="guide-step" data-guide-target="merchantWorkspace"><span>03</span><div><b data-i18n="guide3Title">Manage the next step</b><small data-i18n="guide3Copy">Check payment, stock and delivery actions.</small></div><i>↓</i></button>
     </div>
 
     <article class="product-story-card editor-story reveal" data-spotlight>
@@ -299,7 +316,7 @@
           <div class="checkout-product"><div class="flat-product flat-tee workflow-product" aria-hidden="true"><i></i><b></b></div><div><strong>Studio Tee</strong><small>Black · M · Qty 1</small><span>৳1,490</span></div></div>
           <div class="checkout-total"><span>Total</span><strong>৳1,490</strong></div>
           <button type="button" class="place-order-btn" id="placeOrderDemo"><span data-i18n="placeOrder">Place order</span><i class="auto-cursor">↖</i></button>
-          <small class="workflow-disclaimer" data-i18n="workflowDisclaimer">Illustrative demo data</small>
+          <small class="workflow-disclaimer" data-i18n="workflowDisclaimer">Illustrative demo data</small><small class="workflow-cod-note" data-i18n="workflowCodNote">This run shows paid bKash. COD stays unpaid until collection/settlement.</small>
         </div>
         <div class="workflow-runner">
           <div class="runner-top"><span data-i18n="automationRunner">AUTOMATION RUNNER</span><div><i></i><b id="workflowStatus">Waiting</b></div></div>
@@ -311,7 +328,7 @@
             <div class="workflow-step" data-step="booked"><span class="step-icon">✓</span><div><small>PATHAO</small><strong data-i18n="stepBookedTitle">Courier booked</strong></div><em>PX-84721</em></div>
             <div class="workflow-step" data-step="pickup"><span class="step-icon">↑</span><div><small data-i18n="stepPickup">PICKUP</small><strong data-i18n="stepPickupTitle">Courier picked up</strong></div><em data-i18n="collected">Collected</em></div>
             <div class="workflow-step" data-step="inventory"><span class="step-icon">▦</span><div><small data-i18n="stepInventory">INVENTORY</small><strong data-i18n="stepInventoryTitle">Stock updated</strong></div><em><s>18</s> → 17</em></div>
-            <div class="workflow-step" data-step="profit"><span class="step-icon">↗</span><div><small data-i18n="stepProfit">MARGIN</small><strong data-i18n="stepProfitTitle">Profit booked</strong></div><em>+৳690</em></div>
+            <div class="workflow-step" data-step="profit"><span class="step-icon">↗</span><div><small data-i18n="stepProfit">EST. MARGIN</small><strong data-i18n="stepProfitTitle">Estimated margin</strong></div><em>+৳690</em></div>
           </div>
           <div class="workflow-result" id="workflowResult"><span class="pulse-dot"></span><strong data-i18n="workflowResult">Order complete — every next action is visible.</strong><small data-i18n="workflowResultNote">Example margin assumes merchant cost data is configured.</small></div>
         </div>
@@ -321,23 +338,61 @@
   </div>
 </section>
 
+<section class="section workspace-section" id="workspace">
+  <div class="shell">
+    <div class="section-heading split reveal">
+      <div><p class="kicker" data-i18n="workspaceKicker">Merchant workspace</p><h2 data-i18n="workspaceHeading">The website is only the front door.</h2></div>
+      <p data-i18n="workspaceLead">After an order arrives, keep payment state, stock, courier actions and daily priorities visible in the same operating surface.</p>
+    </div>
+    <article class="product-story-card workspace-story reveal" id="merchantWorkspace">
+      <div class="story-card-head">
+        <div><span class="mini-label" data-i18n="workspaceLabel">03 · MERCHANT WORKSPACE · SAMPLE DATA</span><h3 data-i18n="workspaceTitle">Run the work behind each sale.</h3><p data-i18n="workspaceCopy">Illustrative operational data shows how orders, payment state, inventory and fulfilment can sit together without turning the homepage into a miniature admin manual.</p></div>
+        <div class="story-card-note"><i></i><span data-i18n="workspaceHint">Fewer panels, larger information, clearer next actions.</span></div>
+      </div>
+      <div class="workspace-demo">
+        <aside class="workspace-nav" aria-label="Workspace areas"><b>E</b><span class="active" data-i18n="workspaceOverview">Overview</span><span data-i18n="workspaceOrders">Orders</span><span data-i18n="workspaceProducts">Products</span><span data-i18n="workspacePayments">Payments</span><span data-i18n="workspaceDelivery">Delivery</span></aside>
+        <div class="workspace-main">
+          <div class="workspace-top"><div><small data-i18n="workspaceToday">TODAY · SAMPLE WORKSPACE</small><strong data-i18n="workspaceGreeting">Good evening. Here is what needs attention.</strong></div><button type="button" data-i18n="workspaceNewOrder">View orders</button></div>
+          <div class="workspace-metrics">
+            <article><span data-i18n="workspaceMetricOrders">Orders today</span><b>14</b><small>+4 since noon</small></article>
+            <article><span data-i18n="workspaceMetricPayments">Payment checks</span><b>3</b><small data-i18n="workspaceMetricPaymentsNote">includes COD</small></article>
+            <article><span data-i18n="workspaceMetricStock">Low stock</span><b>2</b><small data-i18n="workspaceMetricStockNote">reorder soon</small></article>
+            <article><span data-i18n="workspaceMetricCourier">Ready for courier</span><b>4</b><small>Pathao</small></article>
+          </div>
+          <div class="workspace-grid">
+            <div class="workspace-orders">
+              <div class="workspace-title"><b data-i18n="workspaceRecent">Recent orders</b><span data-i18n="workspaceSample">illustrative</span></div>
+              <div class="workspace-table">
+                <div><b>#1051</b><span>Studio Tee</span><small data-i18n="workspacePaid">Paid</small><em data-i18n="workspaceReady">Ready</em></div>
+                <div><b>#1050</b><span>Canvas Tote</span><small>COD</small><em data-i18n="workspaceBooked">Booked</em></div>
+                <div><b>#1049</b><span>Rib Mug</span><small data-i18n="workspacePending">Pending</small><em data-i18n="workspaceReview">Review</em></div>
+              </div>
+            </div>
+            <aside class="workspace-next"><span class="mini-label" data-i18n="workspaceNext">NEXT ACTIONS</span><div><i></i><b data-i18n="workspaceAction1">Book 4 courier pickups</b></div><div><i></i><b data-i18n="workspaceAction2">Review 2 low-stock items</b></div><div><i></i><b data-i18n="workspaceAction3">Check 3 payment states</b></div></aside>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
 <section class="section templates-section" id="templates">
   <div class="shell">
     <div class="template-heading reveal">
       <div>
-        <p class="kicker" data-i18n="templatesKicker">Storefront structures</p>
-        <h2 data-i18n="templatesTitle">Different businesses need different storefront structures.</h2>
-        <p class="template-lede" data-i18n="templatesCopy">Switch business models to see how the page architecture, customer flow and primary action change — not just the colors.</p>
+        <p class="kicker" data-i18n="templatesKicker">Choose a starting point</p>
+        <h2 data-i18n="templatesTitle">Start with a storefront shaped for how your business sells.</h2>
+        <p class="template-lede" data-i18n="templatesCopy">Compare Fashion, Booking, Hotel and Digital examples. Each changes the customer journey and primary action—not just the color palette.</p>
       </div>
       <div class="template-count"><span id="templateCount">01</span><i></i><span>04</span></div>
     </div>
 
     <div class="template-showcase reveal">
       <div class="template-nav" role="tablist" aria-label="Storefront structure previews">
-        <button type="button" class="template-option active" data-template-full="fashion" aria-selected="true"><span>01</span><div><b>Fashion</b><small data-i18n="fashionDesc">Catalog + variants</small></div></button>
-        <button type="button" class="template-option" data-template-full="booking" aria-selected="false"><span>02</span><div><b>Booking</b><small data-i18n="bookingDesc">Services + time slots</small></div></button>
-        <button type="button" class="template-option" data-template-full="hotel" aria-selected="false"><span>03</span><div><b>Hotel</b><small data-i18n="hotelDesc">Rooms + availability</small></div></button>
-        <button type="button" class="template-option" data-template-full="digital" aria-selected="false"><span>04</span><div><b>Digital</b><small data-i18n="digitalDesc">Files + licences</small></div></button>
+        <button type="button" class="template-option active" role="tab" data-template-full="fashion" aria-selected="true" aria-controls="direction-fashion"><span>01</span><div><b>Fashion</b><small data-i18n="fashionDesc">Catalog + variants</small></div></button>
+        <button type="button" class="template-option" role="tab" data-template-full="booking" aria-selected="false" aria-controls="direction-booking"><span>02</span><div><b>Booking</b><small data-i18n="bookingDesc">Services + time slots</small></div></button>
+        <button type="button" class="template-option" role="tab" data-template-full="hotel" aria-selected="false" aria-controls="direction-hotel"><span>03</span><div><b>Hotel</b><small data-i18n="hotelDesc">Rooms + availability</small></div></button>
+        <button type="button" class="template-option" role="tab" data-template-full="digital" aria-selected="false" aria-controls="direction-digital"><span>04</span><div><b>Digital</b><small data-i18n="digitalDesc">Files + licences</small></div></button>
       </div>
 
       <div class="template-canvas">
@@ -349,7 +404,7 @@
           </div>
 
           <div class="direction-stage" id="templateVisual">
-            <div class="direction-preview direction-fashion active" data-direction-panel="fashion">
+            <div class="direction-preview direction-fashion active" id="direction-fashion" role="tabpanel" data-direction-panel="fashion">
               <div class="direction-nav"><b>ATELIER 27</b><div><span>New</span><span>Women</span><span>Men</span><span>Journal</span></div><em>Bag · 02</em></div>
               <div class="fashion-hero">
                 <div class="fashion-copy"><small>DROP / 07</small><h3>Quiet forms.<br>Strong silhouettes.</h3><p>Seasonal pieces built around texture, proportion and movement.</p><button type="button">Shop the collection</button></div>
@@ -362,7 +417,7 @@
               </div>
             </div>
 
-            <div class="direction-preview direction-booking" data-direction-panel="booking">
+            <div class="direction-preview direction-booking" id="direction-booking" role="tabpanel" data-direction-panel="booking">
               <div class="direction-nav booking-nav"><b>STUDIO NO.7</b><div><span>Services</span><span>Team</span><span>Journal</span></div><em>My booking</em></div>
               <div class="booking-layout">
                 <div class="booking-intro">
@@ -380,7 +435,7 @@
               </div>
             </div>
 
-            <div class="direction-preview direction-hotel" data-direction-panel="hotel">
+            <div class="direction-preview direction-hotel" id="direction-hotel" role="tabpanel" data-direction-panel="hotel">
               <div class="direction-nav hotel-nav"><b>NORTH HOUSE</b><div><span>Stay</span><span>Dining</span><span>Explore</span><span>About</span></div><em>Dhaka · BD</em></div>
               <div class="hotel-hero">
                 <div><small>STAY / REST / RESET</small><h3>A quieter place<br>inside the city.</h3><p>Thoughtful rooms, slow mornings and everything you need within reach.</p></div>
@@ -395,7 +450,7 @@
               </div>
             </div>
 
-            <div class="direction-preview direction-digital" data-direction-panel="digital">
+            <div class="direction-preview direction-digital" id="direction-digital" role="tabpanel" data-direction-panel="digital">
               <div class="direction-nav digital-nav"><b>FIELD NOTES</b><div><span>Library</span><span>Bundles</span><span>Licence</span></div><em>Account</em></div>
               <div class="digital-hero">
                 <div><small>CREATOR TOOLKIT / VOL. 04</small><h3>Useful files.<br>Ready when you are.</h3><p>A focused library of editable assets, templates and working files.</p><div class="digital-actions"><button type="button">Get the bundle · ৳1,990</button><span>Commercial licence included</span></div></div>
@@ -417,7 +472,7 @@
         </div>
 
         <div class="template-footer">
-          <div><span class="mini-label" data-i18n="selectedDirection">SELECTED STRUCTURE</span><h3 id="templateTitle">Fashion</h3><p id="templateDescription">Editorial catalog structure for collections, variants and product-led storytelling.</p><small class="direction-note" data-i18n="directionNote">Illustrative demo content — the structure is the point.</small></div>
+          <div><span class="mini-label" data-i18n="selectedDirection">YOUR STARTING POINT</span><h3 id="templateTitle">Fashion</h3><p id="templateDescription">Editorial catalog structure for collections, variants and product-led storytelling.</p><small class="direction-note" data-i18n="directionNote">Illustrative demo content — the structure is the point.</small></div>
           <div><a class="btn btn-primary" data-signup id="templateSignup" href="https://ezcomo.shop/signup?template=fashion" data-i18n="useTemplate">Use this structure</a></div>
         </div>
         <div class="template-breadth"><span data-i18n="moreStructures">Also built for</span><div><b>Beauty</b><b>Gadgets</b><b>Food</b><b>Crafts</b><b>Single Product</b><b>Wholesale</b><b>Subscriptions</b><b>Real Estate</b></div></div>
@@ -439,18 +494,18 @@
       </div>
     </div>
     <div class="local-connection-board reveal">
-      <div class="connection-head"><div><span class="mini-label" data-i18n="connectionState">CONNECTION STATE</span><strong data-i18n="connectionTitle">Know what is active before you depend on it.</strong></div><span class="connection-live"><i></i>LIVE STATUS</span></div>
+      <div class="connection-head"><div><span class="mini-label" data-i18n="connectionState">SETUP REQUIREMENTS</span><strong data-i18n="connectionTitle">Know what is supported and what needs merchant setup.</strong></div><span class="connection-live"><i></i><span data-i18n="connectionDemo">DEMO STATUS</span></span></div>
       <div class="connection-group">
         <span class="mini-label" data-i18n="payments">PAYMENTS</span>
-        <div class="connection-row active"><b>bKash</b><span data-i18n="autoConnected">Automated when connected</span><em data-i18n="active">active</em></div>
-        <div class="connection-row"><b>Nagad</b><span data-i18n="storeOption">Storefront option</span><em data-i18n="available">available</em></div>
-        <div class="connection-row"><b>COD</b><span data-i18n="storeOption">Storefront option</span><em data-i18n="available">available</em></div>
+        <div class="connection-row active"><b>bKash</b><span data-i18n="autoConnected">Supported · connect merchant account</span><em data-i18n="supported">supported</em></div>
+        <div class="connection-row"><b>Nagad</b><span data-i18n="storeOption">Supported storefront checkout option</span><em data-i18n="supported">supported</em></div>
+        <div class="connection-row"><b>COD</b><span data-i18n="codOption">Supported · payment collected later</span><em data-i18n="supported">supported</em></div>
       </div>
       <div class="connection-group">
         <span class="mini-label" data-i18n="delivery">DELIVERY</span>
-        <div class="connection-row active"><b>Pathao</b><span data-i18n="merchantApi">Merchant API booking</span><em data-i18n="active">active</em></div>
-        <div class="connection-row setup"><b>Steadfast</b><span data-i18n="setupAvailable">Setup available</span><em data-i18n="setup">setup</em></div>
-        <div class="connection-row setup"><b>REDX</b><span data-i18n="setupAvailable">Setup available</span><em data-i18n="setup">setup</em></div>
+        <div class="connection-row active"><b>Pathao</b><span data-i18n="merchantApi">Automated booking when configured</span><em data-i18n="setupRequired">setup required</em></div>
+        <div class="connection-row setup"><b>Steadfast</b><span data-i18n="setupAvailable">Setup available</span><em data-i18n="setupRequired">setup required</em></div>
+        <div class="connection-row setup"><b>REDX</b><span data-i18n="setupAvailable">Setup available</span><em data-i18n="setupRequired">setup required</em></div>
       </div>
       <div class="connection-group compact">
         <span class="mini-label" data-i18n="storefront">STOREFRONT</span>
@@ -461,23 +516,49 @@
   </div>
 </section>
 
-<section class="section pricing-section" id="pricing">
-  <div class="shell pricing-panel reveal">
-    <div>
-      <p class="kicker" data-i18n="pricingKicker">Pricing</p>
-      <h2 data-i18n="pricingTitle">Start free. Upgrade when the business needs more.</h2>
-      <p data-i18n="pricingCopy">Current prices and limits are published on the plans page so you can compare before committing.</p>
-      <div class="pricing-points" aria-label="What you can build with EZComo"><span data-i18n="pricingPointStore">Launch the storefront</span><span data-i18n="pricingPointOrders">Run structured orders</span><span data-i18n="pricingPointLocal">Connect local commerce</span></div>
+<section class="section store-examples-section" id="examples">
+  <div class="shell">
+    <div class="section-heading split reveal">
+      <div><p class="kicker" data-i18n="examplesKicker">Finished storefront examples</p><h2 data-i18n="examplesTitle">Show the outcome, not only the builder.</h2></div>
+      <p data-i18n="examplesCopy">These are illustrative design examples—not merchant claims. They show the level of storefront presentation the platform is aiming to produce.</p>
     </div>
-    <div class="pricing-actions"><small data-i18n="pricingActionNote">Start with the product before choosing a paid plan.</small><a class="btn btn-primary btn-large" data-signup href="https://ezcomo.shop/signup?template=threads" data-i18n="startFree">Start free</a><a class="text-link" href="https://ezcomo.shop/plans"><span data-i18n="comparePlans">Compare current plans</span> ↗</a></div>
+    <div class="store-example-grid">
+      <article class="store-example-card reveal">
+        <div class="store-example-image"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=82" alt="Folded fashion apparel on a clean studio background" loading="lazy"></div>
+        <div class="store-example-copy"><span>FASHION</span><h3>Editorial product storytelling</h3><p data-i18n="exampleFashion">Collections, variants and strong brand presentation without losing the path to purchase.</p><small data-i18n="illustrativeExample">Illustrative storefront example</small></div>
+      </article>
+      <article class="store-example-card reveal">
+        <div class="store-example-image"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=82" alt="Modern hotel exterior and pool" loading="lazy"></div>
+        <div class="store-example-copy"><span>HOTEL</span><h3>Availability-led hospitality</h3><p data-i18n="exampleHotel">Dates, guests and room choice stay central instead of forcing a product-catalog layout.</p><small data-i18n="illustrativeExample">Illustrative storefront example</small></div>
+      </article>
+      <article class="store-example-card reveal">
+        <div class="store-example-image"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=82" alt="Prepared dishes arranged on a dining table" loading="lazy"></div>
+        <div class="store-example-copy"><span>FOOD</span><h3>Fast browsing, clear ordering</h3><p data-i18n="exampleFood">Menu-first presentation keeps products, pricing and the primary order action easy to scan.</p><small data-i18n="illustrativeExample">Illustrative storefront example</small></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section pricing-section pricing-v7" id="pricing">
+  <div class="shell">
+    <div class="section-heading split reveal">
+      <div><p class="kicker" data-i18n="pricingKicker">Pricing</p><h2 data-i18n="pricingTitle">See the price before you leave the homepage.</h2></div>
+      <p data-i18n="pricingCopy">A compact comparison of the current plan prices and storefront limits shown on the plans page. Check the plans page for exact feature availability and external provider charges.</p>
+    </div>
+    <div class="pricing-compare reveal">
+      <article><span class="pricing-plan">FREE</span><h3 data-i18n="priceFree">Free</h3><p data-i18n="priceFreeNote">Try the platform with one storefront.</p><strong>৳0<small>/mo</small></strong><div><b>1</b><span data-i18n="storefrontLimit">storefront limit shown</span></div><a class="btn btn-ghost" data-signup href="https://ezcomo.shop/signup?template=threads" data-i18n="startFree">Start free</a></article>
+      <article class="featured"><span class="pricing-plan">BASIC</span><h3>Basic</h3><p data-i18n="priceBasicNote">For a merchant ready to move beyond the free tier.</p><strong>৳499<small>/mo</small></strong><div><b>1</b><span data-i18n="storefrontLimit">storefront limit shown</span></div><a class="btn btn-primary" href="https://ezcomo.shop/plans" data-i18n="viewPlanDetails">View plan details</a></article>
+      <article><span class="pricing-plan">ADVANCED</span><h3>Advanced</h3><p data-i18n="priceAdvancedNote">More storefront capacity for a growing operation.</p><strong>৳999<small>/mo</small></strong><div><b>3</b><span data-i18n="storefrontLimitPlural">storefronts limit shown</span></div><a class="btn btn-ghost" href="https://ezcomo.shop/plans" data-i18n="viewPlanDetails">View plan details</a></article>
+    </div>
+    <div class="pricing-fineprint reveal"><span data-i18n="pricingFineprint">Custom-domain access depends on eligible paid features. Payment gateway and courier provider charges, where applicable, are separate.</span><a href="https://ezcomo.shop/plans"><span data-i18n="comparePlans">Compare current plans</span> ↗</a></div>
   </div>
 </section>
 
 <section class="section faq-section" id="faq">
   <div class="shell">
     <div class="section-heading centered reveal"><p class="kicker">FAQ</p><h2 data-i18n="faqTitle">The questions that matter before you move beyond DMs.</h2></div>
-    <div class="faq-categories reveal" role="tablist" aria-label="FAQ categories"><button class="faq-tab active" type="button" data-faq="start" data-i18n="faqStart">Getting started</button><button class="faq-tab" type="button" data-faq="payments" data-i18n="faqPayments">Payments</button><button class="faq-tab" type="button" data-faq="delivery" data-i18n="faqDelivery">Delivery</button><button class="faq-tab" type="button" data-faq="domains" data-i18n="faqDomains">Domains</button></div>
-    <div class="faq-list reveal" id="faqList"></div>
+    <div class="faq-categories reveal" role="tablist" aria-label="FAQ categories"><button class="faq-tab active" role="tab" type="button" data-faq="start" data-i18n="faqStart" aria-selected="true" aria-controls="faqList">Getting started</button><button class="faq-tab" role="tab" type="button" data-faq="payments" data-i18n="faqPayments" aria-selected="false" aria-controls="faqList">Payments</button><button class="faq-tab" role="tab" type="button" data-faq="delivery" data-i18n="faqDelivery" aria-selected="false" aria-controls="faqList">Delivery</button><button class="faq-tab" role="tab" type="button" data-faq="domains" data-i18n="faqDomains" aria-selected="false" aria-controls="faqList">Domains</button></div>
+    <div class="faq-list reveal" id="faqList" role="tabpanel"></div>
     <div class="faq-help reveal"><span data-i18n="anotherQuestion">Have another question?</span><a href="https://ezcomo.shop/support"><span data-i18n="talkSupport">Talk to support</span> →</a></div>
   </div>
 </section>
@@ -495,10 +576,10 @@
   <div class="shell footer-grid">
     <div class="footer-brand"><a class="brand" href="#top"><span class="brand-symbol">E</span><span>EZCOMO</span></a><p data-i18n="footerTag">A storefront customers can use. A workspace merchants can run.</p></div>
     <div><b data-i18n="product">Product</b><a href="#features" data-i18n="navFeatures">Features</a><a href="#templates" data-i18n="navTemplates">Templates</a><a href="#integrations" data-i18n="navIntegrations">Integrations</a><a href="#pricing" data-i18n="navPricing">Pricing</a></div>
-    <div><b data-i18n="support">Support</b><a href="https://ezcomo.shop/support" data-i18n="helpCenter">Help center</a><a href="#faq">FAQ</a><a href="https://ezcomo.shop/login" data-i18n="login">Log in</a></div>
+    <div><b data-i18n="support">Support</b><a href="https://ezcomo.shop/support" data-i18n="helpCenter">Contact support</a><a href="#faq">FAQ</a><a href="https://ezcomo.shop/login" data-i18n="login">Log in</a></div>
     <div><b data-i18n="legal">Legal</b><a href="https://ezcomo.shop/privacy" data-i18n="privacy">Privacy</a><a href="https://ezcomo.shop/terms" data-i18n="terms">Terms</a><a href="https://ezcomo.shop/billing-policy" data-i18n="billing">Billing policy</a></div>
   </div>
-  <div class="shell footer-bottom"><span>© 2026 EZComo</span><span data-i18n="previewLabel">Design preview · no merchant data is changed here.</span></div>
+  <div class="shell footer-bottom"><span>© 2026 EZComo</span><span data-i18n="previewLabel">Redesign preview · demo/sample data is labeled where it appears.</span></div>
 </footer>
 
 <div class="sticky-cta" id="stickyCta" aria-hidden="true"><div class="shell sticky-inner"><div><span class="status-dot"></span><b data-i18n="stickyText">Ready to give customers somewhere better than the DM inbox?</b></div><div><a class="btn btn-primary" data-signup href="https://ezcomo.shop/signup?template=threads" data-i18n="startFree">Start free</a><button id="stickyClose" type="button" aria-label="Dismiss">×</button></div></div></div>
